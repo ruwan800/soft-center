@@ -30,7 +30,7 @@ db_select(SOFT_CENTER);
 foreach ($lines as $line) {
     if(!strncmp ($line, " ",1 ))
         if(!strncmp ($line, " .",2 ))
-            $desc_more=$desc_more."\n";
+            $desc_more=$desc_more."</br>";
         else
             $desc_more=$desc_more.$line;
     else if(strlen($line)==1){
@@ -123,9 +123,7 @@ foreach ($lines as $line) {
     else
         $more_info=$more_info."\n".$line;
 }
-//TODO release .gzfile;
-unset($lines);
-unset($line);
+
 /*
 $query="SELECT soft_id FROM software
         WHERE package NOT IN (SELECT package FROM sc_temp)";
@@ -187,7 +185,7 @@ while($row=mysql_fetch_array( $result )){
         //*/
 $query="DROP /*TEMPORARY*/ TABLE sc_temp";//TODO
 mysql_query($query) or die(mysql_error());
-
+//TODO release .gzfile;
 ?>
 </br>
 DONE :)

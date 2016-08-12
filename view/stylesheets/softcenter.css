@@ -2,10 +2,9 @@
 background-image:url("../images/search.png");
 background-repeat:repeat-x;
 background-size:10px 30px;
-height: 5%;
+height: 30px;
 }
 #searchbardir{
-
 width: 30%;
 float: left;
 margin: 3px 0 0 3%;
@@ -22,10 +21,6 @@ float: right;
 }
 */
 
-#pkgview{
-height: 95%;
-}
-
 #pkg {
 /*background-color:transparent; /*important*/
 background-color:gray;
@@ -34,32 +29,19 @@ float: right;
 
 #sidepane{
 width: 20%;
-height: 100%;
 float: left;
-background-color:#9DEDF2;
 }
 
 #sidePaneValue{
+height: 8%;
 font-size: 20px;
+background-color:#9DEDF2;
 }
 
 
-#pkgviewResultSet{
+#pkgviewmain{
 width: 70%;
 float: left;
-}
-#pkgViewMainResult{
-border-bottom: solid black;
-border-width:1px;
-height: 9.5%;
-}
-#pkgViewMainResultContent{
-width: 70%;
-float: left;
-}
-#pkgViewMainResultButton{
-width: 30%;
-float: right;
 }
 
 #updown{
