@@ -3,9 +3,12 @@ require_once("../includes/includes.php");
 
 
 db_select(SOFT_CENTER);
+
+/*
 $query="DROP TABLE IF EXISTS software";
 mysql_query($query) or die(mysql_error());
-$query="CREATE TABLE software(
+*/
+$query="CREATE TABLE IF NOT EXISTS software(
         package     varchar(70) NOT NULL,
         soft_id     int(11) NOT NULL AUTO_INCREMENT,
         installed_size int(11),
@@ -33,13 +36,24 @@ $query="CREATE TABLE software(
         INDEX USING BTREE (package)
         ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;";
 mysql_query($query) or die(mysql_error());
-/*
 
+
+/*
 $query="CREATE TABLE IF NOT EXISTS software(
         soft_id     int(11)
         
 $query="";
 
 */
+
+$query="CREATE TABLE IF NOT EXISTS category(
+        cat_type int(10) NOT NULL,
+        cat_name    text,
+        cat_img     text,
+        cat_link    text,
+        INDEX USING BTREE (cat_type)
+        ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;";
+mysql_query($query) or die(mysql_error());
+
 ?>
 :)

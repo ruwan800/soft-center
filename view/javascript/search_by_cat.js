@@ -1,7 +1,3 @@
-//function (){ getElementById("button1").hide(); }
-$("#button1").hide();
-$("#button2").hide();
-
 var pkgset;
 var count=0;
 function showPrevious(){
@@ -9,16 +5,9 @@ function showPrevious(){
     viewResult(count);
 }
 
-function showMore(){
-    count++;
-    viewResult(count);
-}
-
-function loadXMLDoc(){
+function searchByCategory(cat){
 
 var xmlhttp;
-var text=document.getElementById('pkg').value;
-var temp;
 
 xmlhttp=new XMLHttpRequest();
 
@@ -32,7 +21,7 @@ xmlhttp.onreadystatechange=function(){
     modResult(0);
     }
   }
-xmlhttp.open("GET","../model/adv_pkg_search.php?pkg="+text,true);
+xmlhttp.open("GET","../model/search_by_cat.php?cat="+cat,true);
 xmlhttp.send();
 }
 
@@ -71,14 +60,4 @@ function modResult(count){
 
       
 }
-
-/*
-if(10 < pkgset.length-10*i)
-        var temp1=pkgset.slice(i*10, i*10+10);
-    else{
-        var temp1=pkgset.slice(i*10, pkgset.length);
-    var temp2=temp1.join("</br>");
-    //modResult(temp2);
-    }
-*/
 
