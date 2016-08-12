@@ -14,7 +14,7 @@
     </div>
 </div>
 <div id="pkgview">
-    <div id="sidepane">
+    <div class="ssPane" id="sidepane">
         <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(1)">Programming</button></div>
         <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(2)">Education</button></div>
         <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(3)">Games</button></div>
@@ -28,7 +28,7 @@
         <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(10)">Universal Access</button></div>
     </div>
     <div id="pkgviewmain">
-        <div id="pkgviewResultSet"></div>
+        <div class="ssMain" id="pkgviewResultSet"></div>
         <div id="updown">
             <div id="updown1">
                 <!-- <button type="button" id="button1" onclick="showPrevious()">Previous</br>Results</button> -->

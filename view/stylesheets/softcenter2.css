@@ -84,19 +84,13 @@ height: 12%;
 button {
 font-weight: bold;
 border-width: 1px;
-border-color: #737373;
+/*border-color: #737373;*/
+border-color: #881E00;
 border-style:solid;
 width: 100%;
-background-color:black;
-color: orange;
-cursor: pointer;
+background-color:#A3A6A3;
+color: black;
 }
-
-button:hover{
-background-color:gray;
-color: #881E00;
-}
-
 
 #sidePaneValue > button {
 text-align:  left;
@@ -108,13 +102,6 @@ margin: 0;
 margin: 8% 0  0 0;
 width: 120px;
 height: 20px;
-background-color:black;
-color: orange;
-}
-
-#pkgViewMainResultButton > button:hover{
-background-color:gray;
-color: #881E00;
 }
 
 #pkgViewMainResultContent{
@@ -129,63 +116,5 @@ margin: 1% 0  0 0;
 color: #737373;
 }
 
-#catResultButton > button {
-height:100%;
-width:100%;
-background-color:#D2D2D2;
-border-width: 0;
-color: #881E00;
-vertical-align:text-top;
-/*background-image: url(http://localhost/vos/my/client_root/client/view/images/loader.gif);
-background-repeat: no-repeat;
-vertical-align: middle;*/
-}
 
-#catResultButton > button:hover{
-background-color:#CACACA;
-color: #881E00;
-}
-
-img{
-url(images/no.png);
-width:80%;
-height:80%;
-}
-
-img:hover{
-width:82%;
-height:82%;
-}
-
-#cat1{
-float: left;
-width:50%;
-height:30%;
-}
-
-#cat2{
-float: right;
-width:50%;
-height:30%;
-}
-
-#catA{
-margin: 12% 6% 11% 6% ;
-float: left;
-width:38%;
-height:77%;
-}
-
-#catB{
-margin: 12% 6% 11% 5% ;
-float: right;
-width:39%;
-height:77%;
-}
-
-#catText{
-height:100%;
-
-color: #180D0D;
-}
 

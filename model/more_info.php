@@ -22,14 +22,16 @@ function moreInfo(){
         if($row[$i]){
             $output = $output."<key>".mysql_field_name($result, $i)."</key><value>".htmlspecialchars($row[$i])."</value>";
         }
+        else{
+        	$output = $output."<key></key><value></value>";
+        }
     }
-    if(allowedSoftware){
-        $output .= "<key>allowedSoftware</key><value>".allowedSoftware($soft_id)."</value>";
-    }
+    $output .= "<key>allowedSoftware</key><value>".allowedSoftware($soft_id)."</value>";
     return $output;
 }
 
 function allowedSoftware($soft_id){
     //TODO allowing software
     return "allowed";
+    //return "notallowed";
 }
