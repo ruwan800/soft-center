@@ -18,9 +18,9 @@ function categoryPage(){
         $cat=$_GET["cat"];
     $output=null;
 //var category=["accessories","education","games","graphics","internet","office","programming","science","sound & video","system tools","universal access"];
-    $category = array("java","perl","python","php","ruby","web","devel","editors");
-    $category_img = array("java","perl","python","php","ruby","web","devel","editors");
-    $category_section = array("java","perl","python","php","ruby","web","devel","editors");
+//    $category = array("java","perl","python","php","ruby","web","devel","editors");
+//    $category_img = array("java","perl","python","php","ruby","web","devel","editors");
+//    $category_section = array("java","perl","python","php","ruby","web","devel","editors");
 
     db_select(SOFT_CENTER);
 
@@ -28,9 +28,9 @@ function categoryPage(){
     $query="SELECT * FROM category WHERE cat_type = $cat;";
     $result = mysql_query($query) or die(search_error(mysql_error()));
     while($row=mysql_fetch_array( $result )){
-        $output.="<category><cat_name>".$row[1]."</cat_name>";
-        $output.="<cat_img>".$row[2]."</cat_img>";
-        $output.="<cat_link>".$row[3]."</cat_link></category>";
+        $output.="<category><cat_name>".$row[2]."</cat_name>";
+        $output.="<cat_img>".$row[3]."</cat_img>";
+        $output.="<cat_link>".$row[4]."</cat_link></category>";
     }
     return $output;
 }
