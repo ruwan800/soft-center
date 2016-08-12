@@ -9,9 +9,9 @@ xmlhttp.onreadystatechange=function(){
     xmlResponse=xmlhttp.responseXML;
     xmlRoot = xmlResponse.documentElement;
     
-    catName = xmlRoot.getElementsByTagName("name");
-    catSearchNameArray = xmlRoot.getElementsByTagName("cat_name");
-    catImgArray = xmlRoot.getElementsByTagName("img_link");
+    catName = xmlRoot.getElementsByTagName("cat_name");
+    catSearchNameArray = xmlRoot.getElementsByTagName("cat_section");
+    catImgArray = xmlRoot.getElementsByTagName("cat_link");
     viewCategoryPage();
     }
   }
