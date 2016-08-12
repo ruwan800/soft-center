@@ -43,6 +43,18 @@ background-color:#9DEDF2;
 width: 70%;
 float: left;
 }
+#pkgViewMainResult{
+border: solid black;
+height: 10%;
+}
+#pkgViewMainResultContent{
+width: 70%;
+float: left;
+}
+#pkgViewMainResultButton{
+width: 30%;
+float: right;
+}
 
 #updown{
 width: 10%;

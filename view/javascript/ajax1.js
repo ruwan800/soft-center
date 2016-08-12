@@ -25,23 +25,7 @@ xmlhttp=new XMLHttpRequest();
 xmlhttp.onreadystatechange=function(){
   if (xmlhttp.readyState==4 && xmlhttp.status==200){
     xmlResponse=xmlhttp.responseXML;
-    xmlRoot = xmlResponse.documentElement;
-    pkgNameArray = xmlRoot.getElementsByTagName("name");
-    pkgDescArray = xmlRoot.getElementsByTagName("description");
-    pkgIDArray = xmlRoot.getElementsByTagName("soft_id");
-    var html = "";
-    // iterate through the arrays and create an HTML structure
-    for (var i=0; i<pkgNameArray.length; i++)
-    html += "<div id=\"pkgViewMainResult\"><div id=\"pkgViewMainResultContent\"><div id=\"pkgViewMainResultName\">"+
-    pkgNameArray.item(i).firstChild.data + 
-    "</div><div id=\"pkgViewMainResultDescription\">"+
-    pkgDescArray.item(i).firstChild.data +
-    "</div></div><div id=\"pkgViewMainResultButton\">"+
-    "<button type=\"button\" onclick=\"moreInfo("+
-    pkgIDArray.item(i).firstChild.data +
-    ")\">More info >></button>"+
-    "</div></div>"
-    document.getElementById("pkgviewmain").innerHTML=html;
+    viewResult(0)
     }
   }
 xmlhttp.open("GET","../model/adv_pkg_search.php?pkg="+text,true);
@@ -78,9 +62,4 @@ if(10 < pkgset.length-10*i)
     //modResult(temp2);
     }
 */
-
-function moreInfo(aaa){
-
-document.getElementById("pkgviewmain").innerHTML="not implimented</br> pkg Id="+aaa;
-}
 
