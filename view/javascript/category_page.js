@@ -66,10 +66,11 @@ function viewCategory(i){
         text="<div id=\"catResultButton\">"+
             "<button onclick=\"searchByCategory('"+
             catLinkArray.item(i).firstChild.data +
-            "')\"><div height=\"80%\"><img src=\"images/set/"+catImgArray.item(i).firstChild.data+
-            ".png\" /></div><div height=\"20%\">"+
+            "')\"><div height=\"20%\">"+
             catNameArray.item(i).firstChild.data+
-            "</div></button></div>";
+            "</div><div height=\"80%\"><img src=\"images/set/"+
+            catImgArray.item(i).firstChild.data+
+            ".png\" /></div></button></div>";
 //        +"</div>";
     }
     return text;

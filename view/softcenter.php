@@ -18,12 +18,12 @@
         <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(1)">Programming</button></div>
         <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(2)">System Tools</button></div>
         <div id="sidePaneValue"><button type="button" onclick="searchByCategory('graphics')">Graphics</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(4)">Internet</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(3)">Internet</button></div>
         <div id="sidePaneValue"><button type="button" onclick="searchByCategory('games')">Games</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(5)">Office</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(6)">Education</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(4)">Office</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(5)">Education</button></div>
         <div id="sidePaneValue"><button type="button" onclick="searchByCategory('misc')">Accessories</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(8)">Sound & Video</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(6)">Sound & Video</button></div>
     </div>
     <div id="pkgviewmain">
         <div class="ssMain" id="pkgviewResultSet"></div>
