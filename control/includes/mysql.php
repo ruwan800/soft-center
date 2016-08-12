@@ -50,7 +50,7 @@ function apt_link_xml($soft_id){
     $result = mysql_query($query) or die(mysql_error());
     $row=mysql_fetch_array( $result );
     return '<package><name>'.$row[0].'</name><description>'.$row[1].'</description><soft_id>'.$soft_id.'</soft_id></package>';
-
+    //TODO ERROR $row[1] gives unwanted chars. use with htmlentities
 }
 
 ?>

@@ -15,17 +15,17 @@
 </div>
 <div id="pkgview">
     <div id="sidepane">
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(0)">Accessories</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(1)">Education</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(2)">Games</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(3)">Graphics</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(4)">Internet</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(5)">Office</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(6)">Programming</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(7)">Science</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(8)">Sound & Video</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(9)">System Tools</button></div>
-        <div id="sidePaneValue"><button type="button" onclick="getCategoryPage(10)">Universal Access</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(0)">Accessories</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(1)">Education</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(2)">Games</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(3)">Graphics</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(4)">Internet</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(5)">Office</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(6)">Programming</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(7)">Science</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(8)">Sound & Video</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(9)">System Tools</button></div>
+        <div id="sidePaneValue"><button type="button" onclick="searchByCategory(10)">Universal Access</button></div>
     </div>
     <div id="pkgviewmain">
         <div id="pkgviewResultSet"></div>

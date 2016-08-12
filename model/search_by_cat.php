@@ -4,6 +4,8 @@ echo '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
 
 
 require_once("../control/includes/includes.php");
+
+
 echo '<response>';
 echo getResult();
 echo '</response>';
@@ -27,10 +29,13 @@ function getResult(){
 
     $output=null;
     if(isset($_GET["cat"]))
-        $category=$_GET["cat"];
+        $cat=$_GET["cat"];
 
     db_select(SOFT_CENTER);
-//var category=["accessories","education","games","graphics","internet","office","programming","science","sound & video","system tools","universal access"];
+/*
+$category=array("accessories","education","games","graphics","internet","office","programming","science","sound & video","system tools","universal access");
+*/
+$category=array("sound","video","graphics","database","java","perl","python","php","ruby","web","devel","editors");
     /*
     $query="SELECT soft_id FROM software WHERE package='$software'";
     $result = mysql_query($query) or die(search_error(mysql_error()));
@@ -41,7 +46,7 @@ function getResult(){
 
     //echo search_error("not implimented");
 
-    $query="SELECT soft_id FROM software WHERE section = '$category' LIMIT 200;";
+    $query="SELECT soft_id FROM software WHERE section = '$category[$cat]' LIMIT 200;";
     $result = mysql_query($query) or die(search_error(mysql_error()));
     while($row=mysql_fetch_array( $result )){
         $output=$output.apt_link_xml($row[0]);
