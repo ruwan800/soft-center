@@ -18,7 +18,7 @@ xmlhttp.onreadystatechange=function(){
     pkgNameArray = xmlRoot.getElementsByTagName("name");
     pkgDescArray = xmlRoot.getElementsByTagName("description");
     pkgIDArray = xmlRoot.getElementsByTagName("soft_id");
-    modResult(0);
+    viewResult(0);
     }
   }
 xmlhttp.open("GET","../model/search_by_cat.php?cat="+cat,true);
@@ -26,27 +26,27 @@ xmlhttp.send();
 }
 
            
-function viewResult(i){
-    
-    xmlDocumentElement = "eouou".documentElement;
-    //pkgDetail = xmlDocumentElement.firstChild.data;
-    
-    document.getElementById("pkgviewResultSet").innerHTML="hchthdtdt";
-    //if(pkgset.length<10+10*i)
-    //    $("#button2").hide();
-    //else
-        $("#button2").show();
-    if(0<i)
-        $("#button1").show();
+function viewResult(count){
+    var html = "";
+    if(pkgNameArray.length<=10+10*count){
+        document.getElementById("updown3").innerHTML="";
+        for (var i=count*10; i<pkgNameArray.length; i++)
+            html +=modResult(i);
+    }
+    else{
+        document.getElementById("updown3").innerHTML="<button type=\"button\" onclick=\"showMore()\">More </br>Results</button>";
+        for (var i=count*10; i<(10+10*count); i++)
+            html +=modResult(i);
+    }
+    if(0<count)
+        document.getElementById("updown1").innerHTML="<button type=\"button\" onclick=\"showPrevious()\">Previous</br>Results</button>";
     else
-        $("#button1").hide();
+        document.getElementById("updown1").innerHTML="";
+    document.getElementById("pkgviewResultSet").innerHTML=html;
 }
 
-function modResult(count){
-    var html = "";
-    // iterate through the arrays and create an HTML structure
-    for (var i=0; i<10; i++)
-    html += "<div id=\"pkgViewMainResult\"><div id=\"pkgViewMainResultContent\"><div id=\"pkgViewMainResultName\">"+
+function modResult(i){
+    text = "<div id=\"pkgViewMainResult\"><div id=\"pkgViewMainResultContent\"><div id=\"pkgViewMainResultName\">"+
     pkgNameArray.item(i).firstChild.data + 
     "</div><div id=\"pkgViewMainResultDescription\">"+
     pkgDescArray.item(i).firstChild.data +
@@ -55,9 +55,5 @@ function modResult(count){
     pkgIDArray.item(i).firstChild.data +
     ")\">More info >></button>"+
     "</div></div>"
-    document.getElementById("pkgviewResultSet").innerHTML=html;
-
-
-      
+    return text;
 }
-

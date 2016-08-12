@@ -1,5 +1,5 @@
 <?php include("includes/header.php");?>
-<script src="javascript/jquery.js"></script>
+<script src="javascript/ajax.js"></script>
 <script src="javascript/search_by_cat.js"></script>
 <script src="javascript/category_page.js"></script>
 <div id="searchbar">
@@ -31,15 +31,15 @@
         <div id="pkgviewResultSet"></div>
         <div id="updown">
             <div id="updown1">
-                <button type="button" id="button1" onclick="showPrevious()">Previous</br>Results</button>
+                <!-- <button type="button" id="button1" onclick="showPrevious()">Previous</br>Results</button> -->
             </div>
             <div id="updown2"></div>
             <div id="updown3">
-                <button type="button" id="button2" onclick="showMore()">More </br>Results</button>
+                <!-- <button type="button" id="button2" onclick="showMore()">More </br>Results</button> -->
             </div>
         </div>
     </div>
 </div>
 
-<script src="javascript/ajax.js"></script>
+
 <?php require("includes/footer.php") ?>

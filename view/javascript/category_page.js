@@ -61,12 +61,30 @@ xmlhttp.send();
 function viewMoreInfo(){
     
     var html = "<b>"+valueArray.item(0).firstChild.data+"</b></br></br>"+
-    valueArray.item(1).firstChild.data+"<></br></br>"+
-    valueArray.item(2).firstChild.data+"<></br></br>";
-    for (var i=3; i<10; i++){
-        try{
-            html += keyArray.item(i).firstChild.data+": "+valueArray.item(i).firstChild.data+"</br>";
-        }catch(e){}
+    valueArray.item(1).firstChild.data+"</br></br>"+
+    valueArray.item(2).firstChild.data+"</br></br>";
+    html += keyArray.item(3).firstChild.data+": "+valueArray.item(3).firstChild.data+" Kbytes</br>";
+    html += keyArray.item(4).firstChild.data+": "+valueArray.item(4).firstChild.data+" Bytes</br>";
+    html += keyArray.item(5).firstChild.data+": "+valueArray.item(5).firstChild.data+"</br>";
+    try{
+    html += keyArray.item(6).firstChild.data+": "+valueArray.item(6).firstChild.data+"</br>";
+    }catch(e){}
+    try{
+    html += "<A href='"+valueArray.item(7).firstChild.data+"'>Developer website</A></br>";
+    }catch(e){}
+    try{
+    html += keyArray.item(8).firstChild.data+": "+valueArray.item(8).firstChild.data+"</br>";
+    }catch(e){}
+    if(valueArray.item(9).firstChild.data=="allowed"){
+        html +="       <button type=\"button\" onclick=\"window.location.href='apt://"
+        +valueArray.item(0).firstChild.data+"'\">INSTALL</button>";
+    }
+    else{
+        html +="       <button type=\"button\" onclick=requestToUse("+id+")>Requst to use</button>";
     }
     document.getElementById("pkgviewResultSet").innerHTML=html;
+}
+
+function requestToUse(id){
+    document.getElementById("pkgviewResultSet").innerHTML="requesting"+id;
 }

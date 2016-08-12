@@ -13,7 +13,6 @@ function moreInfo(){
     $output=null;
     if(isset($_GET["id"]))
         $soft_id=$_GET["id"];
-
     db_select(SOFT_CENTER);
     $query="SELECT * FROM software WHERE soft_id = '$soft_id'";
     $result = mysql_query($query) or die(search_error(mysql_error()));
@@ -24,5 +23,13 @@ function moreInfo(){
             $output = $output."<key>".mysql_field_name($result, $i)."</key><value>".htmlspecialchars($row[$i])."</value>";
         }
     }
+    if(allowedSoftware){
+        $output .= "<key>allowedSoftware</key><value>".allowedSoftware($soft_id)."</value>";
+    }
     return $output;
+}
+
+function allowedSoftware($soft_id){
+    //TODO allowing software
+    return "allowed";
 }
