@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+ body{ font-size: 12px; font-family: Arial; }
+ </style>
+<script src="jquery.js"></script>
+</head>
+<body>
+  
+<table>
+    <tr>
+        <td>
+            <b>Search Software</b>
+        </td>
+        <td>
+            <section id="test">
+                <input type="text" id="pkg" onkeyup="loadXMLDoc()"/>
+                <!-- <button type="button" onclick="loadXMLDoc()">Change Content</button>  -->
+                <!--  <p>Look up: <input id="keywords" type="text" value="" onkeyup="pressed(event)"><img id="loader" src="./loader.gif"></p>  -->  
+            </section>  
+        </td>
+    </tr>
+</table>
+<section id="part1">
+    <button type="button" id="button1" onclick="showPrevious()">Previous</button>
+    <div id="myDiv"></div>
+    <button type="button" id="button2" onclick="showMore()">More Results</button>
+</section>
+<script src="ajax.js"></script>
+
+</body>
+</html>
