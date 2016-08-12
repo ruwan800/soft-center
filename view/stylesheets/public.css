@@ -14,13 +14,11 @@ img { border: none; }
 table, tr, td { border-collapse: collapse; vertical-align: top; font-size: 13px; line-height: 15px;}
 /*a { color:#000000;}*/
 
-#header { height: 10%; margin: 0px; padding: 0px; text-align: left; 
-	background:#ABABAB; color:#881E00; }
+
 #header h1 { padding: 1em; margin: 0px;}
-#main { margin: 0px; padding: 0px; height: 85%; width: 100%; background: #D8D8D8; }
+
 #structure { height: 600px; width: 100%; }
-#footer { height: 5%; margin: 0px;  text-align: center; 
-	background:#ABABAB;  color:#881E00; }
+
 
 /* Navigation */
 #navigation { width: 150px; padding: 1em 2em; color: #D4E6F4; background:#99CCFF; }
@@ -34,4 +32,16 @@ ul.pages { padding-left: 2em; list-style: square; }
 #page h2 { color: #8D0D19; margin-top: 1em;}
 #page h3 { color: #8D0D19; }
 ul.users{ padding-left: 0; list-style: none;}
+
+
+
+
+
+#main { margin: 0px; padding: 0px; height: 85%; width: 100%; background: #D8D8D8; }
+#header { height: 10%; margin: 0px; padding: 0px; text-align: left; 
+	background:#ABABAB; color:#881E00; }
+#footer { height: 5%; margin: 0px;  text-align: center; 
+	background:#ABABAB;  color:#881E00; }
+
+
 

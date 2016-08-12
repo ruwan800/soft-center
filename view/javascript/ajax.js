@@ -35,7 +35,7 @@ xmlhttp.onreadystatechange=function(){
     viewResult(0);
     }
   }
-xmlhttp.open("GET","../model/adv_pkg_search.php?pkg="+text,true);
+xmlhttp.open("GET","tcenter/softcenter/sc.php?action=ps&pkg="+text,true);
 xmlhttp.send();
 }
 

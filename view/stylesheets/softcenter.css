@@ -36,7 +36,10 @@ float: right;
 width: 20%;
 height: 100%;
 float: left;
-background-color:#737373;
+background-color:#D8D8D8;
+border-right: solid #C1C1C1;
+border-width:1px;
+
 }
 
 #sidePaneValue{
@@ -50,9 +53,13 @@ width: 69%;
 float: left;
 }
 #pkgViewMainResult{
-border-bottom: solid #881E00;
+border-bottom: solid #C1C1C1;
 border-width:1px;
 height: 9.5%;
+background-color:#D8D8D8;
+}
+#pkgViewMainResult:hover{
+background-color:#CACACA;
 }
 #pkgViewMainResultContent{
 width: 78%;
@@ -99,9 +106,17 @@ color: #881E00;
 
 
 #sidePaneValue > button {
+color: black;
 text-align:  left;
 font-weight: bold;
 margin: 0;
+background-color:#D8D8D8;
+border-width: 0;
+}
+
+#sidePaneValue > button:hover {
+background-color:#CACACA;
+color: #881E00;
 }
 
 #pkgViewMainResultButton > button {
