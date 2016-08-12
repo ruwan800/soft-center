@@ -2,7 +2,6 @@
 $("#button1").hide();
 $("#button2").hide();
 
-    //
 var pkgset;
 var count=0;
 function showPrevious(){
@@ -15,47 +14,71 @@ function showMore(){
     viewResult(count);
 }
 
-function loadXMLDoc()
-{
+function loadXMLDoc(){
 
 var xmlhttp;
 var text=document.getElementById('pkg').value;
 var temp;
 
-$("#button1").hide();
-$("#button2").hide();
-
-
 xmlhttp=new XMLHttpRequest();
 
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-     temp=xmlhttp.responseText;
-     pkgset = temp.split("</br>");
-     viewResult(0)
-     //viewResult(temp);
+xmlhttp.onreadystatechange=function(){
+  if (xmlhttp.readyState==4 && xmlhttp.status==200){
+    xmlResponse=xmlhttp.responseXML;
+    xmlRoot = xmlResponse.documentElement;
+    pkgNameArray = xmlRoot.getElementsByTagName("name");
+    pkgDescArray = xmlRoot.getElementsByTagName("description");
+    pkgIDArray = xmlRoot.getElementsByTagName("soft_id");
+    modResult(0);
     }
   }
-xmlhttp.open("GET","../model/adv_pkg_search.php?pkg="+text+"&sm=2",true);
+xmlhttp.open("GET","../model/adv_pkg_search.php?pkg="+text,true);
 xmlhttp.send();
 }
 
            
 function viewResult(i){
-    if(10 < pkgset.length-10*i)
-        var temp1=pkgset.slice(i*10, i*10+10);
-    else
-        var temp1=pkgset.slice(i*10, pkgset.length);
-    var temp2=temp1.join("</br>");
-    document.getElementById("pkgviewmain").innerHTML=temp2;
-    if(pkgset.length<10+10*i)
-        $("#button2").hide();
-    else
+    
+    xmlDocumentElement = "eouou".documentElement;
+    //pkgDetail = xmlDocumentElement.firstChild.data;
+    
+    document.getElementById("pkgviewResultSet").innerHTML="hchthdtdt";
+    //if(pkgset.length<10+10*i)
+    //    $("#button2").hide();
+    //else
         $("#button2").show();
     if(0<i)
         $("#button1").show();
     else
         $("#button1").hide();
 }
+
+function modResult(count){
+    var html = "";
+    // iterate through the arrays and create an HTML structure
+    for (var i=0; i<10; i++)
+    html += "<div id=\"pkgViewMainResult\"><div id=\"pkgViewMainResultContent\"><div id=\"pkgViewMainResultName\">"+
+    pkgNameArray.item(i).firstChild.data + 
+    "</div><div id=\"pkgViewMainResultDescription\">"+
+    pkgDescArray.item(i).firstChild.data +
+    "</div></div><div id=\"pkgViewMainResultButton\">"+
+    "<button type=\"button\" onclick=\"moreInfo("+
+    pkgIDArray.item(i).firstChild.data +
+    ")\">More info >></button>"+
+    "</div></div>"
+    document.getElementById("pkgviewResultSet").innerHTML=html;
+
+
+      
+}
+
+/*
+if(10 < pkgset.length-10*i)
+        var temp1=pkgset.slice(i*10, i*10+10);
+    else{
+        var temp1=pkgset.slice(i*10, pkgset.length);
+    var temp2=temp1.join("</br>");
+    //modResult(temp2);
+    }
+*/
+

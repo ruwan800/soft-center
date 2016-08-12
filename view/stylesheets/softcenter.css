@@ -2,35 +2,64 @@
 background-image:url("../images/search.png");
 background-repeat:repeat-x;
 background-size:10px 30px;
-height: 30px;
+height: 5%;
 }
 #searchbardir{
+
 width: 30%;
 float: left;
+margin: 3px 0 0 3%;
 }
 #searchbox{
 width: 50%;
-float: middle;
+float: right;
+margin: 3px 3% 0 0;
 }
+/*
 #searchimg{
 width: 10%;
 float: right;
+}
+*/
 
+#pkgview{
+height: 95%;
 }
 
 #pkg {
 /*background-color:transparent; /*important*/
 background-color:gray;
+float: right;
 }
 
 #sidepane{
 width: 20%;
+height: 100%;
 float: left;
+background-color:#9DEDF2;
 }
 
-#pkgviewmain{
+#sidePaneValue{
+font-size: 20px;
+}
+
+
+#pkgviewResultSet{
 width: 70%;
 float: left;
+}
+#pkgViewMainResult{
+border-bottom: solid black;
+border-width:1px;
+height: 9.5%;
+}
+#pkgViewMainResultContent{
+width: 70%;
+float: left;
+}
+#pkgViewMainResultButton{
+width: 30%;
+float: right;
 }
 
 #updown{
