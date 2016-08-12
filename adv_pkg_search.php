@@ -1,69 +1,42 @@
-<html>
-<head>
-<title>Advance Package Search</title>
-</head>
-<body>
 
-
-<!--$query="SELECT package,soft_id FROM software WHERE package LIKE '%$software%'";-->
-
-
-
+<result>\n
 <?php
 require_once("includes/constants.php");
 require_once("includes/mysql.php");
 
+function search_result($pkg){
+    if(isset($result))
+        $result=$result.$pkg;
+    else
+        $result=$pkg;
+}
 
-if(isset($_GET["pkg"])){
+function search_error($err){
+    return ("\t<error>\n\t\t".$err."\t</error>\n");
+}
+
+if(isset($_GET["pkg"]))
     $software=$_GET["pkg"];
-    if(isset($_GET["sm"]))
-        $filter=$_GET["sm"];
-    else
-        $filter=1;
-    if($filter==1){
-        db_select(SOFT_CENTER);
-        $query="SELECT package,soft_id FROM software WHERE package='$software'";
-        $result = mysql_query($query) or die("Error DB querying:".mysql_error());
-        $row=mysql_fetch_array( $result );
-        if($row)
-            echo apt_link($row[1]);
-        else
-            echo "package \"".$software."\" not found";
-    }
-    else if($filter==2){
-        db_select(SOFT_CENTER);
-        $query="SELECT package,soft_id FROM software WHERE package LIKE '%$software%'";
-        $result = mysql_query($query) or die("Error DB querying:".mysql_error());
-        $found=False;
-        while($row=mysql_fetch_array( $result )){
-            echo apt_link($row[1])."</br>";
-            $found=True;
-        }
-        if(!$found)
-            echo "Nothing found related with \"".$software."\".";
-    }
-    else if($filter==3){
-        echo "not implimented";
-    }
-    else
-        echo "bad request";
+if(isset($_GET["sm"]))
+    $filter=$_GET["sm"];
+
+db_select(SOFT_CENTER);
+$query="SELECT soft_id FROM software WHERE package='$software'";
+$result = mysql_query($query) or die(search_error(mysql_error()));
+$row=mysql_fetch_array( $result );
+if($row)
+    search_result(apt_link_xml($row[0]));
+
+//echo search_error("not implimented");
+
+$query="SELECT soft_id FROM software WHERE package LIKE '%$software%' LIMIT 200;";
+$result = mysql_query($query) or die(search_error(mysql_error()));
+while($row=mysql_fetch_array( $result )){
+    search_result(apt_link_xml($row[0]));
 }
-else{
+if($result)
+    echo $result;
+else
+    echo search_error("Nothing found related with \"".$software."\".");
 ?>
-    <form>
-    <form name="input" action="adv_pkg_search.php" method="get">
-    Enter Package Name:
-    <input type="text" name="pkg" />
-    <input type="submit" value="Submit" /></br>
-    Filter result by:
-    <input type="radio" name="sm" value=1 /> Package</>
-    <input type="radio" name="sm" value=2 /> Full Text</>
-    <input type="radio" name="sm" value=3 /> Keyword</>
-    </form>
-<?php
-}
-
-
-
-?>
-
+</result>

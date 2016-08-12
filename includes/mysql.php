@@ -45,13 +45,13 @@ function apt_link($software_id) {
     return ($temp);
 }
 
-function adv_pkg_search($software){
+function apt_link_xml($soft_id){
     db_select(SOFT_CENTER);
-    $query="SELECT package,soft_id FROM software WHERE package='$software'";
+    $query="SELECT package FROM software WHERE soft_id='$soft_id'";
     $result = mysql_query($query) or die(mysql_error());
     $row=mysql_fetch_array( $result );
     if($row){
-        echo apt_link($row[1]);
+        echo apt_link($row[0]);
     }
     else
         echo $software." not found";
