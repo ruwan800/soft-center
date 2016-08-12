@@ -1,5 +1,5 @@
 <?php
-require_once("includes/constants.php");
+require_once("constants.php");
 
 // 2. Select a database to use 
 
@@ -50,11 +50,8 @@ function apt_link_xml($soft_id){
     $query="SELECT package FROM software WHERE soft_id='$soft_id'";
     $result = mysql_query($query) or die(mysql_error());
     $row=mysql_fetch_array( $result );
-    if($row){
-        echo apt_link($row[0]);
-    }
-    else
-        echo $software." not found";
+    $temp="<a href=apt://".$row[0].">Install ".$row[0]."</a>";
+    return $temp;
 
 }
 

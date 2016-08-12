@@ -1,0 +1,53 @@
+#searchbar{
+background-image:url("../images/search.png");
+background-repeat:repeat-x;
+background-size:10px 30px;
+height: 30px;
+}
+#searchbardir{
+width: 30%;
+float: left;
+}
+#searchbox{
+width: 50%;
+float: middle;
+}
+#searchimg{
+width: 10%;
+float: right;
+
+}
+
+#pkg {
+/*background-color:transparent; /*important*/
+background-color:gray;
+}
+
+#sidepane{
+width: 20%;
+float: left;
+}
+
+#pkgviewmain{
+width: 70%;
+float: left;
+}
+
+#updown{
+width: 10%;
+float: right;
+}
+
+#updown1{
+height: 20%;
+}
+
+#updown2{
+height: 60%;
+}
+
+#updown3{
+height: 20%;
+}
+
+

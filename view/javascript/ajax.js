@@ -38,7 +38,7 @@ xmlhttp.onreadystatechange=function()
      //viewResult(temp);
     }
   }
-xmlhttp.open("GET","adv_pkg_search.php?pkg="+text+"&sm=2",true);
+xmlhttp.open("GET","../model/adv_pkg_search.php?pkg="+text+"&sm=2",true);
 xmlhttp.send();
 }
 
@@ -49,7 +49,7 @@ function viewResult(i){
     else
         var temp1=pkgset.slice(i*10, pkgset.length);
     var temp2=temp1.join("</br>");
-    document.getElementById("myDiv").innerHTML=temp2;
+    document.getElementById("pkgviewmain").innerHTML=temp2;
     if(pkgset.length<10+10*i)
         $("#button2").hide();
     else

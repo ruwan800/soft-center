@@ -1,9 +1,7 @@
    Please wait...! This takes time. </br>
 
 <?php
-require_once("includes/constants.php");
-require_once("includes/mysql.php");
-
+require_once("../includes/includes.php");
 $desc_more=null;
 $homepage=null;
 $maintainer=null;
