@@ -43,6 +43,7 @@ function viewResult(count){
     else
         document.getElementById("updown1").innerHTML="";
     document.getElementById("pkgviewResultSet").innerHTML=html;
+    document.getElementById("updown2").innerHTML="";
 }
 
 function modResult(i){

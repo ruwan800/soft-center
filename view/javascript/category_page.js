@@ -33,6 +33,9 @@ function viewCategoryPage(){
     "')\">"+catNameArray.item(i).firstChild.data+"</button>"+
     "</div></div>"
     document.getElementById("pkgviewResultSet").innerHTML=html;
+    document.getElementById("updown3").innerHTML="";
+    document.getElementById("updown1").innerHTML="";
+    document.getElementById("updown2").innerHTML="";
 }
 
 function moreInfo(id){
@@ -76,13 +79,15 @@ function viewMoreInfo(){
     html += keyArray.item(8).firstChild.data+": "+valueArray.item(8).firstChild.data+"</br>";
     }catch(e){}
     if(valueArray.item(9).firstChild.data=="allowed"){
-        html +="       <button type=\"button\" onclick=\"window.location.href='apt://"
-        +valueArray.item(0).firstChild.data+"'\">INSTALL</button>";
+        document.getElementById("updown2").innerHTML="<button type=\"button\" onclick=\"window.location.href='apt://"
+        +valueArray.item(0).firstChild.data+"'\"></br>  INSTALL </br></br></button>";
     }
     else{
-        html +="       <button type=\"button\" onclick=requestToUse("+id+")>Requst to use</button>";
+        document.getElementById("updown2").innerHTML="<button type=\"button\" onclick=requestToUse("+id+")>REQUST </br>  TO</br> USE</button>";
     }
     document.getElementById("pkgviewResultSet").innerHTML=html;
+    document.getElementById("updown3").innerHTML="";
+    document.getElementById("updown1").innerHTML="<button type=\"button\"onclick=\"showCurrent()\">BACK</br> TO  </br>RESULTS</button>";
 }
 
 function requestToUse(id){

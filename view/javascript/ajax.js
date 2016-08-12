@@ -9,9 +9,12 @@ function showPrevious(){
     viewResult(count);
 }
 
+function showCurrent(){
+    viewResult(count);
+}
+
 function showMore(){
     count++;
-    
     viewResult(count);
 }
 
@@ -19,7 +22,6 @@ function loadXMLDoc(){
 
 var xmlhttp;
 var text=document.getElementById('pkg').value;
-var temp;
 
 xmlhttp=new XMLHttpRequest();
 
@@ -55,6 +57,7 @@ function viewResult(count){
     else
         document.getElementById("updown1").innerHTML="";
     document.getElementById("pkgviewResultSet").innerHTML=html;
+    document.getElementById("updown2").innerHTML="";
 }
 
 function modResult(i){
@@ -69,14 +72,4 @@ function modResult(i){
     "</div></div>"
     return text;
 }
-
-/*
-if(10 < pkgset.length-10*i)
-        var temp1=pkgset.slice(i*10, i*10+10);
-    else{
-        var temp1=pkgset.slice(i*10, pkgset.length);
-    var temp2=temp1.join("</br>");
-    //modResult(temp2);
-    }
-*/
 
