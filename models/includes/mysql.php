@@ -3,7 +3,7 @@ require_once("../controller/includes/includes.php");
 
 // 2. Select a database to use 
 
-function db_select($_db){
+function db_select(){
     $connection = mysql_connect(DB_SERVER,DB_USER,DB_PASS);
     if (!$connection) 
 	    die(mysql_error());
@@ -63,7 +63,7 @@ function apt_link_DOM_xml($soft_id,$document){
     $soft_id = $document->createElement('soft_id');
     $nameText = $document->createTextNode($row[0]);
     $descriptionText = $document->createTextNode($row[1]);
-    $soft_idText = $document->createTextNode($soft_id);
+    $soft_idText = $document->createTextNode('$soft_id');
 	$package->appendChild($name);
 	$package->appendChild($description);
 	$package->appendChild($soft_id);
@@ -71,7 +71,6 @@ function apt_link_DOM_xml($soft_id,$document){
 	$description->appendChild($descriptionText);
 	$soft_id->appendChild($soft_idText);
 	
-	return $package;
 }
 
 ?>

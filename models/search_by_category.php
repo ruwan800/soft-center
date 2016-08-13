@@ -50,6 +50,6 @@ function getResult(){
 if($output)
     return $output;
 else
-    return search_error("Nothing found related with \"".$software."\".");
+    return search_error("Nothing found related with \"".$category."\".");
 }
 ?>
