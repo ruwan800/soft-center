@@ -1,0 +1,9 @@
+<tr>
+    <td><?php echo htmlentities($this->package);?></td>
+    <td>
+	<a class="pkgDwnLink" href="<?php echo htmlentities($this->repository); echo htmlentities($this->filename);?>">Download</a>
+    </td>
+    <td>
+	    <a href="<?php echo $this->url(array('controller'=>'sect', 'action'=>'info', 'pkgid' => $this->package)); ?>">Info</a>
+    </td>
+</tr>

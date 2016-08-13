@@ -1,0 +1,16 @@
+<div id="view-content">
+	<?php if ( ! ($this->error)): ?>
+	<?php if (count($this->paginator)): ?>
+	<dl><?php foreach ($this->paginator as $entry): ?>
+    <dt><b><?php echo $entry['package'] ?></b></dt>
+    <dt><?php echo $entry['description'] ?></dt>
+    <?php endforeach ?>
+    <?php endif ?>
+    <?php echo $this->paginationControl($this->paginator,
+                                    'Sliding',
+                                    'partials/paginator.phtml'); ?>
+	<?php else: ?>
+	<?php echo $this->error ?>
+	<?php endif ?>
+</dl>
+</div>

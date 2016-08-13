@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:80>
-   DocumentRoot "C:/Program Files/Zend/Apache2/htdocs/delta5/public"
-   ServerName .local
+   DocumentRoot "/var/www/zf/softcenter/public"
+   ServerName softcenter.local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
 
-   <Directory "C:/Program Files/Zend/Apache2/htdocs/delta5/public">
+   <Directory "/var/www/zf/softcenter/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
