@@ -6,6 +6,7 @@ class Application_Form_Addteamuser extends Zend_Form
     public function init()
     {
 		$this->setName("searchusr")
+			 ->setAction('/addteamuser/form')
 			 ->setMethod('post');
 
 		$searchtxt = new Zend_Form_Element_Text('searchtxt');
@@ -13,7 +14,7 @@ class Application_Form_Addteamuser extends Zend_Form
 				 ->setRequired()
 				 ->setAttrib('size', '30')
 				 ->addFilters(array('StringTrim', 'StringToLower'))
-				 ->addValidator('StringLength', false, array(2, 10));
+				 ->addValidator('StringLength', false, array(1, 10));
 
 		$searchtxt->class = "text";        
 		$searchtxt->setDecorators(array(

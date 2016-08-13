@@ -1,0 +1,95 @@
+A.users
+B.software(i already made this table 'B' long ago)
+C.request_management
+D.tracked_reports
+E.teams
+F.team_members
+G.software_for_team
+H.software_for_user
+I.software_for_job_type
+J.software_for_team_type
+K.depedancies
+
+A.users
+	0.id
+	1.name
+	2.email
+	3.password
+	4.password_salt
+	5.real_name
+	6.job_type
+	7.priviledge_type
+
+C.request_management
+	0.id
+	1.software_name
+	2.user_name
+	3.request_is_for
+	4.priority_level
+	5.remarks
+	6.updates
+	7.team
+
+D.tracked_reports
+	0.id
+	1.username
+	2.viewed
+	3.manager
+
+E.teams
+	0.id
+	1.team_name
+	2.team_description
+	3.team_type
+	4.team_owner
+
+F.team_members
+	0.id
+	1.team_name
+	2.user_name
+
+G.software_for_team
+	0.id
+	1.team_name
+	2.software
+
+H.software_for_user
+	0.id
+	1.user_name
+	2.software
+
+I.software_for_job_type
+	0.id
+	1.job_type
+	2.software
+
+J.software_for_team_type
+	0.id
+	1.team_type
+	2.software
+
+
+K.depedancies
+	0.id
+	1.dependant
+	2.dependancy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

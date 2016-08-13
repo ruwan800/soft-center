@@ -5,35 +5,38 @@ class DelteamuserController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
-    }
+    	$this->form = new Application_Form_Delteamuser();
+		$this->team	= new Zend_Session_Namespace('tempData');
+		$this->model= new Application_Model_Delteamuser();
+		$this->text	= Null;
+}
 
     public function indexAction()
     {
-    	Zend_Session::start();
-    	$delTeamUserForm = new Application_Form_Delteamuser();
-		$tempData = new Zend_Session_Namespace('tempData');
+
 		$page = $this->_getParam('page', False);
-		$user = $this->_getParam('user', False);
-		$team = $tempData->team;
-    	if ($delTeamUserForm->isValid($_POST)){
-    		$searchtxt = $delTeamUserForm->getValue('searchtxt');
-    		$tempData->txt = $searchtxt;
-    		$this->getResult($searchtxt,1);
-    	}
-    	else if ($user){
-			$Delteamuser = new Application_Model_Delteamuser($user,$team);
-			$Delteamuser->Delteamuser();
-			$this->view->message = "success";
-    	}
-    	else if ($page){
-    		$searchtxt = $tempData->txt;
-    		$this->getResult($searchtxt,$page);
+		if($page){
+			$this->getResult($text,$page);
+		}
+    	else if ($this->form->isValid($_POST)){
+    		$text = $this->form->getValue('searchtxt');
+			$this->text  = $text;
+    		$this->getResult($this->text,1);
     	}
     	else{
-        	$this->view->form = $delTeamUserForm;
+    		$this->view->form = $this->form;
+    		$this->render('index');
     	}
-	}
+
+
+		public function deleteAction(){
+		
+			$package = $this->_getParam('package', False);
+			$this->model->delTeamPkg($package);
+			$this->view->message = "success";
+
+		}
+
 
 	public function getResult($searchtxt,$page){
 
@@ -50,6 +53,12 @@ class DelteamuserController extends Zend_Controller_Action
 			$this->view->paginator = $paginator;
 		}
     }
+
+	public function indexAction(){
+	
+		$this->view->form = $this->form;
+	
+	}
 
 
 }

@@ -2,17 +2,12 @@
 
 class Application_Model_Pkgrequest
 {
-	protected $_request;
 	
-	public function __construct($request)
-	{
-		$this->_request = $request;
-	}
 
-	public function newRequest()
+	public function newRequest($request)
 	{
 		$db = Zend_Db_Table::getDefaultAdapter();
-		$db->insert('request_log', $this->_request);
+		$db->insert('request_management', $request);
 	}
 
 }

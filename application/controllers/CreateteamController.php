@@ -5,27 +5,33 @@ class CreateteamController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+        $this->form 	= new Application_Form_Createteam();
+        $this->model	= new Application_Model_Team();
     }
 
-    public function indexAction()
-    {
-        
-        $createTeamForm = new Application_Form_Createteam();
-        if ($createTeamForm->isValid($_POST)) {
+    public function formAction(){
+     
+        if ($this->form->isValid($_POST)) {
         	
-        	$request['usr_group_name'] = $createTeamForm->getValue('teamname');
-        	$request['usr_group_desc'] = $createTeamForm->getValue('teamdesc');
-#        	$request['rqst_log_status'] = $createTeamForm->getValue('teamlead');
-#        	$request['rqst_log_status'] = $createTeamForm->getValue('teamtype');
-        	$createTeam = new Application_Model_Team($request);
-        	$createTeam->createTeam();
-        	$this->view->message = "Success";
-        }
-        else{
-        	$this->view->form = $createTeamForm;
-        }        
-    }
+        	$request['team_name']	= $this->form->getValue('teamname');
+        	$request['team_descreption']	= $this->form->getValue('teamdesc');
+        	$request['team_owner']	= $this->form->getValue('teamowner');
+        	$request['team_type']	= $this->form->getValue('teamtype');
+        	$this->model->createTeam($request);
+        	$this->view->message = "Team '{$request['team_name']}' successfully created.";
+		}
+		else{
+			$this->view->form = $this->form;
+    		$this->render('index');
+		}
+
+	}
+
+	public function indexAction(){
+	
+		$this->view->form = $this->form;
+	
+	}
 
 }
 

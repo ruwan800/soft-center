@@ -3,16 +3,11 @@
 class PkginstallController extends Zend_Controller_Action
 {
 
-    public function init()
-    {
-        /* Initialize action controller here */
-    }
-
     public function indexAction()
     {
 		$package = $this->_getParam('package', "None");
-		$Pkgauth = $this->_helper->Pkgauth;
-        $pkgStatus = $Pkgauth->auth($package);
+		$search = new Application_Model_Pkgstatus();
+        $pkgStatus = $search->isAllowed($package);
     	if ($pkgStatus){
     		$this->_redirect("apt://{$package}");
     	}

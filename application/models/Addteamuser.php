@@ -3,24 +3,21 @@
 class Application_Model_Addteamuser
 {
 
-	protected $_user;
+	protected $team;
 	
-	public function __construct($user,$team = Null)
+	public function __construct()
 	{
-		$this->_user = $user;
-		$this->_team = $team;
+		$this->db = Zend_Db_Table::getDefaultAdapter();
+		$tempData = new Zend_Session_Namespace('tempData');
+		$this->team = $tempData->team;
 	}
 
-	public function searchUser()
+	public function searchUser($user)
 	{
-
-		$db = Zend_Db_Table::getDefaultAdapter();
-		
-		$select = $db->select()
-					 ->from('user_settings',array('usr_e_mail'))
-					 ->where('usr_e_mail LIKE ?', "%{$this->_user}%")
-					 ->limit(1000);
-
+		$select = $this->db->select()
+						   ->from('users',array('name','job_type'))
+						   ->where('name LIKE ?', "%{$user}%")
+						   ->limit(1000);
 
 		$stmt = $select->query();
 		$result = $stmt->fetchAll();
@@ -28,10 +25,9 @@ class Application_Model_Addteamuser
 	
 	}
 
-	public function addTeamUser()
+	public function addTeamUser($user)
 	{
-		$db = Zend_Db_Table::getDefaultAdapter();
-		$db->insert('users_in_groups', array("usr_group_id" => $this->_user, "usr_id" => $this->_team));
+		$this->db->insert('team_members', array("team_name" => $this->team, "user_name" => $user));
 	}
 
 

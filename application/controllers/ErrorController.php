@@ -12,6 +12,20 @@ class ErrorController extends Zend_Controller_Action
             return;
         }
         
+        $handler = new App_CustomErrorHandler($errors);
+        $errorInfo = $handler->getCustomError();
+        if ($errorInfo){
+        	$this->view->message = $errorInfo['message'];
+        	if ($this->getInvokeArg('displayExceptions') == true) {
+        		if (array_key_exists('exception',$errorInfo)){
+            		$this->view->exception = $errorInfo['exception'];
+        		}
+        	}
+         $this->view->parameters = $errors->request->getParams();
+        	$this->render('custom');
+        	return;
+        }
+        
         switch ($errors->type) {
             case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_NO_ROUTE:
             case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_NO_CONTROLLER:
@@ -52,7 +66,6 @@ class ErrorController extends Zend_Controller_Action
         $log = $bootstrap->getResource('Log');
         return $log;
     }
-
 
 }
 

@@ -1,7 +1,7 @@
  <?php
 $this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
 $this->headTitle()->setSeparator(' - ');
-$this->headTitle('VOS Software Portal');
+$this->headTitle($this->getControllerName(True).'-VOS Software Portal');
 echo $this->doctype(); 
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -24,20 +24,21 @@ echo $this->doctype();
 <!-- Layout Header --><!-- Layout Header --><!-- Layout Header --><!-- Layout Header -->
         <div id="header">
             <div class="col w5 bottomlast">
-                    <a href="" class="logo">
-                            <img src="/gray_admin/images/logo.gif" alt="Logo"/>
+                    <a href="/" class="logo">
+                            <img src="/gray_admin/images/logo.png" alt="Logo"/>
                     </a>
             </div>
             <div class="col w5 last right bottomlast">
             	<?php $auth   = Zend_Auth::getInstance(); ?>
 				<?php if ($auth->getIdentity()) : ?>
-					<A href="logout">Logout</A>
+					<A href="/logout">Logout</A>
+				<?php else : ?>
+					<A href="/auth">Login</A>
 				<?php endif ?>
             </div>
             <div class="clear"></div>            
         </div>
 <!-- Layout Header --><!-- Layout Header --><!-- Layout Header --><!-- Layout Header -->
-<br/><br/>
 <!-- Layout Wrapper --><!-- Layout Wrapper --><!-- Layout Wrapper --><!-- Layout Wrapper -->
         <div id="wrapper">
             <div id="minwidth">

@@ -5,48 +5,37 @@ class PkgsearchController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+		$this->search	= new Application_Model_Pkgsearch();
+		$this->tempns	= new Zend_Session_Namespace('tempData');
+
     }
 
     public function indexAction()
     {
 
-		Zend_Session::start();
-		$tempData = new Zend_Session_Namespace('tempData');
     	$request = $this->getRequest();
-    	if ($request->isPost()){
-    		$package = $request->getPost('package');
-    		if( ! $package){
-        		$this->view->error = "No package specified." ;
-        	}
-        	else{
-    			$tempData->pkg = $package;
-        	}
+		$page = $this->_getParam('page', 1);
+    	$text = $request->getPost('package',Null);
+    	if($text){
+    		$this->tempns->text = $text;
     	}
-    	else if ($tempData->pkg){
-    		$package = $tempData->pkg;
-    	}
-    	if ($package){
-			$search = new Application_Model_Pkgsearch($package);
-    		$result = $search->fetchAll();
-    		if( ! $result){
-    			$this->view->error = "No package found related with '{$package}'.";
-    		}
-    		else{
-    			Zend_View_Helper_PaginationControl::setDefaultViewPartial('controls.phtml');
-				$paginator = Zend_Paginator::factory($result);
-				$paginator->setCurrentPageNumber($this->_getParam('page', 1));
-				$paginator->setItemCountPerPage(20);
-
-				if( ! $paginator){
-    				$this->view->error = "No PPPPP." ;
-    			}
-    			else{
-					$this->view->paginator = $paginator;
-    			}
-    		}
-		}
+    	$this->getResult($this->tempns->text,$page);
     }
+    
+	public function getResult($searchtxt,$page){
+
+		$result = $this->search->getResult($searchtxt);
+		if( $result){
+			Zend_View_Helper_PaginationControl::setDefaultViewPartial('controls.phtml');
+			$paginator = Zend_Paginator::factory($result);
+			$paginator->setCurrentPageNumber($page);
+			$paginator->setItemCountPerPage(20);
+			$this->view->paginator = $paginator;
+		}
+		else{
+			throw new App_Exception("No result found related with '{$searchtxt}'.");
+		}
+	}
 
 }
 

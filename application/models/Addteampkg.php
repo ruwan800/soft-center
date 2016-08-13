@@ -3,23 +3,23 @@
 class Application_Model_Addteampkg
 {
 
-	protected $_package;
+	protected $team;
 	
-	public function __construct($package,$team = Null)
+	public function __construct()
 	{
-		$this->_package = $package;
-		$this->_team = $team;
+		$tempData = new Zend_Session_Namespace('tempData');
+		$this->_team = $tempData->team;
+		$this->db = Zend_Db_Table::getDefaultAdapter();
 	}
 
-	public function searchPackage()
+	public function searchPackage($package)
 	{
 
-		$db = Zend_Db_Table::getDefaultAdapter();
 		
-		$select = $db->select()
-					 ->from('software',array('package', 'description'))
-					 ->where('package LIKE ?', "%{$this->_package}%")
-					 ->limit(1000);
+		$select =  $this->db->select()
+					 	->from('software',array('package', 'description'))
+					 	->where('package LIKE ?', "%{$package}%")
+					 	->limit(1000);
 
 		$stmt = $select->query();
 		$result = $stmt->fetchAll();
@@ -27,10 +27,9 @@ class Application_Model_Addteampkg
 	
 	}
 
-	public function addTeamPkg()
+	public function addTeamPkg($package)
 	{
-		$db = Zend_Db_Table::getDefaultAdapter();
-		$db->insert('softwares_in_groups', array("sw_group_id" => $this->_package, "soft_id" => $this->_team));
+		$this->db->insert('software_for_team', array("team_name" => $this->_team, "software" => $package));
 	}
 
 }

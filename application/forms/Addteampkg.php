@@ -6,6 +6,7 @@ class Application_Form_Addteampkg extends Zend_Form
     public function init()
     {
 		$this->setName("searchpkg")
+			 ->setAction('/addteampkg/form')
 			 ->setMethod('post');
 
 		$searchtxt = new Zend_Form_Element_Text('searchtxt');

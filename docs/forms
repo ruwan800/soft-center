@@ -1,0 +1,31 @@
+addteampkg
+	searchtxt
+
+addteamuser
+	searchtxt
+
+delteampkg
+	searchtxt
+
+delteamuser
+	searchtxt
+
+adduser
+	username
+	email
+	privtype
+	jobtype
+
+auth
+	username
+	password
+
+request
+	softname
+	username
+	usage
+	priority
+	updates
+	remarks
+
+

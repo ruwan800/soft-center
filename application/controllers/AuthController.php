@@ -5,48 +5,64 @@ class AuthController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+		$this->userns	= new Zend_Session_Namespace('members');
+	    $this->db		= Zend_Db_Table::getDefaultAdapter();
+		$this->model	= new Application_Model_User();
+	  	$this->form		= new Application_Form_Auth();
+		$this->auth		= Zend_Auth::getInstance();
     }
 
-    public function indexAction()
-    {
-		$auth   = Zend_Auth::getInstance();
-		if ($auth->getIdentity()){
+    public function indexAction(){
+    
+#		$auth   = Zend_Auth::getInstance();
+		if ($this->auth->getIdentity()){
 			$this->_redirect('/');
 			return;
 		}
-		
-	    $db = Zend_Db_Table::getDefaultAdapter();
+    	$this->view->form = $this->form;
+	}
 
-	    $loginForm = new Application_Form_Auth();
- 
-	    if ($loginForm->isValid($_POST)) {
+	public function formAction(){
+
+#	    $db = Zend_Db_Table::getDefaultAdapter();
+
+	    if ($this->form->isValid($_POST)) {
  
 	        $adapter = new Zend_Auth_Adapter_DbTable(
-	            $db,
-	            'user_settings',
-	            'usr_e_mail',
-	            'usr_passwd'
+	            $this->db,
+	            'users',
+	            'name',
+	            'password'
 	            );
  
-	        $adapter->setIdentity($loginForm->getValue('username'));
-	        $adapter->setCredential($loginForm->getValue('password'));
+ 			$userName = $this->form->getValue('username');
+	        $adapter->setIdentity($userName);
+	        $adapter->setCredential($this->form->getValue('password'));
  
 #			$auth   = Zend_Auth::getInstance();
-	        $result = $auth->authenticate($adapter);
+	        $result = $this->auth->authenticate($adapter);
  
 	        if ($result->isValid()) {
-	            $this->_helper->FlashMessenger('Successful Login');
+				$this->userns->userName = $userName ;
+	        	$this->model->setUser();
 	            $this->_redirect('/');
 	            return;
 	        }
 	        else{
-	        	$this->view->form = "<b>Incorrect username or password. Please Try again.</b></br></br>".$loginForm;
+	        	$this->view->form = "<p><b>Incorrect username or password. Please Try again.</b><p></br></br>".$this->form;
+	    		$this->render('index');
 	        	return;
 	        }
- 
 	    }
-    	$this->view->form = $loginForm;
+    }
+
+    public function logoutAction()
+    {
+		$auth = Zend_Auth::getInstance();
+		$auth->clearIdentity();
+		Zend_Session::namespaceUnset('members');
+    	$this->view->form = $this->form;
+		$this->render('index');
     }
 
 }

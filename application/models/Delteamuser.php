@@ -3,23 +3,20 @@
 class Application_Model_Delteamuser
 {
 
-	protected $_user;
-	
-	public function __construct($user,$team = Null)
+	public function __construct()
 	{
-		$this->_user = $user;
-		$this->_team = $team;
+		$this->db = Zend_Db_Table::getDefaultAdapter();
+		$tempData = new Zend_Session_Namespace('tempData');
+		$this->team = $tempData->team;
 	}
 
-	public function searchUser()
+	public function searchUser($user)
 	{
-
-		$db = Zend_Db_Table::getDefaultAdapter();
 		
-		$select = $db->select()
-					 ->from('users_in_groups',array('usr_id'))
-					 ->where('usr_id LIKE ?', "%{$this->_user}%")
-					 ->limit(1000);
+		$select = 	$this->db->select()
+						 ->from('team_members',array('user_name'))
+						 ->where('user_name LIKE ?', "%{$user}%")
+						 ->limit(1000);
 
 		$stmt = $select->query();
 		$result = $stmt->fetchAll();
@@ -27,11 +24,9 @@ class Application_Model_Delteamuser
 	
 	}
 
-	public function addTeamUser()
+	public function addTeamUser($user)
 	{
-		$db = Zend_Db_Table::getDefaultAdapter();
-		$db->delete('users_in_groups', "usr_id = {$this->_user} AND usr_group_id = {$this->_team}");
-#		$db->insert('users_in_groups', array("usr_group_id" => $this->_user, "usr_id" => $this->_team));
+		$this->db->delete('team_members', "user_name = {$user} AND team_name = {$this->team}");
 	}
 
 

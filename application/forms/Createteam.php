@@ -7,6 +7,7 @@ class Application_Form_Createteam extends Zend_Form
     {
         
 		$this->setName("Crateteam")
+			 ->setAction('/createteam/form')
 			 ->setMethod('post');
 
 		$teamname = new Zend_Form_Element_Text('teamname');
@@ -16,7 +17,7 @@ class Application_Form_Createteam extends Zend_Form
 				 ->addFilters(array('StringTrim', 'StringToLower'))
 				 ->addValidator('StringLength', false, array(4, 10));
 
-		$teamname->class = "text";        
+		$teamname->class = "text";
 		$teamname->setDecorators(array(
 				'ViewHelper',
 				'Description',
@@ -28,10 +29,8 @@ class Application_Form_Createteam extends Zend_Form
 
 		$teamdesc = new Zend_Form_Element_Textarea('teamdesc');
 		$teamdesc->setLabel('Team Description:')
-				 ->setRequired()
-				 ->setAttrib('rows=15 cols=45', '30')
-				 ->addFilters(array('StringTrim', 'StringToLower'))
-				 ->addValidator('StringLength', false, array(4, 70));
+				 ->setAttrib('rows=10 cols=45', '30')
+				 ->addFilters(array('StringTrim', 'StringToLower'));
 
 		$teamdesc->class = "text";        
 		$teamdesc->setDecorators(array(
@@ -43,8 +42,8 @@ class Application_Form_Createteam extends Zend_Form
 		));
 
 
-		$teamlead = new Zend_Form_Element_Text('teamlead');
-		$teamlead->setLabel('Team Leader:')
+		$teamlead = new Zend_Form_Element_Text('teamowner');
+		$teamlead->setLabel('Team Owner:')
 				 ->setRequired()
 				 ->setAttrib('size', '30')
 				 ->addFilters(array('StringTrim', 'StringToLower'))
@@ -76,12 +75,12 @@ class Application_Form_Createteam extends Zend_Form
 		));
 		
 		
-		$teamtype = new Zend_Form_Element_Select('type');
+		$teamtype = new Zend_Form_Element_Select('teamtype');
 		$teamtype->setLabel('Type of team :')
-				->addMultiOption('Designing', 'designing')
-				->addMultiOption('Testing', 'testing')
-				->addMultiOption('Management', 'Management')
-				->addMultiOption('Marketing', 'marketing');
+				->addMultiOption('designing', 'Designing')
+				->addMultiOption('testing', 'Testing')
+				->addMultiOption('management', 'Management')
+				->addMultiOption('marketing', 'Marketing');
 
 		$teamtype->class = "text";        
 		$teamtype->setDecorators(array(
@@ -104,10 +103,10 @@ class Application_Form_Createteam extends Zend_Form
 
 		$this->addElements(array(
 				$teamname,
-				$teamdesc,
 				$teamlead,
-				$usertype,
+				#$usertype,
 				$teamtype,
+				$teamdesc,
 				$submit
 			));
 

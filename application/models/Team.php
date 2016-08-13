@@ -2,27 +2,34 @@
 
 class Application_Model_Team
 {
-	protected $_data;
 	
-	public function __construct($data)
-	{
-		$this->_data = $data;
+	protected $team = Null;
+	
+	public function __construct($team = Null){
+
+		$this->team   = $team;
+		$this->db     = Zend_Db_Table::getDefaultAdapter();
+		$this->userns = new Zend_Session_Namespace('members');
+
 	}
 
-	public function createTeam()
-	{
-		try {
-			$db = Zend_Db_Table::getDefaultAdapter();
-			$db->insert('user_groups', $this->_data);
-		} catch (Zend_Db_Adapter_Exception $e) {
-			#echo $e->getCode();
-			$this->view->error = $e->getCode();
-		}
 
+	public function createTeam($data){
+
+			$this->db->insert('teams', $data);
+
+	}
 	
-	
-#		$db = Zend_Db_Table::getDefaultAdapter();
-#		$db->insert('user_groups', $this->_data);
+	public function myTeams(){
+
+		$select =  $this->db->select()
+					 	->from('teams',array('team_name','team_description'))
+					 	->where('team_owner = ?', $this->userns->userName)
+					 	->limit(100);
+		$stmt 	= $select->query();
+		$result = $stmt->fetchAll();
+		return $result;
+
 	}
 
 }

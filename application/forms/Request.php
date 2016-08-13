@@ -7,10 +7,12 @@ class Application_Form_Request extends Zend_Form
     {
 
 		$this->setName("request")
+			 ->setAction('/pkgrequest/form')
 			 ->setMethod('post');
 
 		$softname = new Zend_Form_Element_Text('softname');
 		$softname->setLabel('Software name:')
+				 ->setRequired()
 				 ->setAttrib('size', '30')
 				 ->addFilters(array('StringTrim', 'StringToLower'))
 				 ->addValidator('StringLength', false, array(0, 70));
@@ -42,11 +44,9 @@ class Application_Form_Request extends Zend_Form
 
 
 		$usage = new Zend_Form_Element_Select('usage');
-		$usage->setLabel('Request software for :')
-				->addMultiOption('one', 'An Individual')
-				->addMultiOption('group', 'A Group')
-				->addMultiOption('catagory', 'Catagory')
-				->addMultiOption('company', 'Company');
+		$usage->setLabel('Request software :')
+				->addMultiOption('team', 'For the Team')
+				->addMultiOption('one', 'For single use');
 
 		$usage->class = "text";        
 		$usage->setDecorators(array(
@@ -78,11 +78,10 @@ class Application_Form_Request extends Zend_Form
 
 		
 		
-		$prio = new Zend_Form_Element_Radio('prio');
+		$prio = new Zend_Form_Element_Radio('priority');
         $prio->setLabel(' Priority Level :')
-             
               ->setSeparator('')
-              ->setMultiOptions(array('24Hours' => '24Hours' , 'Week' => 'Week','Month' => 'Month' ))
+              ->setMultiOptions(array('hours24' => '24Hours' , 'week' => 'Week','month' => 'Month' ))
               ->addErrorMessage('')
               ->addValidator('NotEmpty');
         $prio->setDecorators(array(
@@ -96,9 +95,7 @@ class Application_Form_Request extends Zend_Form
               
         $remarks = new Zend_Form_Element_Textarea('remarks');
 		$remarks->setLabel('Remarks :')
-				 ->setAttrib('rows=10 cols=35', '30')
-				 ->addFilters(array('StringTrim', 'StringToLower'))
-				 ->addValidator('StringLength', false, array(4, 70));
+				 ->setAttrib('rows=10 cols=35', '30');
 
 		$remarks->class = "text";        
 		$remarks->setDecorators(array(
@@ -145,11 +142,11 @@ class Application_Form_Request extends Zend_Form
 				$softname,
 				$username,
 				$usage,
-				$password,
-				$confirmPswd,
+				$updates,
+				#$password,
+				#$confirmPswd,
 				$prio,
 				$remarks,
-				$updates,
 				$submit
 			));
 

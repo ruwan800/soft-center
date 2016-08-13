@@ -1,0 +1,15 @@
+<br/>
+<?php foreach ($this->paginator as $entry): ?>
+<div class="col w8"><div class="content">
+<span class="strong"><h1><?php echo $entry['name'] ?></h1></span>
+<span class="italic"><h4><?php echo $entry['info'] ?></h4></span></div></div>
+<div class="col w2 last"><div class="content">
+<a href="<?php echo "/{$this->controller}/{$this->action}/value/{$entry['name']}";?>
+		" class="button yellow"><span>Select</span></a></div></div>
+<?php endforeach ?>
+<?php echo $this->paginationControl($this->paginator,
+                                'Sliding',
+                                'partials/paginator.phtml'); ?>
+                                
+                                
+<?php #echo $this->url(array('controller' => $this->nextcontroller, 'action' => $this->nextaction, 'value' =>$entry['name']));?>

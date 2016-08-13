@@ -12,6 +12,7 @@ class LogoutController extends Zend_Controller_Action
     {
 		$auth = Zend_Auth::getInstance();
 		$auth->clearIdentity();
+		Zend_Session::namespaceUnset('members');
 		$this->_redirect('/auth');
     }
 

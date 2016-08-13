@@ -1,0 +1,10 @@
+</br>
+<h1><?php echo $this->message ?></h1>
+<?php echo $this->addButton('back',-1).$this->addButton('ok')?>
+<br/><br/><br/><h2>Request Parameters:</h2>
+<pre><?php echo $this->escape(var_export($this->parameters, true)) ?></pre>
+<?php if ($this->exception) : ?>
+	<br/><br/><br/><h2>More details:</h2>
+	<pre><?php echo $this->escape(stripslashes(var_export($this->exception, true))) ?></pre>
+<?php endif ?>
+

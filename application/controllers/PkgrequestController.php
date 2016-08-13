@@ -5,29 +5,37 @@ class PkgrequestController extends Zend_Controller_Action
 
     public function init()
     {
-        /* Initialize action controller here */
+        $this->form = new Application_Form_Request();
+       	$this->model= new Application_Model_Pkgrequest();
     }
 
-    public function indexAction()
+    public function formAction()
     {
         
         $requestForm = new Application_Form_Request();
-        if ($requestForm->isValid($_POST)) {
+        if ($this->form->isValid($_POST)) {
         	
 #        	$request['id'] = $requestForm->getValue('emid');
-        	$request['rqsted_usr'] = $requestForm->getValue('username');
-        	$request['rqst_log_msg'] = $requestForm->getValue('softname');
-        	$request['rqst_log_status'] = $requestForm->getValue('updates');
-        	$newRequest = new Application_Model_Pkgrequest($request);
-        	$result = $newRequest->newRequest();
+        	$request['rqsted_usr'] = $this->form->getValue('username');
+        	$request['rqst_log_msg'] = $this->form->getValue('softname');
+        	$request['rqst_log_status'] = $this->form->getValue('updates');
+        	$result = $this->model->newRequest($request);
         	$this->_redirect('/');
         }
         else{
-        	$this->view->form = $requestForm;
-        }
         
+        	$this->view->form = $this->form;
+    		$this->render('index');
+        	
+        }
+
     }
 
+	public function indexAction(){
+	
+        $this->view->form = $this->form;
+
+	}
 
 }
 

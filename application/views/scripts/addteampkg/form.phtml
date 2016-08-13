@@ -1,0 +1,11 @@
+<br/>
+<?php foreach ($this->paginator as $entry): ?>
+<div class="col w8"><div class="content">
+<span class="strong"><?php echo $entry['package'] ?></span><br/>
+<span class="italic"><?php echo $entry['description'] ?></span></div></div>
+<div class="col w2 last"><div class="content">
+<a href="/addteampkg/add/package/<?php echo $entry['package'] ?>" class="button yellow"><span>Select</span></a></div></div>
+<?php endforeach ?>
+<?php echo $this->paginationControl($this->paginator,
+                                'Sliding',
+                                'partials/paginator.phtml'); ?>

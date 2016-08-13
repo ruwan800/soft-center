@@ -2,23 +2,21 @@
 
 class Application_Model_Delteampkg
 {
-	protected $_package;
 	
-	public function __construct($package,$team = Null)
+	public function __construct()
 	{
-		$this->_package = $package;
-		$this->_team = $team;
+		$this->db = Zend_Db_Table::getDefaultAdapter();
+		$tempData = new Zend_Session_Namespace('tempData');
+		$this->team = $tempData->team;
 	}
 
-	public function searchPackage()
+	public function searchPackage($package)
 	{
 
-		$db = Zend_Db_Table::getDefaultAdapter();
-		
-		$select = $db->select()
-					 ->from('softwares_in_groups',array('soft_id'))
-					 ->where('soft_id LIKE ?', "%{$this->_package}%")
-					 ->limit(1000);
+		$select =	$this->db->select()
+						 ->from('software_for_team',array('software'))
+						 ->where('software LIKE ?', "%{$package}%")
+						 ->limit(1000);
 
 		$stmt = $select->query();
 		$result = $stmt->fetchAll();
@@ -26,11 +24,9 @@ class Application_Model_Delteampkg
 	
 	}
 
-	public function addTeamPkg()
+	public function addTeamPkg($package)
 	{
-		$db = Zend_Db_Table::getDefaultAdapter();
-		$db->delete('softwares_in_groups', "soft_id = {$this->_package} AND sw_group_id = {$this->_team}");
-#		$db->insert('softwares_in_groups', array("usr_group_id" => $this->_package, "usr_id" => $this->_team));
+		$this->db->delete('software_for_team', "software = {$package} AND team_name = {$this->team}");
 	}
 
 

@@ -12,12 +12,13 @@ class App_Acl_Validate extends Zend_Controller_Plugin_Abstract
 			$roleName='guest';
 		}
 		else {
-			$roleName=$usersNs->$userType;
+			$roleName=$usersNs->userType;
 		}
 		$privilageName=$request->getActionName();
-		if(!$acl->isAllowed($roleName,null,$privilageName)){
-			$request->setControllerName('Error');
-			$request->setActionName('index');
+		$taskName=$request->getControllerName();
+		if(!$acl->isAllowed($roleName,$taskName,$privilageName)){
+			$request->setControllerName('Voserror');
+			$request->setActionName('baduser');
 		}
 	}
 }

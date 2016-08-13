@@ -7,6 +7,7 @@ class Application_Form_Adduser extends Zend_Form
     {
        
 		$this->setName("add-user")
+			 ->setAction('/adduser/form/')
 			 ->setMethod('post');
 
 		$username = new Zend_Form_Element_Text('username');
@@ -44,14 +45,12 @@ class Application_Form_Adduser extends Zend_Form
 
 
 
-		$usertype = new Zend_Form_Element_Select('usertype');
-		$usertype->setLabel('Priviledges of user :')
-				->addMultiOption('level1','level1' )
-				->addMultiOption('level2','level2')
-				->addMultiOption('level3','level3' )
-				->addMultiOption('admin','Administrater');
-		$usertype->class = "text";        
-		$usertype->setDecorators(array(
+		$privtype = new Zend_Form_Element_Select('privtype');
+		$privtype->setLabel('Priviledges of user :')
+				->addMultiOption('default','Restricted User')
+				->addMultiOption('admin','Administrator');
+		$privtype->class = "text";        
+		$privtype->setDecorators(array(
 				'ViewHelper',
 				'Description',
 				'Errors',
@@ -75,7 +74,7 @@ class Application_Form_Adduser extends Zend_Form
 				array('HtmlTag', array('tag' => 'p'))
 		));
 
-		$submit = new Zend_Form_Element_Submit('createteam');
+		$submit = new Zend_Form_Element_Submit('Add User');
 		$submit->class = "novisible";
 		$submit->setDecorators(array(
 				'ViewHelper',
@@ -87,13 +86,13 @@ class Application_Form_Adduser extends Zend_Form
 		$this->addElements(array(
 				$username,
 				$email,
-				$usertype,
+				$privtype,
 				$jobtype,
 				$submit
 			));
 
 		$this->addElement('image', 'createteam', array(
-				'description' => '<a href="" class="button form_submit"><small class="icon play"></small><span>Create Team</span></a>',
+				'description' => '<a href="" class="button form_submit"><small class="icon play"></small><span>Add User</span></a>',
 				'ignore' => true,
 				'decorators' => array(
 				        array('Description', array('escape'=>false, 'tag'=>'p')),

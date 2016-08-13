@@ -6,6 +6,7 @@ class Application_Form_Delteamuser extends Zend_Form
     public function init()
     {
 		$this->setName("searchusr")
+			 ->setAction('/delteamuser/form')
 			 ->setMethod('post');
 
 		$searchtxt = new Zend_Form_Element_Text('searchtxt');
