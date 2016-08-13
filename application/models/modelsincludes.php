@@ -1,7 +1,7 @@
 <?php
 namespace application\models;
 
-class appLogic{
+class modelsIncludes{
 
 	function doIt($pkg){
 		echo "not implemented";

@@ -1,7 +1,7 @@
 <?php
 namespace application\views;
 
-class viewIncludes {
+class viewsIncludes {
 
 	public static function view(){
 		self::goXML();		//TODO let it go with html;
@@ -64,10 +64,12 @@ class viewIncludes {
 	*/
 	
 	public static function goHTML(){
-	
-		echo"<html><head>ooooo</head><body>aaaaa</body></html>";
-		echo "eoauoaeu";
-	
+
+		global $document;
+		$head = "";
+		$body = static::createHTML();
+		$document = "<html><head>{$head}</head><body>{$body}</body></html>";
+		echo $document;
 	}
 }
 ?>

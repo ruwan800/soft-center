@@ -1,7 +1,7 @@
 <?php
 namespace application\controller;
 
-class packageSearch extends vosIncludes{
+class packageSearch extends controllerIncludes{
 
 	function handle(){
 //		if(self::validUser()){
@@ -12,7 +12,14 @@ class packageSearch extends vosIncludes{
 			else{
 				$pkg='anna';
 			}
-			\application\models\packageSearch::doIt($pkg);
+			if (isset( $_GET["lm"]) ) {
+				$lm=$_GET["lm"];
+				$lm=self::filterInput($lm);
+			}
+			else{
+				$lm=0;
+			}
+			\application\models\packageSearch::doIt($pkg,$lm);
 			\application\views\packageView::view();
 
 					/* get input values securely

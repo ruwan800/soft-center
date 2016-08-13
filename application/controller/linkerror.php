@@ -1,7 +1,7 @@
 <?php
 namespace application\controller;
 
-class linkError extends vosIncludes{
+class linkError extends controllerIncludes{
 
 	function handle(){
 		

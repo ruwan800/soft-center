@@ -1,7 +1,7 @@
 <?php
 namespace application\controller;
 
-class vosIncludes{
+class controllerIncludes{
 
 #check user's validity
 	function validUser(){

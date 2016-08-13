@@ -23,15 +23,15 @@ function ProcessXML(url) {
 function processChange() {
     if (obj.readyState == 4) {					// 4 means the response has been returned and ready to be processed
         if (obj.status == 200) {				// 200 means "OK"
-			try{		// process the response
+//			try{		// process the response
 				xmlResponse=obj.responseXML;
 				xmlRoot = xmlResponse.documentElement;
 				resultHandler();
-			}catch(e){
-				notify(e+"::proto-31");
-			}
-        } else {								// anything else means a problem
-            notify("There was a problem in the returned data::proto-31");
+//			}catch(e){
+//				notify(e+"::proto-31");
+//			}
+//        } else {								// anything else means a problem
+//            notify("There was a problem in the returned data::proto-31");
         }
     }
 }

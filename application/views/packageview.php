@@ -1,7 +1,7 @@
 <?php
 namespace application\views;
 
-class packageview extends viewIncludes{
+class packageview extends viewsIncludes{
 
 	function createXML(){
 		global $result;
@@ -22,7 +22,13 @@ class packageview extends viewIncludes{
 	}
 	
 	function createHTML(){
-		
+
+		global $result;
+		$resultSet = "";
+		foreach ($result as $row){
+			$resultSet .= "{$row[0]}</br>{$row[1]}</br>";
+		}
+		return $resultSet;
 	}
 }
 ?>

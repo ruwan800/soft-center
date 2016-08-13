@@ -7,7 +7,6 @@ namespace application;
 header('Content-Type: text/xml');
 echo '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
 
-
 //echo $_SERVER['REQUEST_URI'].'<br />';
 
 
@@ -25,7 +24,20 @@ class classLoader {
 			include $file;
 		}
 		else {
-			echo "</br>file not found:".__DIR__."/".$file;
+			$pos = strrpos($class, "/");
+			$rc = substr($class,($pos+1));
+			$namesp = substr($class,0,$pos);
+			$namesp = str_replace('/','\\',$namesp);
+			$pos = strrpos($namesp, "/");
+			$rd = substr($namesp,($pos+1));
+			$filename = __DIR__."/".$file;
+			echo "</br>file not found:".$filename." and created";	//TODO remove below
+			$text = "<?php\nnamespace {$namesp};\n\nclass {$rc} extends {$rd}Includes";
+			$text .="{\n\n\tfunction handle(){\n\n\t\t\n\n\t}\n\n}\n\n?>";
+			$handle = fopen($filename, "w");
+			fwrite($handle, $text);
+			fclose($handle);
+			chmod($filename, 0777);
 		}
 	}
 }
@@ -49,7 +61,8 @@ $request::handle();
 function getPage($key){
 
 	$pageArray = array(
-		"ps" => "packageSearch"
+		"ps" => "packageSearch",
+		"login" => "login"
 	);
 	if(array_key_exists($key,$pageArray)){
 		$value = $pageArray[$key];
