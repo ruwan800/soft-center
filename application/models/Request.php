@@ -7,7 +7,7 @@ class Application_Model_Request
 		$this->db = Zend_Db_Table::getDefaultAdapter();
 	}
 
-	public function getAll($data)
+	public function getAll()
 	{
 		$select =   $this->db->select()
 						 ->from('request_management',array(	'id'		=> 'id',
@@ -15,8 +15,8 @@ class Application_Model_Request
 						 									'user'		=> 'user_name',
 						 									'info'		=> 'remarks',
 						 									'teamuse'	=> 'request_is_for'))
-						 ->where("priority_level NOT ?",0)
-						 ->limit(100);
+						 ->where("priority_level != ?",0)
+						 ->limit(30);
 		$stmt 	= $select->query();
 		$result = $stmt->fetchAll();
 		return $result;

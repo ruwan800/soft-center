@@ -47,7 +47,7 @@ class App_Acl
 		$this->acl->add(new Zend_Acl_Resource('createteam'));
 		$this->acl->add(new Zend_Acl_Resource('delteam'));
 		$this->acl->add(new Zend_Acl_Resource('softreport'));
-		$this->acl->add(new Zend_Acl_Resource('requestlog'));
+		$this->acl->add(new Zend_Acl_Resource('request'));
 		$this->acl->add(new Zend_Acl_Resource('addttpkgs'));
 		$this->acl->add(new Zend_Acl_Resource('addutpkgs'));
 		$this->acl->add(new Zend_Acl_Resource('delttpkgs'));
@@ -63,12 +63,12 @@ class App_Acl
 							array('pkginstall','pkgrequest'));
 
 		$this->acl->allow(	'admin',
-							array('adduser','deluser','createteam','delteam','softreport','requestlog',
+							array('adduser','deluser','createteam','delteam','softreport',
 								  'addttpkgs','addutpkgs','delttpkgs','delttpkgs','managepkgs'));
 
 		$this->acl->allow(	array('defaultTO','adminTO'),
 							array('team','teamtasks','addteampkg','addteamuser','delteamuser','delteampkg',
-								  'acceptrequest','mpackage','mteam','muser'));
+								  'acceptrequest','mpackage','mteam','muser','request'));
 
 
 

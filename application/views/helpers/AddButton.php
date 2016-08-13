@@ -27,7 +27,14 @@ class Zend_View_Helper_AddButton extends Zend_View_Helper_Abstract
     					class='button ml'><small class='icon check'></small><span>&nbsp;&nbsp;OK&nbsp;&nbsp;</span></a>";
     			break;
     		case 'back' :
+    			$back ? Null : $link = "javascript:history.back()";
     			$button="<a href='{$link}' class='button ml'><small class='icon arrow_left'></small><span>Back</span></a>";
+    			break;
+    		case 'home'	:
+    			$button="<a href='/' class='button ml'><small class='icon home'></small><span>Home</span></a>";
+    			break;
+    		default	:
+    			$button="<a href='{$link}' class='button ml'><span>{$type}</span></a>";
     			break;
     	}
 		return $button;

@@ -19,11 +19,12 @@ $installed_size = number_format( $this->result['installed_size']);
 <br/><br/>
 
 <?php if ($this->status) : ?>
-<a href="/pkginstall/index/package/<?php echo $this->result['package'] ?>" class="button green"><span>Install Package</span></a></div></div>
+<a href="/pkginstall/index/package/<?php echo $this->result['package'] ?>" class="button green"><span>Install Package</span></a>
 <?php else :?>
-<a href="/pkgrequest/index/package/<?php echo $this->result['package'] ?>" class="button red"><span>Request Package</span></a></div></div>
+<a href="/pkgrequest/index/package/<?php echo $this->result['package'] ?>" class="button red"><span>Request Package</span></a>
 <?php endif ?>
-</div>
+<?php echo $this->addButton('back') ?>
+</div></div></div>
 <div class="col w3 last"><div class="content">
 <?php echo "<a href=\"http://screenshots.debian.net/screenshot/{$this->result['package']}\"
  target=\"_blank\"><img src=\"http://​screenshots.debian.net/thumbnail/{$this->result['package']}\" alt=\"Screenshot\"></a>" ?>

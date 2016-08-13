@@ -26,14 +26,14 @@
                     <span>View which software installed by each user</span>
                 </a> 
                 <hr/>
-                <a href="<?php echo $this->url(array('controller' => 'requestlog'),Null,True); ?>">
+                <a href="<?php echo $this->url(array('controller' => 'request'),Null,True); ?>">
                     User Requests
                     <span>View requested software</span>
                 </a>
             <?php endif?>
             <?php if ($this->isTeamOwner()) : ?>
                 <hr/>
-                <a href="<?php echo $this->url(array('controller' => 'myteams'),Null,True); ?>">
+                <a href="<?php echo $this->url(array('controller' => 'team'),Null,True); ?>">
                     My Teams
                     <span>Manage teams and related software</span>
                 </a>

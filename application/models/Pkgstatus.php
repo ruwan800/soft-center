@@ -9,6 +9,12 @@ class Application_Model_Pkgstatus
 		$db = Zend_Db_Table::getDefaultAdapter();
 
 		$usersNs = new Zend_Session_Namespace('members');
+		if( ! isset($usersNs->userName)){
+			return False;
+		}
+		if( ! isset($usersNs->jobType)){
+			return False;
+		}
 		$userName =	$usersNs->userName;
 		$jobType  = $usersNs->jobType;
 

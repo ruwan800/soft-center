@@ -1,4 +1,38 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Request</b> and script/action name <b>index</b></p>
-</div>
+<br />
+<div id="table" class="help">
+	<h1>Table:</h1>
+	<div class="col w10 last">
+		<div class="content">
+			<table>
+				<tr>
+					<th>Software Name</th>
+					<th>Requested User</th>
+					<th>Remarks</th>
+					<th>Request For<br/>Team Use</th>
+					<th>Allow User<br/>Only</th>
+					<th>Allow For<br/>Team</th>
+					<th>Deny</th>
+				</tr>
+<?php $count = 0 ?>
+<?php foreach( $this->result as $item ) :?>
+<?php $count ++ ?>
+				<tr id="id_<?php echo $count ?>">
+					<td><?php echo $item['software'] ?></td>
+					<td><?php echo $item['user'] ?></td>
+					<td><?php echo $item['info'] ?></td>
+					<td><?php echo $item['teamuse'] ?></td>
+					<td>
+<a href="<?php echo $this->url(array('controller' => 'request', 'action' => 'accept', 'decision' => 'allow', 'request' =>$item['id'] ),Null,True);?>">Allow</a></td>
+					<td>
+<a href="<?php echo $this->url(array('controller' => 'request', 'action' => 'accept', 'decision' => 'allowall', 'request' =>$item['id'] ),Null,True);?>">Allow<br/>For Team</a></td></td>
+					<td>
+<a href="<?php echo $this->url(array('controller' => 'request', 'action' => 'accept', 'decision' => 'deny', 'request' =>$item['id'] ),Null,True);?>">Deny</a></td></td>
+				</tr>
+<?php endforeach ?>
+
+
+			</table>
+		</div>							
+	</div>
+
+<?php echo $this->addButton('home') ?>

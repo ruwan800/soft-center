@@ -32,7 +32,7 @@ class Application_Model_Muser
 
 	public function deleteUser($data)
 	{
-		$this->db->delete('users', array('user'=> $data));
+		$this->db->delete('users', "name = '{$data}'");
 	}
 	
 	

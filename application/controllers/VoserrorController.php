@@ -16,7 +16,6 @@ class VoserrorController extends Zend_Controller_Action
 
     public function baduserAction()
     {
-        // action body
     }
 
 

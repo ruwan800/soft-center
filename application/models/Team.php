@@ -48,7 +48,7 @@ class Application_Model_Team
 		$this->db->insert('team_members',$data);
 	}
 
-	public function delUser()
+	public function delUser($user)
 	{
 		$team = $this->nsteam->team;
 		$data = array(
@@ -78,7 +78,6 @@ class Application_Model_Team
 			'software' 	=> $pkg
 		);
 		$this->db->insert('software_for_team',$data);
-		$this-update($request);
 	}
 
 	public function delPackage($pkg)

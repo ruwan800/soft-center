@@ -1,7 +1,12 @@
 <b>User Package Tracker</b><br/><br/>
-
-Usage of software packages were automatically generated for following user(s).
+<?php if ($this->result) : ?>
+<h1>software packages of some users were automatically generated.</h1>
+<h3>Click on username to view report.</h3>
 
 <?php foreach ($this->result as $item) :?><br/><br/>
 	<b><a href="/upt/<?php echo $item ?>/"><span><?php echo $item ?></span></a></b><br/><br/>
 <?php endforeach?>
+<?php else : ?>
+<h1>No new reports found.</h1>
+<?php endif?>
+<?php echo $this->addButton('home') ?>

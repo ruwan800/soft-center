@@ -110,7 +110,7 @@ class Application_Form_Createteam extends Zend_Form
 			));
 
 		$this->addElement('image', 'createteam', array(
-				'description' => '<a href="" class="button yellow form_submit"><small class="icon plus"></small><span>Create Team</span></a>',
+				'description' => '<a href="" class="button yellow form_submit"><small class="icon plus"></small><span>Save Team Details</span></a>',
 				'ignore' => true,
 				'decorators' => array(
 				        array('Description', array('escape'=>false, 'tag'=>'p')),

@@ -37,7 +37,7 @@ class Application_Model_Mteam
 	
 	public function deleteTeam($data)
 	{
-		$this->db->delete('teams', array('team_name'=> $data));
+		$this->db->delete('teams', "team_name = '{$data}'");
 	}
 
 }

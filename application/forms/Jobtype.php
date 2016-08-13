@@ -6,7 +6,7 @@ class Application_Form_Jobtype extends Zend_Form
     public function init()
     {
 		$jobtype = new Zend_Form_Element_Select('type');
-		$jobtype->setLabel('Type of team :')
+		$jobtype->setLabel('Type of Job :')
 				->addMultiOption('designing', 'Designing')
 				->addMultiOption('testing', 'Testing')
 				->addMultiOption('management', 'Management')

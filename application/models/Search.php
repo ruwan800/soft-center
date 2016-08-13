@@ -11,13 +11,13 @@ class Application_Model_Search
 													'addpackage'	=> array('software','package','description'),
 													'delpackage'	=> array('software_for_team','software','team_name')
 								),
-								'muser'	=> array(	'adduser'		=> array(),
-													'deluser'		=> array('users','name','job_type'),
-													'edituser'		=> array('users','name','job_type'),
+								'muser'	=> array(	'add'			=> array(),
+													'del'			=> array('users','name','job_type'),
+													'edit'			=> array('users','name','job_type'),
 								),
-								'mteam'	=> array(	'createteam'	=> array(),
-													'delteam'		=> array('teams','team_name','team_description'),
-													'editteam'		=> array('teams','team_name','team_description'),
+								'mteam'	=> array(	'add'			=> array(),
+													'del'			=> array('teams','team_name','team_description'),
+													'edit'			=> array('teams','team_name','team_description'),
 								),
 								'mpackage'=> array(	'addbyteam'		=> array('software','package','description'),
 													'delbyteam'		=> array('software_for_team_type',
@@ -47,7 +47,7 @@ class Application_Model_Search
 						 ->where("{$param[1]} LIKE ?","%{$this->nssearch->text}%")
 						 ->limit(1000);
 		}
-
+		#throw new App_Exception($param[0].$param[1].$param[2]);
 		$stmt 	= $select->query();
 		$result = $stmt->fetchAll();
 		return $result;

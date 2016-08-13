@@ -12,13 +12,17 @@ class SearchController extends Zend_Controller_Action
 
     public function indexAction()
     {
-		$this->isAllowed();
+		if( ! $this->isAllowed()){
+			return;
+		}
 		$this->viewForm();
     }
 
 	public function searchAction()
 	{
-		$this->isAllowed();
+		if( ! $this->isAllowed()){
+			return;
+		}
     	if ($this->form->isValid($_POST)){
     		$this->nssearch->text = $this->form->getValue('text',Null);
 			$this->result  = $this->getResult(1);
@@ -29,9 +33,15 @@ class SearchController extends Zend_Controller_Action
     	}
 	}
 
+	public function errorAction()
+	{	
+	}
+
 	public function resultAction()
 	{
-		$this->isAllowed();
+		if( ! $this->isAllowed()){
+			return;
+		}
 		$page = $this->_getParam('page', 1);
 		$this->result  = $this->getResult($page);
 	}
@@ -41,6 +51,7 @@ class SearchController extends Zend_Controller_Action
 		$this->nssearch->value = $this->_getParam('value', Null);
 		$this->_forward($this->nssearch->action, $this->nssearch->controller);
 	}
+
 
 	public function viewForm()
 	{	
@@ -69,9 +80,12 @@ class SearchController extends Zend_Controller_Action
 		$user	= new Application_Model_User();
 		$acl	= new App_Acl();
 		if(!$acl->acl->isAllowed($user->getUserType(), $this->nssearch->controller, $this->nssearch->action)){
+			$this->_forward('error');
+			return False;
 			#throw new App_Exception("Please select your task again.");
-			throw new App_Exception(":ER:".$user->getUserType().":ER:".$this->nssearch->controller.":ER:".$this->nssearch->action.":ER:");
+			#throw new App_Exception(":ER:".$user->getUserType().":ER:".$this->nssearch->controller.":ER:".$this->nssearch->action.":ER:");
 		}
+		return True;
 	}
 
 }

@@ -17,7 +17,12 @@ class TeamController extends Zend_Controller_Action
 
     public function teamAction()
     {
-        $this->nsteam->team = $this->_getParam('team', Null);
+    	$team = $this->_getParam('team', Null);
+    	if ($team){
+    		if($team != 'images'){
+        		$this->nsteam->team = $team;
+    		}
+    	}
         // just render view/team.phtml page
     }
 
@@ -68,7 +73,9 @@ class TeamController extends Zend_Controller_Action
 		if (isset($this->nssearch->value)){
 			$value = $this->nssearch->value;
 			Zend_Session::namespaceUnset('search');
-			return $value;
+			if ($value != 'images'){
+				return $value;
+			}
 		}
 		$this->nssearch->controller = 'team';
 		$this->nssearch->action = $this->getRequest()->getActionName();

@@ -29,6 +29,7 @@ class MteamController extends Zend_Controller_Action
         if ($request) {
         	$this->model->createTeam($request);
         	$this->view->message = "Team '{$request['team_name']}' successfully created.";
+			$this->render('message');
 		}
 		else{
 			$this->view->form = $this->form;
@@ -43,7 +44,8 @@ class MteamController extends Zend_Controller_Action
         if ($request) {
         	$this->model->updateTeam($request);
 			Zend_Session::namespaceUnset('editteam');
-        	$this->view->message = "Team '{$request['team_name']}' successfully created.";
+        	$this->view->message = "Team '{$request['team_name']}' edit complete.";
+			$this->render('message');
 		}
 		else{
 			$this->form->setAction('editform/');
@@ -73,8 +75,11 @@ class MteamController extends Zend_Controller_Action
     public function delAction()
     {
     	$value = $this->getValue();
+    	if(!$value){
+    		return;
+    	}
 		$this->model->deleteTeam($value);
-		$this->view->message = "User '{$value}' added to the '{$this->nsteam->team}' team successfully.";
+		$this->view->message = "Team '{$value}' deleted.";
 		$this->render('message');
     }
 
@@ -83,7 +88,9 @@ class MteamController extends Zend_Controller_Action
 		if (isset($this->nssearch->value)){
 			$value = $this->nssearch->value;
 			Zend_Session::namespaceUnset('search');
-			return $value;
+			if ($value != 'images'){
+				return $value;
+			}
 		}
 		$this->nssearch->controller = 'mteam';
 		$this->nssearch->action = $this->getRequest()->getActionName();
@@ -109,6 +116,7 @@ class MteamController extends Zend_Controller_Action
 		$this->form->teamname->setvalue($request['team_name']);
 		$this->form->teamowner->setvalue($request['team_owner']);
 		$this->form->teamtype->setvalue($request['team_type']);
+		$this->form->teamdesc->setvalue($request['team_description']);
 		$this->form->teamdesc->setvalue($request['team_description']);
 	}
 

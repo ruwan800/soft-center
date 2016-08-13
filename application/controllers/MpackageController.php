@@ -17,77 +17,106 @@ class MpackageController extends Zend_Controller_Action
 
 	public function addbyjobAction()
 	{
-    	$values = $this->getAllValues();
-		$this->model->addByJobType($values[0],$values[1]);
-		$this->view->message = "Package '{$values[1]}' added to the '{$values[0]}' job category successfully.";
-		$this->render('index');
+		$this->setParam();
 	}
 
 	public function delbyjobAction()
 	{
-    	$values = $this->getAllValues();
-		$this->model->delByJobType($values[0],$values[1]);
-		$this->view->message = "User '{$values[0]}' added to the '{$values[1]}' team successfully.";
-		$this->render('index');
+		$this->setParam();
 	}
 
 	public function addbyteamAction()
 	{
-    	$values = $this->getAllValues();
-		$this->model->addByTeamType($values[0],$values[1]);
-		$this->view->message = "User '{$values[0]}' added to the '{$values[1]}' team successfully.";
-		$this->render('index');
+		$this->setParam();
 	}
 
 	public function delbyteamAction()
 	{
-    	$values = $this->getAllValues();
-		$this->model->delByTeamType($values[0],$values[1]);
-		$this->view->message = "User '{$values[0]}' added to the '{$values[1]}' team successfully.";
-		$this->render('index');
+		$this->setParam();
 	}
 
 	public function packageAction()
 	{
-		$this->_forward($this->nspkg->action);
+		$action	= $this->nspkg->action;
+		$type	= $this->nspkg->type;
+		$value	= $this->nssearch->value;
+		Zend_Session::namespaceUnset('search');
+		Zend_Session::namespaceUnset('mpackage');
+		switch($action){
+			case 'addbyjob' :
+				$this->model->addByJobType($type,$value);
+				$this->view->message = "Package '{$value}' added to the '{$type}' job category successfully.";
+				break;
+			case 'delbyjob' :
+				$this->model->delByJobType($type,$value);
+				$this->view->message = "Package '{$type}' deleted from '{$value}' job category.";
+				break;
+			case 'addbyteam':
+				$this->model->addByTeamType($type,$value);
+				$this->view->message = "Package '{$type}' added to the '{$value}' team type successfully.";
+				break;
+			case 'delbyteam':
+				$this->model->delByTeamType($type,$value);
+				$this->view->message = "User '{$type}' deleted from '{$value}' team  type.";
+				break;
+		}
+		$this->render('message');
 	}
 
-	public function getAllValues()
+
+	public function formAction()
 	{
-		if( ! isset($this->nspkg->action)){
-			$this->nspkg->action = $this->getRequest()->getActionName();
-		}
-		$type = $this->_getParam('type', Null);
-		if ($type){
-			$this->nspkg->type = $type;
-			$this->nssearch->type = $type;
-		}
-		if(isset($this->nspkg->type)){
-			if (isset($this->nssearch->value)){
-				$value = $this->nssearch->value;
-				$type = $this->nspkg->type;
-				Zend_Session::namespaceUnset('search');
-				Zend_Session::namespaceUnset('nspkg');
-				return array($type, $value);
-			}
-			$this->nssearch->controller = 'mpackage';
-			$this->nssearch->action = $this->nspkg->action;
-			$this->_forward('index','search');
-			return;
-		}
+		$form = $this->getForm();
+    	if ($form->isValid($_POST)){
+    		$type = $form->getValue('type',Null);
+    		if($type){
+    			$this->nspkg->type = $type;
+    		}
+    		$this->search();
+    	}
+    	else{
+			$this->selectType();
+    	}
+	}
+
+	public function errorAction()
+	{
+		
+	}
+
+	public function getForm()
+	{
 		switch($this->nspkg->action){
 			case 'addbyjob' :
 			case 'delbyjob' :
-				$form = new Application_Form_Jobtype();
+				return new Application_Form_Jobtype();
 				break;
 			case 'addbyteam':
 			case 'delbyteam':
-				$form = new Application_Form_Teamtype();
+				return new Application_Form_Teamtype();
 				break;
 		}
+	}
+
+	public function selectType()
+	{
+		$form = $this->getForm();
+		$form->setAction("form/");
 		$this->view->form = $form;
 		$this->render('type');
-		return;
+	}
+
+	public function setParam()
+	{
+		$this->nspkg->action = $this->getRequest()->getActionName();
+		$this->selectType();
+	}
+
+	public function search()
+	{
+		$this->nssearch->controller = 'mpackage';
+		$this->nssearch->action = 'package';
+		$this->_forward('index','search');
 	}
 
 }

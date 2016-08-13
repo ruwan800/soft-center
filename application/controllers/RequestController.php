@@ -16,7 +16,7 @@ class RequestController extends Zend_Controller_Action
 	public function acceptAcction()
 	{
 		$request = $this->_getParam('request', Null);
-		$action  = $this->_getParam('action', Null);
+		$action  = $this->_getParam('decision', Null);
 		switch ($action){
 			case 'allow':
 				$this->model->allow($request);

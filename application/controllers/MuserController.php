@@ -72,8 +72,11 @@ class MuserController extends Zend_Controller_Action
     public function delAction()
     {
     	$value = $this->getValue();
+    	if(!$value){
+    		return;
+    	}
 		$this->model->deleteUser($value);
-		$this->view->message = "User '{$value}' added to the '{$this->nsteam->team}' team successfully.";
+		$this->view->message = "User '{$value}' deleted.";
 		$this->render('message');
     }
 
@@ -82,7 +85,9 @@ class MuserController extends Zend_Controller_Action
 		if (isset($this->nssearch->value)){
 			$value = $this->nssearch->value;
 			Zend_Session::namespaceUnset('search');
-			return $value;
+			if ($value != 'images'){
+				return $value;
+			}
 		}
 		$this->nssearch->controller = 'muser';
 		$this->nssearch->action = $this->getRequest()->getActionName();

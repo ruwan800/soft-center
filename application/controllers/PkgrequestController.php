@@ -33,6 +33,11 @@ class PkgrequestController extends Zend_Controller_Action
 
 	public function indexAction(){
 	
+		$package = $this->_getParam('package', False);
+		$userns	= new Zend_Session_Namespace('members');
+		$user = $userns->userName;
+		$this->form->softname->setvalue($package);
+		$this->form->username->setvalue($user);
         $this->view->form = $this->form;
 
 	}
