@@ -3,10 +3,10 @@
 namespace application;
 
 //TODO add xml header
-/*
+
 header('Content-Type: text/xml');
 echo '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
-*/
+
 
 //echo $_SERVER['REQUEST_URI'].'<br />';
 

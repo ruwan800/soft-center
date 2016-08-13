@@ -4,7 +4,7 @@ namespace application\views;
 class viewIncludes {
 
 	public static function view(){
-		self::goHTML();		//TODO let it go with html;
+		self::goXML();		//TODO let it go with html;
 	}
 
 
