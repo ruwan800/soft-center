@@ -55,7 +55,7 @@ class Application_Model_Team
 			'user_name'	=> $user,
 			'team_name' => $team
 		);
-		$this->db->delete('team_members', $data);
+		$this->db->delete('team_members', "user_name = '{$user}' AND team_name = '{$team}'");
 	}
 
 	public function addPackage($pkg)
@@ -83,11 +83,7 @@ class Application_Model_Team
 	public function delPackage($pkg)
 	{
 		$team = $this->nsteam->team;
-		$data = array(
-			'team_name'	=> $team,
-			'software' 	=> $pkg
-		);
-		$this->db->delete('software_for_team', $data);
+		$this->db->delete('software_for_team', "team_name = '{$team}' AND software = '{$pkg}'");
 	}
 
 }

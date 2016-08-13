@@ -36,7 +36,7 @@ class Application_Model_Mpackage
 			'job_type'	=> $type,
 			'software' => $value
 		);
-		$this->db->delete('software_for_job_type', $data);
+		$this->db->delete('software_for_job_type',  "job_type = '{$type}' AND software = '{$value}'");
 	}
 
 	public function addByTeamType($type,$value)
@@ -66,7 +66,7 @@ class Application_Model_Mpackage
 			'team_type'	=> $type,
 			'software' => $value
 		);
-		$this->db->delete('software_for_team_type', $data);
+		$this->db->delete('software_for_team_type',  "team_type = '{$type}' AND software = '{$value}'");
 	}
 
 }
