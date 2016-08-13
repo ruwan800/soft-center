@@ -29,7 +29,10 @@ echo $this->doctype();
                     </a>
             </div>
             <div class="col w5 last right bottomlast">
-                <?php echo "user" #TODO echo $this->loggedInAs(); ?>
+            	<?php $auth   = Zend_Auth::getInstance(); ?>
+				<?php if ($auth->getIdentity()) : ?>
+					<A href="logout">Logout</A>
+				<?php endif ?>
             </div>
             <div class="clear"></div>            
         </div>

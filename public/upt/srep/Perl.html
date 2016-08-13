@@ -1,0 +1,1523 @@
+<html>
+<head>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+<title>Linux dpkg Software Report</title>
+<style>
+body {
+        background-image: url(DK18GRN.JPG);
+	background-color: blue;
+	font-family: "Times New Roman", Times, serif;
+        width: 98%;
+}
+a:link {color: #0000FF}
+a:visited {color: #FF0000}
+a:hover {color: #FF0000}
+a:active {color: #0000FF}
+
+</style>
+  <meta content="Team Deta" name="author">
+  <meta content="LinuxdpkgReport.sh" name="generator">
+  <link REL="SHORTCUT ICON" HREF="http://www.rayslinks.com/images/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+</head><body>
+
+<center><font color="white"><h3>Perl Packages</h3></font></center>
+
+<a name="libalgorithm-diff-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libalgorithm-diff-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">160</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libalgorithm-diff-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.19.02-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">libalgorithm-diff-xs-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">50672</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module to find differences between files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Algorithm::Diff is a Perl module that allows users to analyze text based on a Longest Common Subsequence (LCS) algorithm. It can compare two files and find the differences between them, which can produce the same information as the common Unix tool 'diff'.</p>
+<p>There is an XS-optimized implementation of the core loop, which accelerates some types of diff output (see libalgorithm-diff-xs-perl).</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libalgorithm-diff-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Algorithm-Diff/" target="_blank">http://search.cpan.org/dist/Algorithm-Diff/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libalgorithm-diff-perl.list">/var/lib/dpkg/info/libalgorithm-diff-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libalgorithm-diff-perl" target="_blank">/usr/share/doc/libalgorithm-diff-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libalgorithm-diff-xs-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libalgorithm-diff-xs-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">100</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libalgorithm-diff-xs-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.04-1build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu3), perlapi-5.12.3, libc6 (>= 2.1.3), libalgorithm-diff-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">13844</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module to find differences between files (XS accelerated)</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Algorithm::Diff::XS is a Perl diff utility module based on Joe Schaefer's excellent but not very well-known Algorithm::LCS module, with a drop-in interface identical to Algorithm::Diff.</p>
+<p>Note that only the LCSidx function is optimized in XS at the moment, which means only compact_diff will get significantly faster for large data sets, while diff and sdiff will run in identical speed as Algorithm::Diff.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libalgorithm-diff-xs-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Algorithm-Diff-XS/" target="_blank">http://search.cpan.org/dist/Algorithm-Diff-XS/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libalgorithm-diff-xs-perl.list">/var/lib/dpkg/info/libalgorithm-diff-xs-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libalgorithm-diff-xs-perl" target="_blank">/usr/share/doc/libalgorithm-diff-xs-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libalgorithm-merge-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libalgorithm-merge-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">80</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libalgorithm-merge-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.08-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libalgorithm-diff-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">12672</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module for three-way merge of textual data</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Algorithm::Merge provides three-way merge and diff functions, complementing the functionality offered by Algorithm::Diff (libalgorithm-diff-perl). Given three sets of items, known as the original, left and right, this module can take a three-way difference or merge them. Taking a difference provides an array reference that is very similar to the behaviour of Algorithm::Diff. One can also implement custom conflict resolution using the CONFLICT callback.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libalgorithm-merge-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Algorithm-Merge/" target="_blank">http://search.cpan.org/dist/Algorithm-Merge/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libalgorithm-merge-perl.list">/var/lib/dpkg/info/libalgorithm-merge-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libalgorithm-merge-perl" target="_blank">/usr/share/doc/libalgorithm-merge-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libcairo-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libcairo-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">492</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libcairo-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.070-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.1.3), libcairo2 (>= 1.8.0)</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libfont-freetype-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">122548</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl interface to the Cairo graphics library</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>libcairo-perl provides access to the Cairo library.</p>
+<p>Cairo is a 2D graphics library with support for multiple output devices. It is designed to produce consistent output on all output media while taking advantage of display hardware acceleration when available (eg. through the X Render Extension).</p>
+<p>The cairo API provides operations similar to the drawing operators of PostScript and PDF. Operations in cairo including stroking and filling cubic Bézier splines, transforming and compositing translucent images, and antialiased text rendering. All drawing operations can be transformed by any affine transformation (scale, rotation, shear, etc.)</p>
+<p>Find out more about Cairo at <a href="http://www.cairographics.org/." target="_blank">http://www.cairographics.org/.</a> </p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libcairo-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://gtk2-perl.sourceforge.net/" target="_blank">http://gtk2-perl.sourceforge.net/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libcairo-perl.list">/var/lib/dpkg/info/libcairo-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libcairo-perl" target="_blank">/usr/share/doc/libcairo-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libclass-isa-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libclass-isa-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">68</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libclass-isa-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.36-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">11902</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">report the search path for a class's ISA tree</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Suppose you have a class (like Food::Fish::Fishstick) that is derived, via its @ISA, from one or more superclasses (as Food::Fish::Fishstick is from Food::Fish, Life::Fungus, and Chemicals), and some of those superclasses may themselves each be derived, via its @ISA, from one or more superclasses (as above).</p>
+<p>When, then, you call a method in that class ($fishstick->calories), Perl first searches there for that method, but if it's not there, it goes searching in its superclasses, and so on, in a depth-first (or maybe "height-first" is the word) search. In the above example, it'd first look in Food::Fish, then Food, then Matter, then Life::Fungus, then Life, then Chemicals.</p>
+<p>This library, Class::ISA, provides functions that return that list -- the list (in order) of names of classes Perl would search to find a method, with no duplicates.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libclass-isa-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Class-ISA/" target="_blank">http://search.cpan.org/dist/Class-ISA/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libclass-isa-perl.list">/var/lib/dpkg/info/libclass-isa-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libclass-isa-perl" target="_blank">/usr/share/doc/libclass-isa-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libcrypt-passwdmd5-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libcrypt-passwdmd5-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">64</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-motu@lists.ubuntu.com?Subject=libcrypt-passwdmd5-perl">Ubuntu MOTU Developers  - ubuntu-motu@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.3-9</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">10432</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">interoperable MD5-based crypt() for perl</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This package provides various crypt()-compatible interfaces to the MD5-based crypt() function found in various *nixes. It's based on the implementation found on FreeBSD 2.2.[56]-RELEASE</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:bartm@debian.org?Subject=libcrypt-passwdmd5-perl">Bart Martens  - bartm@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/~luismunoz/Crypt-PasswdMD5-1.3/" target="_blank">http://search.cpan.org/~luismunoz/Crypt-PasswdMD5-1.3/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libcrypt-passwdmd5-perl.list">/var/lib/dpkg/info/libcrypt-passwdmd5-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libcrypt-passwdmd5-perl" target="_blank">/usr/share/doc/libcrypt-passwdmd5-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libdbd-mysql-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libdbd-mysql-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">396</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libdbd-mysql-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">4.019-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libmysqlclient16 (>= 5.1.21-1), perl (>= 5.12.3-6ubuntu4), perl-dbdabi-94, perlapi-5.12.3, libdbi-perl (>= 1.610.90)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">109864</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl5 database interface to the MySQL database</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>DBD::mysql is the Perl5 Database Interface driver for the MySQL database. In other words: DBD::mysql is an interface between the Perl programming language and the MySQL programming API that comes with the MySQL relational database management system. Most functions provided by this programming API are supported. Some rarely used functions are missing, mainly because noone ever requested them. However supported features include: compression of data between server and client; timeouts; SSL; prepared statement support; server administration such as creating and dropping databases and restarting the serverl; auto-reconnection; utf8; bind type guessing; bind comment placeholders; automated insert ids; transactions; multiple result sets and multithreading.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libdbd-mysql-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/DBD-mysql/" target="_blank">http://search.cpan.org/dist/DBD-mysql/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libdbd-mysql-perl.list">/var/lib/dpkg/info/libdbd-mysql-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libdbd-mysql-perl" target="_blank">/usr/share/doc/libdbd-mysql-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 10:20</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libdbi-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libdbi-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">2384</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libdbi-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.616-1build1</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">perl-dbdabi-94</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.4), libplrpc-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libdbd-anydata-perl (<< 0.09+), libdbd-csv-perl (<< 0.3000), libsql-statement-perl (<< 1.28)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">852408</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl Database Interface (DBI)</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>DBI (DataBase Interface) is a Perl framework that provides a common interface to access various backend databases in a uniform manner. DBD (DataBase Driver) modules provide implementations for various backend data storage mechanisms including networked relational databases (particularly SQL databases) and even web services such as the Google search engine.</p>
+<p>It is extremely portable and available for a wide range of operating systems, architectures and data stores, including:</p>
+<ul><li> Oracle</li>
+<li> Microsoft SQL Server</li>
+<li> IBM DB2</li>
+<li> SQLite</li>
+<li> PostgreSQL</li>
+<li> Firebird</li>
+<li> MySQL</li></ul>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libdbi-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://dbi.perl.org/" target="_blank">http://dbi.perl.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libdbi-perl.list">/var/lib/dpkg/info/libdbi-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libdbi-perl" target="_blank">/usr/share/doc/libdbi-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 10:20</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libdpkg-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libdpkg-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">1188</td></tr>
+<tr><td style="padding: 10px;">Origin</td><td style="padding: 10px;">debian</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libdpkg-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Bugs</td><td style="padding: 10px;">debbugs://bugs.debian.org</td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">dpkg</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.16.0.3ubuntu5.1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">dpkg (<< 1.15.8), dpkg-dev (<< 1.15.6)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">dpkg (>= 1.15.8), perl, libtimedate-perl</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">bzip2, xz-utils</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">debian-keyring, gnupg, gpgv, binutils, patch</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">dpkg-dev (<< 1.15.6)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">171730</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Dpkg perl modules</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This package provides the perl modules used by the scripts in dpkg-dev. They cover a wide range of functionalities. Among them there are the following modules:</p>
+<ol><li> Dpkg::Arch: manipulate Debian architecture information</li>
+<li> Dpkg::BuildOptions: parse and manipulate DEB_BUILD_OPTIONS</li>
+<li> Dpkg::Changelog: parse Debian changelogs</li>
+<li> Dpkg::Checksums: generate and parse checksums</li>
+<li> Dpkg::Compression::Process: wrapper around compression tools</li>
+<li> Dpkg::Compression::FileHandle: transparently (de)compress files</li>
+<li> Dpkg::Control: parse and manipulate Debian control information (.dsc, .changes, Packages/Sources entries, etc.)</li></ul>
+<li> Dpkg::Deps: parse and manipulate dependencies</li>
+<li> Dpkg::ErrorHandling: common error functions</li>
+<li> Dpkg::Index: collections of Dpkg::Control (Packages/Sources files for example)</li></ul>
+<li> Dpkg::IPC: spawn sub-processes and feed/retrieve data</li>
+<li> Dpkg::Substvars: substitute variables in strings</li>
+<li> Dpkg::Vendor: identify current distribution vendor</li>
+<li> Dpkg::Version: parse and manipulate Debian package versions</li></ol>
+
+<p>All the packages listed in Suggests or Recommends are used by some of the modules.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://wiki.debian.org/Teams/Dpkg" target="_blank">http://wiki.debian.org/Teams/Dpkg</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:debian-dpkg@lists.debian.org?Subject=libdpkg-perl">Dpkg Developers  - debian-dpkg@lists.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libdpkg-perl.list">/var/lib/dpkg/info/libdpkg-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libdpkg-perl" target="_blank">/usr/share/doc/libdpkg-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libencode-locale-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libencode-locale-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">68</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libencode-locale-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.02-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">11830</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">utility to determine the locale encoding</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>In many applications it's wise to let Perl use Unicode for the strings it processes. Most of the interfaces Perl has to the outside world is still byte based. Programs therefore needs to decode byte strings that enter the program from the outside and encode them again on the way out.</p>
+<p>The POSIX locale system is used to specify both the language conventions requested by the user and the preferred character set to consume and output. The Encode::Locale module looks up the charset and encoding (called a CODESET in the locale jargon) and arrange for the Encode module to know this encoding under the name "locale". It means bytes obtained from the environment can be converted to Unicode strings by calling Encode::encode(locale => $bytes) and converted back again with Encode::decode(locale => $string).</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libencode-locale-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Encode-Locale/" target="_blank">http://search.cpan.org/dist/Encode-Locale/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libencode-locale-perl.list">/var/lib/dpkg/info/libencode-locale-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libencode-locale-perl" target="_blank">/usr/share/doc/libencode-locale-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="liberror-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">liberror-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">96</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=liberror-perl">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.17-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">23762</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module for error/exception handling in an OO-ish way</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module provides two interfaces.  Firstly "Error" provides a procedural interface to exception handling.  Secondly "Error" is a base class for errors/exceptions that can either be thrown, for subsequent catch, or can simply be recorded.</p>
+<p>Errors in the class "Error" should not be thrown directly, but the user should throw errors from a sub-class of "Error".</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:clint@burfoot.info?Subject=liberror-perl">Clint Burfoot  - clint@burfoot.info</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/liberror-perl.list">/var/lib/dpkg/info/liberror-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/liberror-perl" target="_blank">/usr/share/doc/liberror-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:45</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libfile-basedir-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libfile-basedir-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">64</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libfile-basedir-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.03-1fakesync1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">10540</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module to use the freedesktop basedir specification</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The File::BaseDir module can be used to find directories and files as specified by the XDG Base Directory Specification. It takes care of defaults and uses File::Spec to make the output platform specific.</p>
+<p>For this module the XDG basedir specification 0.6 was used.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/File-BaseDir/" target="_blank">http://search.cpan.org/dist/File-BaseDir/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libfile-basedir-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libfile-basedir-perl.list">/var/lib/dpkg/info/libfile-basedir-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libfile-basedir-perl" target="_blank">/usr/share/doc/libfile-basedir-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libfile-copy-recursive-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libfile-copy-recursive-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">88</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-motu@lists.ubuntu.com?Subject=libfile-copy-recursive-perl">Ubuntu MOTU Developers  - ubuntu-motu@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.38-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">20586</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl extension for recursively copying files and directories</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>File::Copy::Recursive module copies and moves directories recursively (or single files, well... singley) to an optional depth and attempts to preserve each file or directory's mode.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libfile-copy-recursive-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/File-Copy-Recursive/" target="_blank">http://search.cpan.org/dist/File-Copy-Recursive/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libfile-copy-recursive-perl.list">/var/lib/dpkg/info/libfile-copy-recursive-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libfile-copy-recursive-perl" target="_blank">/usr/share/doc/libfile-copy-recursive-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libfile-desktopentry-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libfile-desktopentry-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">96</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libfile-desktopentry-perl">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.04-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16), libfile-basedir-perl (>= 0.03)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">18776</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module to handle freedesktop .desktop files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module is used to work with .desktop files. The format of these files is specified by the freedesktop "Desktp Entry" specification. See <a href="http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html" target="_blank">http://standards.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html</a>  For this module version 0.9.4 of the specification was used.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libfile-desktopentry-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/File-DesktopEntry/" target="_blank">http://search.cpan.org/dist/File-DesktopEntry/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libfile-desktopentry-perl.list">/var/lib/dpkg/info/libfile-desktopentry-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libfile-desktopentry-perl" target="_blank">/usr/share/doc/libfile-desktopentry-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libfile-listing-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libfile-listing-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">64</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libfile-listing-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.01-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libhttp-date-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">8988</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module to parse directory listings</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>File::Listing exports a single function called parse_dir(), which can be used to parse directory listings.</p>
+<p>The first parameter to parse_dir() is the directory listing to parse. It can be a scalar, a reference to an array of directory lines or a glob representing a filehandle to read the directory listing from.</p>
+<p>The second parameter is the time zone to use when parsing time stamps in the listing. If this value is undefined, then the local time zone is assumed.</p>
+<p>The third parameter is the type of listing to assume. Currently supported formats are 'unix', 'apache' and 'dosftp'. The default value 'unix'. </p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libfile-listing-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/File-Listing/" target="_blank">http://search.cpan.org/dist/File-Listing/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libfile-listing-perl.list">/var/lib/dpkg/info/libfile-listing-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libfile-listing-perl" target="_blank">/usr/share/doc/libfile-listing-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libfile-mimeinfo-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libfile-mimeinfo-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">188</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-motu@lists.ubuntu.com?Subject=libfile-mimeinfo-perl">Ubuntu MOTU Developers  - ubuntu-motu@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.15-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16), libfile-basedir-perl, shared-mime-info, libfile-desktopentry-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">52274</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module to determine file types</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module can be used to determine the mime type of a file. It tries to implement the freedesktop specification for a shared MIME database.</p>
+<p>This package also contains two related utilities:</p>
+<ul><li> mimetype: determine a files mimetype</li>
+<li> mimeopen: open files according to their mimetype</li></ul>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libfile-mimeinfo-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/File-MimeInfo/" target="_blank">http://search.cpan.org/dist/File-MimeInfo/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libfile-mimeinfo-perl.list">/var/lib/dpkg/info/libfile-mimeinfo-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libfile-mimeinfo-perl" target="_blank">/usr/share/doc/libfile-mimeinfo-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libfont-afm-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libfont-afm-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">120</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-motu@lists.ubuntu.com?Subject=libfont-afm-perl">Ubuntu MOTU Developers  - ubuntu-motu@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.20-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">14288</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Font::AFM - Interface to Adobe Font Metrics files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module implements the Font::AFM class. Objects of this class are initialised from an AFM-file and allows you to obtain information about the font and the metrics of the various glyphs in the font.</p>
+<p>All measurements in AFM files are given in terms of units equal to 1/1000 of the scale factor of the font being used. To compute actual sizes in a document, these amounts should be multiplied by (scale factor of font)/1000.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libfont-afm-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Font-AFM/" target="_blank">http://search.cpan.org/dist/Font-AFM/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libfont-afm-perl.list">/var/lib/dpkg/info/libfont-afm-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libfont-afm-perl" target="_blank">/usr/share/doc/libfont-afm-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libglib-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libglib-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">1184</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libglib-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2:1.223-1build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.4), libglib2.0-0 (>= 2.24.0)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">413078</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">interface to the GLib and GObject libraries</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Glib provides a Perl interface to the GLib and GObject libraries, as part of gtk2-perl. It attempts to provide a perlish interface while remaining as true as possible to the underlying C API, so perusing the reference manual is recommended </p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libglib-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://gtk2-perl.sourceforge.net/" target="_blank">http://gtk2-perl.sourceforge.net/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libglib-perl.list">/var/lib/dpkg/info/libglib-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libglib-perl" target="_blank">/usr/share/doc/libglib-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libgtk2-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libgtk2-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">4212</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libgtk2-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2:1.223-1build2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.4-1ubuntu2), perlapi-5.12.4, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.18.0), libpango1.0-0 (>= 1.18.0), libglib-perl (>= 1:1.230), libcairo-perl, libpango-perl (>= 1.220), shared-mime-info</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libgtk2-perl-doc, librsvg2-common</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">1194630</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl interface to the 2.x series of the Gimp Toolkit library</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>libgtk2-perl allows a perl developer to use the Gtk+ graphical user interface library.</p>
+<p>The Gtk+ is a multi-platform toolkit for creating graphical user interfaces. Offering a complete set of widgets, the Gtk+ is suitable for projects ranging from small one-off tools to complete application suites.</p>
+<p>Find out more about Gtk+ at <a href="http://www.gtk.org." target="_blank">http://www.gtk.org.</a> </p>
+<p>The perl bindings follow the C API very closely, and the C reference documentation should be considered the canonical source: <a href="http://developer.gnome.org/doc/API/2.0/gtk/index.html" target="_blank">http://developer.gnome.org/doc/API/2.0/gtk/index.html</a> </p>
+<p>This module is part of gtk2-perl.</p>
+<p>To discuss gtk2-perl, ask questions and flame/praise the authors, join gtk-perl-list@gnome.org at lists.gnome.org.</p>
+<p>Also have a look at the gtk2-perl website and sourceforge project page, <a href="http://gtk2-perl.sourceforge.net" target="_blank">http://gtk2-perl.sourceforge.net</a> </p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libgtk2-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://gtk2-perl.sourceforge.net/" target="_blank">http://gtk2-perl.sourceforge.net/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libgtk2-perl.list">/var/lib/dpkg/info/libgtk2-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libgtk2-perl" target="_blank">/usr/share/doc/libgtk2-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhtml-form-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhtml-form-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">96</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhtml-form-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.00-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, liburi-perl, libhtml-parser-perl, libhttp-message-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">22780</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module that represents an HTML form element</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Objects of the HTML::Form class represents a single HTML <form> ... </form> instance. A form consists of a sequence of inputs that usually have names, and which can take on various values. The state of a form can be tweaked and it can then be asked to provide HTTP::Request objects that can be passed to the request() method of LWP::UserAgent.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhtml-form-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTML-Form/" target="_blank">http://search.cpan.org/dist/HTML-Form/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhtml-form-perl.list">/var/lib/dpkg/info/libhtml-form-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhtml-form-perl" target="_blank">/usr/share/doc/libhtml-form-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhtml-format-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhtml-format-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">160</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhtml-format-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.10-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libfont-afm-perl, libhtml-tree-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">40584</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module for transforming HTML into various formats</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTML::Formatter is a base class for various formatters, which are modules that traverse an HTML syntax tree and produce various output file formats. There are currently three formatter classes included:</p>
+<ul><li> HTML::FormatText for converting to plain human-readable text</li>
+<li> HTML::FormatPS for converting to PostScript</li>
+<li> HTML::FormatRTF for converting to Microsoft's Rich Text Format (RTF)</li></ul>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhtml-format-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTML-Format/" target="_blank">http://search.cpan.org/dist/HTML-Format/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhtml-format-perl.list">/var/lib/dpkg/info/libhtml-format-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhtml-format-perl" target="_blank">/usr/share/doc/libhtml-format-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhtml-parser-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhtml-parser-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">316</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhtml-parser-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">3.68-1build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu3), perlapi-5.12.3, libc6 (>= 2.4), liburi-perl, libhtml-tagset-perl</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libdata-dump-perl</td></tr>
+<tr><td style="padding: 10px;">Enhances</td><td style="padding: 10px;">libwww-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">98768</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">collection of modules that parse HTML text documents</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTML::Parser is a collection of modules useful for handling HTML documents. These modules used to be part of the libwww-perl distribution, but are now unbundled in order to facilitate a separate development track.</p>
+<p>Objects of the HTML::Parser class will recognize markup and separate it from content data. As different kinds of markup are recognized, the corresponding event handler is invoked. The document to be parsed may also be supplied in arbitrary chunks, making on-the-fly parsing of network documents possible.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhtml-parser-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTML-Parser/" target="_blank">http://search.cpan.org/dist/HTML-Parser/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhtml-parser-perl.list">/var/lib/dpkg/info/libhtml-parser-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhtml-parser-perl" target="_blank">/usr/share/doc/libhtml-parser-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhtml-tagset-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhtml-tagset-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">76</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhtml-tagset-perl">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">3.20-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">13536</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Data tables pertaining to HTML</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTML-Tagset contains data tables useful in dealing with HTML.  For instance, it provides %HTML::Tagset::emptyElement, which lists all of the HTML elements which cannot have content.  It provides no functions or methods.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhtml-tagset-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTML-Tagset/" target="_blank">http://search.cpan.org/dist/HTML-Tagset/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhtml-tagset-perl.list">/var/lib/dpkg/info/libhtml-tagset-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhtml-tagset-perl" target="_blank">/usr/share/doc/libhtml-tagset-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhtml-template-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhtml-template-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">236</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhtml-template-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.10-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libipc-sharedcache-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">65042</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module for using HTML Templates with Perl</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTML::Template attempts make using HTML templates simple and natural.  It extends standard HTML with a few new HTML-esque tags - <TMPL_VAR>, <TMPL_LOOP>, <TMPL_INCLUDE>, <TMPL_IF> and <TMPL_ELSE>.  The file written with HTML and these new tags is called a template.  It is usually saved separate from your script - possibly even created by someone else!  Using this module you fill in the values for the variables, loops and branches declared in the template.  This allows you to separate design - the HTML - from the data, which you generate in the Perl script.</p>
+<p>This module allows you to store its cache in shared memory using the IPC::SharedCache module, please install libipc-sharedcache-perl if you want to make use of this.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhtml-template-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTML-Template/" target="_blank">http://search.cpan.org/dist/HTML-Template/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhtml-template-perl.list">/var/lib/dpkg/info/libhtml-template-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhtml-template-perl" target="_blank">/usr/share/doc/libhtml-template-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 10:20</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhtml-tree-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhtml-tree-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">536</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhtml-tree-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">4.2-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libhtml-parser-perl, libhtml-tagset-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">205054</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module to represent and create HTML syntax trees</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTML::Tree is a collection of modules that represent, create and extract information from HTML syntax trees.  These modules used to be part of the libwww-perl distribution, but are now unbundled in order to facilitate a separate development track.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhtml-tree-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTML-Tree/" target="_blank">http://search.cpan.org/dist/HTML-Tree/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhtml-tree-perl.list">/var/lib/dpkg/info/libhtml-tree-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhtml-tree-perl" target="_blank">/usr/share/doc/libhtml-tree-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhttp-cookies-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhttp-cookies-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">104</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhttp-cookies-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.00-2</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libhttp-date-perl, libhttp-message-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">23324</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">HTTP cookie jars</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This class is for objects that represent a "cookie jar" -- that is, a database of all the HTTP cookies that a given LWP::UserAgent object knows about.</p>
+<p>Cookies are a general mechanism which server side connections can use to both store and retrieve information on the client side of the connection. For more information about cookies refer to
+<p>URL <a href="http://curl.haxx.se/rfc/cookie_spec.html" target="_blank">http://curl.haxx.se/rfc/cookie_spec.html</a> 
+<p>URL <a href="http://www.cookiecentral.com/" target="_blank">http://www.cookiecentral.com/</a>  style cookies described in RFC 2965. The two variants of cookies are supposed to be able to coexist happily.</p>
+<p>Instances of the class HTTP::Cookies are able to store a collection of Set-Cookie2: and Set-Cookie: headers and are able to use this information to initialize Cookie-headers in HTTP::Request objects. The state of a HTTP::Cookies object can be saved in and restored from files.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhttp-cookies-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTTP-Cookies/" target="_blank">http://search.cpan.org/dist/HTTP-Cookies/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhttp-cookies-perl.list">/var/lib/dpkg/info/libhttp-cookies-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhttp-cookies-perl" target="_blank">/usr/share/doc/libhttp-cookies-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhttp-daemon-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhttp-daemon-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">80</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhttp-daemon-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.00-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libhttp-message-perl, libhttp-date-perl, liblwp-mediatypes-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">16694</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">simple http server class</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Instances of the HTTP::Daemon class are HTTP/1.1 servers that listen on a socket for incoming requests. The HTTP::Daemon is a subclass of IO::Socket::INET, so you can perform socket operations directly on it too.</p>
+<p>The accept() method will return when a connection from a client is available. The returned value will be an HTTP::Daemon::ClientConn object which is another IO::Socket::INET subclass. Calling the get_request() method on this object will read data from the client and return an HTTP::Request object. The ClientConn object also provide methods to send back various responses.</p>
+<p>This HTTP daemon does not fork(2) for you. Your application, i.e. the user of the HTTP::Daemon is responsible for forking if that is desirable. Also note that the user is responsible for generating responses that conform to the HTTP/1.1 protocol.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhttp-daemon-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTTP-Daemon/" target="_blank">http://search.cpan.org/dist/HTTP-Daemon/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhttp-daemon-perl.list">/var/lib/dpkg/info/libhttp-daemon-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhttp-daemon-perl" target="_blank">/usr/share/doc/libhttp-daemon-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhttp-date-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhttp-date-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">64</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhttp-date-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.00-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libtimedate-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">10122</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module of date conversion routines</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTTP::Date provides functions that deal the date formats used by the HTTP protocol (and then some more). Only the first two functions, time2str() and str2time(), are exported by default.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhttp-date-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTTP-Date/" target="_blank">http://search.cpan.org/dist/HTTP-Date/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhttp-date-perl.list">/var/lib/dpkg/info/libhttp-date-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhttp-date-perl" target="_blank">/usr/share/doc/libhttp-date-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhttp-message-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhttp-message-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">244</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhttp-message-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.01-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, liburi-perl, libhttp-date-perl, libhtml-parser-perl, libencode-locale-perl, liblwp-mediatypes-perl, perl (>= 5.10.1) | libio-compress-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">77620</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">perl interface to HTTP style messages</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The HTTP::Headers class encapsulates HTTP-style message headers. The headers consist of attribute-value pairs also called fields, which may be repeated, and which are printed in a particular order. The field names are cases insensitive.</p>
+<p>Instances of this class are usually created as member variables of the HTTP::Request and HTTP::Response classes, internal to the library.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhttp-message-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTTP-Message/" target="_blank">http://search.cpan.org/dist/HTTP-Message/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhttp-message-perl.list">/var/lib/dpkg/info/libhttp-message-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhttp-message-perl" target="_blank">/usr/share/doc/libhttp-message-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libhttp-negotiate-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libhttp-negotiate-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">72</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libhttp-negotiate-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.00-2</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libhttp-message-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">13372</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">implementation of content negotiation</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>HTTP::Negotiate provides a complete implementation of the HTTP content negotiation algorithm. Content negotiation allows for the selection of a preferred content representation based upon attributes of the negotiable variants and the value of the various Accept* header fields in the request.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libhttp-negotiate-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/HTTP-Negotiate/" target="_blank">http://search.cpan.org/dist/HTTP-Negotiate/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libhttp-negotiate-perl.list">/var/lib/dpkg/info/libhttp-negotiate-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libhttp-negotiate-perl" target="_blank">/usr/share/doc/libhttp-negotiate-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libio-socket-ssl-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libio-socket-ssl-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">180</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libio-socket-ssl-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.43-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libnet-ssleay-perl, netbase</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">libnet-libidn-perl | liburi-perl (>= 1.50)</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libio-socket-inet6-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">47208</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module implementing object oriented interface to SSL sockets</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module is a true drop-in replacement for IO::Socket::INET that uses SSL to encrypt data before it is transferred to a remote server or client.  IO::Socket::SSL supports all the extra features that one needs to write a full-featured SSL client or server application: multiple SSL contexts, cipher selection, certificate verification, and SSL version selection.  As an extra bonus, it works perfectly with mod_perl.</p>
+<p>IO::Socket::SSL uses IPv6 if libio-socket-inet6-perl is installed.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libio-socket-ssl-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/IO-Socket-SSL/" target="_blank">http://search.cpan.org/dist/IO-Socket-SSL/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libio-socket-ssl-perl.list">/var/lib/dpkg/info/libio-socket-ssl-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libio-socket-ssl-perl" target="_blank">/usr/share/doc/libio-socket-ssl-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="liblocale-gettext-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">liblocale-gettext-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">required</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">108</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=liblocale-gettext-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.05-6build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.2)</td></tr>
+<tr><td style="padding: 10px;">Pre-Depends</td><td style="padding: 10px;">perl-base (>= 5.12.3-6ubuntu3), perlapi-5.12.3</td></tr>
+<tr><td style="padding: 10px;">Filename</td><td style="padding: 10px;">pool/main/libl/liblocale-gettext-perl/liblocale-gettext-perl_1.05-6build1_i386.deb</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">21526</td></tr>
+<tr><td style="padding: 10px;">MD5sum</td><td style="padding: 10px;">f6cd61efd5e1be3187879c1ffbf58b89</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Using libc functions for internationalization in Perl</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The gettext module permits access from perl to the gettext() family of functions for retrieving message strings from databases constructed to internationalize software.</p>
+<p>It provides gettext(), dgettext(), dcgettext(), textdomain(), bindtextdomain(), bind_textdomain_codeset(), ngettext(), dcngettext() and dngettext().</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=liblocale-gettext-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/gettext/gettext.pm" target="_blank">http://search.cpan.org/dist/gettext/gettext.pm</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/liblocale-gettext-perl.list">/var/lib/dpkg/info/liblocale-gettext-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/liblocale-gettext-perl" target="_blank">/usr/share/doc/liblocale-gettext-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:57</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="liblwp-mediatypes-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">liblwp-mediatypes-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">92</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=liblwp-mediatypes-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.01-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">17538</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module to guess media type for a file or a URL</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>LWP::MediaTypes provides functions for handling media (also known as MIME) types and encodings. The mapping from file extensions to media types is defined by the media.types file. If the ~/.media.types file exists it is used instead. For backwards compatibility it will also look for ~/.mime.types.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=liblwp-mediatypes-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/LWP-MediaTypes/" target="_blank">http://search.cpan.org/dist/LWP-MediaTypes/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/liblwp-mediatypes-perl.list">/var/lib/dpkg/info/liblwp-mediatypes-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/liblwp-mediatypes-perl" target="_blank">/usr/share/doc/liblwp-mediatypes-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="liblwp-protocol-https-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">liblwp-protocol-https-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">64</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=liblwp-protocol-https-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.02-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.02)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libwww-perl (>= 6.02), libnet-http-perl, libio-socket-ssl-perl, ca-certificates</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libcrypt-ssleay-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.02)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">6746</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">https driver for LWP::UserAgent</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The LWP::Protocol::https module provide support for using https schemed URLs with LWP. LWP::Protocol::https is a plug-in to the LWP protocol handling, so  you don't use it directly. Once the module is installed LWP is able to access sites using HTTP over SSL/TLS.</p>
+<p>If hostname verification is requested by LWP::UserAgent's ssl_opts, and neither SSL_ca_file nor SSL_ca_path is set, then SSL_ca_file is implied to be the one provided by ca-certificates.</p>
+<p>This module used to be bundled with the libwww-perl, but it was unbundled in v6.02 in order to be able to declare its dependencies properly for the CPAN tool-chain. Applications that need https support can just declare their  dependency on LWP::Protocol::https and will no longer need to know what  underlying modules to install.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=liblwp-protocol-https-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/LWP-Protocol-https/" target="_blank">http://search.cpan.org/dist/LWP-Protocol-https/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/liblwp-protocol-https-perl.list">/var/lib/dpkg/info/liblwp-protocol-https-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/liblwp-protocol-https-perl" target="_blank">/usr/share/doc/liblwp-protocol-https-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libmail-sendmail-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libmail-sendmail-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">100</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libmail-sendmail-perl">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.79.16-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16), libsys-hostname-long-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">26546</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Send email from a perl script</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Simple platform independent e-mail from your perl script. Only requires Perl 5, Sys::Hostname::Long, and a network connection.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libmail-sendmail-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Mail-Sendmail/" target="_blank">http://search.cpan.org/dist/Mail-Sendmail/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libmail-sendmail-perl.list">/var/lib/dpkg/info/libmail-sendmail-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libmail-sendmail-perl" target="_blank">/usr/share/doc/libmail-sendmail-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libmailtools-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libmailtools-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">320</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libmailtools-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.08-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">mailtools (<= 1.15-1)</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">libmail-perl, mailtools</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libnet-perl, libtimedate-perl</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">mailtools (<= 1.15-1)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">83974</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Manipulate email in perl programs</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This is a set of perl modules which provide an easy interface to manipulating email in an object-oriented fashion.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:anibal@debian.org?Subject=libmailtools-perl">Anibal Monsalve Salazar  - anibal@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/MailTools/" target="_blank">http://search.cpan.org/dist/MailTools/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libmailtools-perl.list">/var/lib/dpkg/info/libmailtools-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libmailtools-perl" target="_blank">/usr/share/doc/libmailtools-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libnet-daemon-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libnet-daemon-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">extra</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">148</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libnet-daemon-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.48-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">43056</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module for building portable Perl daemons easily</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Net::Daemon is an abstract base class for implementing portable server applications in a very simple way. The module is designed for Perl 5.005 and threads, but can work with fork() and Perl 5.004.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:anibal@debian.org?Subject=libnet-daemon-perl">Anibal Monsalve Salazar  - anibal@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Net-Daemon/" target="_blank">http://search.cpan.org/dist/Net-Daemon/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libnet-daemon-perl.list">/var/lib/dpkg/info/libnet-daemon-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libnet-daemon-perl" target="_blank">/usr/share/doc/libnet-daemon-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 10:20</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libnet-http-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libnet-http-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">100</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libnet-http-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.01-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">libio-socket-ssl-perl (>= 1.38)</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">20486</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module providing low-level HTTP connection client</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The Net::HTTP class is a low-level HTTP client.  An instance of the Net::HTTP class represents a connection to an HTTP server.  The HTTP protocol is described in RFC 2616.  The Net::HTTP class supports HTTP/1.0 and HTTP/1.1. Net::HTTP is a sub-class of IO::Socket::INET. You can mix its methods with reading and writing from the socket directly. This is not necessarily a good idea, unless you know what you are doing.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libnet-http-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Net-HTTP/" target="_blank">http://search.cpan.org/dist/Net-HTTP/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libnet-http-perl.list">/var/lib/dpkg/info/libnet-http-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libnet-http-perl" target="_blank">/usr/share/doc/libnet-http-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libnet-ssleay-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libnet-ssleay-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">1000</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libnet-ssleay-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.36-3</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libmime-base64-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">205778</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module for Secure Sockets Layer (SSL)</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Net::SSLeay.pm is a perl module that allows you to call Secure Sockets Layer (SSL) functions of the SSLeay library directly from your perl scripts. It is useful if you want to program robots that access secure web servers or if you want to build your own applications over SSL encrypted tunnels. If you just want to view web pages on https servers, you do not  need this - your web browser already knows to do that.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libnet-ssleay-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Net-SSLeay/" target="_blank">http://search.cpan.org/dist/Net-SSLeay/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libnet-ssleay-perl.list">/var/lib/dpkg/info/libnet-ssleay-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libnet-ssleay-perl" target="_blank">/usr/share/doc/libnet-ssleay-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libpango-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libpango-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">900</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libpango-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.221-2build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.4), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.16.0), libpango1.0-0 (>= 1.22.0), libglib-perl (>= 1.220), libcairo-perl (>= 1.000)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">246758</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module to layout and render international text</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>libpango-perl allows a perl developer to use the Pango library.</p>
+<p>This module is part of gtk2-perl.</p>
+<p>To discuss gtk2-perl, ask questions and flame/praise the authors, join gtk-perl-list@gnome.org at lists.gnome.org.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libpango-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://gtk2-perl.sourceforge.net/" target="_blank">http://gtk2-perl.sourceforge.net/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libpango-perl.list">/var/lib/dpkg/info/libpango-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libpango-perl" target="_blank">/usr/share/doc/libpango-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libplrpc-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libplrpc-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">152</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libplrpc-perl">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.2020-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16), libstorable-perl | perl-modules (>= 5.8.0-10), libnet-daemon-perl</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libcompress-zlib-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">35976</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl extensions for writing PlRPC servers and clients</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Perl RPC simplifies the writing of Perl based client/server applications.  RPC::PlServer is the package used on the server side, and you guess what RPC::PlClient is for.  plRPC works by defining a set of functions that may be executed by the client.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:anibal@debian.org?Subject=libplrpc-perl">Anibal Monsalve Salazar  - anibal@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/search?query=PlRPC&mode=module" target="_blank">http://search.cpan.org/search?query=PlRPC&mode=module</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libplrpc-perl.list">/var/lib/dpkg/info/libplrpc-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libplrpc-perl" target="_blank">/usr/share/doc/libplrpc-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 10:21</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libpod-plainer-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libpod-plainer-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">60</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libpod-plainer-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.03-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">5950</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl extension for converting Pod to old-style Pod.</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Pod::Plainer uses Pod::Parser which takes Pod with the (new) 'C<< .. >>' constructs and returns the old(er) style with just 'C<>'; '<' and '>' are replaced by 'E<lt>' and 'E<gt>'.</p>
+<p>This can be used to pre-process Pod before using tools which do not recognise the new style Pods.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libpod-plainer-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Pod-Plainer/" target="_blank">http://search.cpan.org/dist/Pod-Plainer/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libpod-plainer-perl.list">/var/lib/dpkg/info/libpod-plainer-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libpod-plainer-perl" target="_blank">/usr/share/doc/libpod-plainer-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libswitch-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libswitch-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">88</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libswitch-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.16-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, perl-modules</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">20618</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">A switch statement for Perl</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The Switch.pm module implements a generalized case mechanism that covers many possible combinations of switch and case values.</p>
+<p>This is an obsolete module provided for compatiblity since it is being removed from the core. For perl 5.10 and above the "given/when" builtins are much preferred.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libswitch-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Switch/" target="_blank">http://search.cpan.org/dist/Switch/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libswitch-perl.list">/var/lib/dpkg/info/libswitch-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libswitch-perl" target="_blank">/usr/share/doc/libswitch-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libsys-hostname-long-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libsys-hostname-long-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">84</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-motu@lists.ubuntu.com?Subject=libsys-hostname-long-perl">Ubuntu MOTU Developers  - ubuntu-motu@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.4-2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.6.0-16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">11388</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Figure out the long (fully-qualified) hostname</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module determines the host full name on multiple operating systems (MacOS, Windows, Unix-like systems; more later.)</p>
+<p>The Sys::Hostname class is the best and standard way to get the basic hostname, but that may not be fully qualified.  This module tries to determine the host's fully qualified name.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libsys-hostname-long-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/Sys-Hostname-Long/" target="_blank">http://search.cpan.org/dist/Sys-Hostname-Long/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libsys-hostname-long-perl.list">/var/lib/dpkg/info/libsys-hostname-long-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libsys-hostname-long-perl" target="_blank">/usr/share/doc/libsys-hostname-long-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libtext-charwidth-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libtext-charwidth-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">required</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">96</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libtext-charwidth-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.04-6build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.1.3), perl-base (>= 5.12.3-6ubuntu3), perlapi-5.12.3</td></tr>
+<tr><td style="padding: 10px;">Filename</td><td style="padding: 10px;">pool/main/libt/libtext-charwidth-perl/libtext-charwidth-perl_0.04-6build1_i386.deb</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">12008</td></tr>
+<tr><td style="padding: 10px;">MD5sum</td><td style="padding: 10px;">f26a9944f94557fdaee21921005a99ed</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">get display widths of characters on the terminal</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module permits perl software to get the display widths of characters and strings on the terminal, using wcwidth() and wcswidth() from libc.</p>
+<p>It provides mbwidth(), mbswidth(), and mblen().</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:anibal@debian.org?Subject=libtext-charwidth-perl">Anibal Monsalve Salazar  - anibal@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/search?module=Text::CharWidth" target="_blank">http://search.cpan.org/search?module=Text::CharWidth</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libtext-charwidth-perl.list">/var/lib/dpkg/info/libtext-charwidth-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libtext-charwidth-perl" target="_blank">/usr/share/doc/libtext-charwidth-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:57</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libtext-iconv-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libtext-iconv-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">required</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">104</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libtext-iconv-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.7-2build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.1.3), perl-base (>= 5.12.3-6ubuntu3), perlapi-5.12.3</td></tr>
+<tr><td style="padding: 10px;">Filename</td><td style="padding: 10px;">pool/main/libt/libtext-iconv-perl/libtext-iconv-perl_1.7-2build1_i386.deb</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">17418</td></tr>
+<tr><td style="padding: 10px;">MD5sum</td><td style="padding: 10px;">817490dee3aa39f59f6569bc45467af8</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">converts between character sets in Perl</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The iconv() family of functions from XPG4 define an API for converting between character sets (e.g. UTF-8 to Latin1, EBCDIC to ASCII). They are provided by libc6.</p>
+<p>This package allows access to them from Perl via the Text::Iconv package.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:anibal@debian.org?Subject=libtext-iconv-perl">Anibal Monsalve Salazar  - anibal@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/search?module=Text::Iconv" target="_blank">http://search.cpan.org/search?module=Text::Iconv</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libtext-iconv-perl.list">/var/lib/dpkg/info/libtext-iconv-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libtext-iconv-perl" target="_blank">/usr/share/doc/libtext-iconv-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:57</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libtext-wrapi18n-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libtext-wrapi18n-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">required</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">68</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libtext-wrapi18n-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.06-7</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libtext-charwidth-perl</td></tr>
+<tr><td style="padding: 10px;">Filename</td><td style="padding: 10px;">pool/main/libt/libtext-wrapi18n-perl/libtext-wrapi18n-perl_0.06-7_all.deb</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">9010</td></tr>
+<tr><td style="padding: 10px;">MD5sum</td><td style="padding: 10px;">f0a64e9a72da5e0199c725df9bc3673d</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">internationalized substitute of Text::Wrap</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This module is a substitution for Text::Wrap, supporting multibyte characters such as UTF-8, EUC-JP, and GB2312, fullwidth characters such as east Asian characters, combining characters such as diacritical marks and Thai, and languages which don't use whitespaces between words such as Chinese and Japanese.</p>
+<p>It provides wrap().</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:anibal@debian.org?Subject=libtext-wrapi18n-perl">Anibal Monsalve Salazar  - anibal@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/search?module=Text::WrapI18N" target="_blank">http://search.cpan.org/search?module=Text::WrapI18N</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libtext-wrapi18n-perl.list">/var/lib/dpkg/info/libtext-wrapi18n-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libtext-wrapi18n-perl" target="_blank">/usr/share/doc/libtext-wrapi18n-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:57</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libtimedate-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libtimedate-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">248</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libtimedate-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.2000-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">timedate</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">timedate</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">timedate</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">41616</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">collection of modules to manipulate date/time information</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>TimeDate is a collection of Perl modules useful for manipulating date and time information. Date::Parse can parse absolute date specifications in a wide variety of input formats and many languages (via Date::Language).</p>
+<p>This package also includes Date::Format, which can format dates into strings, as well as Time::Zone, which contains miscellaneous time zone functions.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libtimedate-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/TimeDate/" target="_blank">http://search.cpan.org/dist/TimeDate/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libtimedate-perl.list">/var/lib/dpkg/info/libtimedate-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libtimedate-perl" target="_blank">/usr/share/doc/libtimedate-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 21:50</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="liburi-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">liburi-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">384</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=liburi-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.58-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, libmime-base64-perl, libnet-perl</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libwww-perl</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">89764</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">module to manipulate and access URI strings</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>URI is a collection of Perl modules that represent and manipulate Uniform Resource Identifier (URI) references as specified in RFC 2396.</p>
+<p>URI objects can be used to access and manipulate the various components that make up these strings.  There are also methods to combine URIs in various ways.</p>
+<p>The URI class replaces the URI::URL class that used to be distributed with libwww-perl. This package also includes an emulation of the old URI::URL interface, which implements both the old and the new interface.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=liburi-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/URI/" target="_blank">http://search.cpan.org/dist/URI/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/liburi-perl.list">/var/lib/dpkg/info/liburi-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/liburi-perl" target="_blank">/usr/share/doc/liburi-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:23</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libuuid-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libuuid-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">80</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libuuid-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.02-4build1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl-base (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.4), libuuid1 (>= 2.16)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">10606</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl extension for using UUID interfaces as defined in e2fsprogs</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This is a Perl interface to libuuid from e2fsprogs.  It allows generation, parsing, and unparsing of UUIDs.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libuuid-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/UUID/" target="_blank">http://search.cpan.org/dist/UUID/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libuuid-perl.list">/var/lib/dpkg/info/libuuid-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libuuid-perl" target="_blank">/usr/share/doc/libuuid-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libwww-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libwww-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">464</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libwww-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.02-1ubuntu1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, ca-certificates, libencode-locale-perl, libfile-listing-perl, libhtml-parser-perl, libhtml-tagset-perl, libhtml-tree-perl, libhttp-cookies-perl, libhttp-date-perl, libhttp-message-perl, libhttp-negotiate-perl, liblwp-mediatypes-perl, liblwp-protocol-https-perl, libnet-http-perl, liburi-perl, libwww-robotrules-perl, netbase</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">libhtml-form-perl, libhtml-format-perl, libhttp-daemon-perl, libmailtools-perl</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libauthen-ntlm-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">fusioninventory-agent (<< 2.1.8-2), gsutil (<< 3.1-1), libfrontier-rpc-perl (<< 0.07b4-6), libhttp-daemon-ssl-perl (<< 1.04-3), libhttp-proxy-perl (<< 0.24-2), libhttp-request-ascgi-perl (<< 1.2-2), libhttp-request-params-perl (<< 1.01-6), libjson-rpc-perl (<< 0.96-3), libpoe-perl (<< 2:1.2990-2), librpc-xml-perl (<< 0.74-2), libsoap-lite-perl (<< 0.7.12-3), libwww-mechanize-formfiller-perl (<< 0.10-2), libwww-mechanize-perl (<< 1.66-2), satutils (<= 0.6), tidy-proxy (<< 0.97-4)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">155234</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">simple and consistent interface to the world-wide web</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>libwww-perl (also known as LWP) is a collection of Perl modules that provide a simple and consistent programming interface (API) to the World-Wide Web. The main focus of the library is to provide classes and functions that allow you to write WWW clients. It also contains general purpose modules, as well as a simple HTTP/1.1-compatible server implementation.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libwww-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/libwww-perl/" target="_blank">http://search.cpan.org/dist/libwww-perl/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libwww-perl.list">/var/lib/dpkg/info/libwww-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libwww-perl" target="_blank">/usr/share/doc/libwww-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libwww-robotrules-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libwww-robotrules-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">76</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libwww-robotrules-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">6.01-1</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl, liburi-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libwww-perl (<< 6.00)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">14074</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">database of robots.txt-derived permissions</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>WWW::RobotRules parses /robots.txt files as specified in "A Standard for Robot Exclusion", at <a href="http://www.robotstxt.org/wc/norobots.html" target="_blank">http://www.robotstxt.org/wc/norobots.html</a> Webmasters  can use the /robots.txt file to forbid conforming robots from accessing parts of their web site.</p>
+<p>The parsed files are kept in a WWW::RobotRules object, and this object provides methods to check if access to a given URL is prohibited. The same WWW::RobotRules object can be used for one or more parsed /robots.txt files on any number of hosts.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libwww-robotrules-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/dist/WWW-RobotRules/" target="_blank">http://search.cpan.org/dist/WWW-RobotRules/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libwww-robotrules-perl.list">/var/lib/dpkg/info/libwww-robotrules-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libwww-robotrules-perl" target="_blank">/usr/share/doc/libwww-robotrules-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libxml-parser-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libxml-parser-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">772</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libxml-parser-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.41-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, liburi-perl, libwww-perl, libc6 (>= 2.4), libexpat1 (>= 1.95.8)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">272102</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module for parsing XML files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>XML::Parser module provides ways to parse XML documents.  It is built on top of XML::Parser::Expat, which is a lower level interface to James Clark's expat library.  Each call to one of the parsing methods creates a new instance of XML::Parser::Expat which is then used to parse the document.  Expat options may be provided when the XML::Parser object is created.  These options are then passed on to the Expat object on each parse call.  They can also be given as extra arguments to the parse methods, in which case they override options given at XML::Parser creation time.</p>
+<p>The behavior of the parser is controlled either by Style and/or Handlers options, or by setHandlers method.  These all provide mechanisms for XML::Parser to set the handlers needed by XML::Parser::Expat.  If neither Style nor Handlers are specified, then parsing just checks the document for being well-formed.</p>
+<p>When underlying handlers get called, they receive as their first parameter the Expat object, not the Parser object.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-perl-maintainers@lists.alioth.debian.org?Subject=libxml-parser-perl">Debian Perl Group  - pkg-perl-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.libexpat.org/" target="_blank">http://www.libexpat.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libxml-parser-perl.list">/var/lib/dpkg/info/libxml-parser-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libxml-parser-perl" target="_blank">/usr/share/doc/libxml-parser-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-05-08 22:24</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libyaml-tiny-perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libyaml-tiny-perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">100</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libyaml-tiny-perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.50-1</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">27772</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl module for reading and writing YAML files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>YAML::Tiny is a pure Perl module that provides support for reading and writing a usable subset of the full YAML specification. It aims to minimize memory requirements and avoid XS while remaining relatively fast.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:lightsey@debian.org?Subject=libyaml-tiny-perl">John Lightsey  - lightsey@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://search.cpan.org/~adamk/YAML-Tiny/" target="_blank">http://search.cpan.org/~adamk/YAML-Tiny/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libyaml-tiny-perl.list">/var/lib/dpkg/info/libyaml-tiny-perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libyaml-tiny-perl" target="_blank">/usr/share/doc/libyaml-tiny-perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="perl">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">standard</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">12460</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=perl">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">5.12.4-4</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libarchive-tar-perl (<= 1.38-2), libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libmodule-corelist-perl (<< 2.14-2), libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl-base (<< 5.10.1-12), perl-doc (<< 5.8.0-1), perl-modules (<< 5.8.1-1)</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">data-dumper, libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl5</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl-base (= 5.12.4-4), perl-modules (>= 5.12.4-4), libbz2-1.0, libc6 (>= 2.11), libdb5.1, libgdbm3 (>= 1.8.3), zlib1g (>= 1:1.2.3.3.dfsg)</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">netbase</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">perl-doc, libterm-readline-gnu-perl | libterm-readline-perl-perl, make</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libcompress-raw-bzip2-perl (<< 2.024), libcompress-raw-zlib-perl (<< 2.024), libcompress-zlib-perl (<< 2.024), libdevel-dprof-perl (<< 20080331.00), libdigest-md5-perl (<< 2.39), libdigest-sha-perl (<< 5.47), libencode-perl (<< 2.39), libio-compress-base-perl (<< 2.024), libio-compress-bzip2-perl (<< 2.024), libio-compress-perl (<< 2.024), libio-compress-zlib-perl (<< 2.024), libmime-base64-perl (<< 3.08), libstorable-perl (<< 2.22), libsys-syslog-perl (<< 0.27), libthreads-perl (<< 1.75), libthreads-shared-perl (<< 1.32), libtime-hires-perl (<< 1.9719), libtime-piece-perl (<< 1.15.01), mrtg (<< 2.16.3-3.1), perl-doc (<< 5.12.4-1)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">3566112</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Larry Wall's Practical Extraction and Report Language</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>An interpreted scripting language, known among some as "Unix's Swiss Army Chainsaw".</p>
+<p>Perl is optimised for scanning arbitrary text files and system administration.  It has built-in extended regular expression matching and replacement, a data-flow mechanism to improve security with setuid scripts and is extensible via modules that can interface to C libraries.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:ntyni@debian.org?Subject=perl">Niko Tyni  - ntyni@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/perl.list">/var/lib/dpkg/info/perl.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/perl" target="_blank">/usr/share/doc/perl</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="perl-base">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">perl-base</td></tr>
+<tr><td style="padding: 10px;">Essential</td><td style="padding: 10px;">yes</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">required</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">7464</td></tr>
+<tr><td style="padding: 10px;">Origin</td><td style="padding: 10px;">Ubuntu</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=perl-base">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Bugs</td><td style="padding: 10px;"><a href="https://bugs.launchpad.net/ubuntu/+filebug" target="_blank">https://bugs.launchpad.net/ubuntu/+filebug</a> </td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">5.12.4-4</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libperl5.8 (<< 5.8.0-20), libscalar-list-utils-perl, libxsloader-perl, perl (<< 5.10.1-12), perl-modules (<< 5.10.1-1)</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">libscalar-list-utils-perl, libxsloader-perl, perl5-base, perlapi-5.12.3, perlapi-5.12.4</td></tr>
+<tr><td style="padding: 10px;">Pre-Depends</td><td style="padding: 10px;">libc6 (>= 2.11), dpkg (>= 1.14.20)</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">autoconf2.13 (<< 2.13-45), doc-base (<< 0.10.0), libfile-spec-perl (<< 3.3101), libmarc-charset-perl (<< 1.2), libscalar-list-utils-perl (<< 1:1.22), libxsloader-perl (<< 0.10)</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">safe-rm (<< 0.8)</td></tr>
+<tr><td style="padding: 10px;">Filename</td><td style="padding: 10px;">pool/main/p/perl/perl-base_5.12.4-4_i386.deb</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">1391748</td></tr>
+<tr><td style="padding: 10px;">MD5sum</td><td style="padding: 10px;">54f0ba03d08976a5197d54727972a856</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">minimal Perl system</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:ntyni@debian.org?Subject=perl-base">Niko Tyni  - ntyni@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">SHA1</td><td style="padding: 10px;">e9e00f711389a5824ab0ceb0504a6c7d95b01721</td></tr>
+<tr><td style="padding: 10px;">SHA256</td><td style="padding: 10px;">ed1fc217a7bff30f1eb35d6973df4f2100d3fb981a0189d16b9a6cebbace4fb7</td></tr>
+<tr><td style="padding: 10px;">Description-md5</td><td style="padding: 10px;">7c818331fe8bc53134bb22330b07f5ae</td></tr>
+<tr><td style="padding: 10px;">Supported</td><td style="padding: 10px;">18m</td></tr>
+<tr><td style="padding: 10px;">Task</td><td style="padding: 10px;">minimal</td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/perl-base.list">/var/lib/dpkg/info/perl-base.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/perl-base" target="_blank">/usr/share/doc/perl-base</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:57</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="perl-modules">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">perl-modules</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">standard</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">24832</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=perl-modules">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">5.12.4-4</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libclass-isa-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libi18n-langtags-perl, libio-zlib-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-plainer-perl, libpod-simple-perl, libshell-perl, libswitch-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, podlators-perl</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libi18n-langtags-perl, libio-zlib-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libshell-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, podlators-perl</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.4-1)</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">libswitch-perl, libpod-plainer-perl, libclass-isa-perl</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">libansicolor-perl (<< 2.02), libarchive-tar-perl (<< 1.54), libattribute-handlers-perl (<< 0.87), libautodie-perl (<< 2.06.01), libcgi-pm-perl (<< 3.49-1squeeze1), libclass-isa-perl (<< 0.36), libcpanplus-perl (<< 0.90), libdigest-perl (<< 1.16), libextutils-cbuilder-perl (<< 0.2700), libextutils-command-perl (<< 1.16), libextutils-install-perl (<< 1.55), libextutils-parsexs-perl (<< 2.210000), libfile-path-perl (<< 2.08.01), libfile-spec-perl (<< 3.3101), libfile-temp-perl (<< 0.22), libi18n-langtags-perl (<< 0.35-1), libio-zlib-perl (<< 1.10), liblocale-codes-perl (<< 2.07), liblocale-maketext-perl (<< 1.14), liblocale-maketext-simple-perl (<< 0.21), libmath-bigint-perl (<< 1.89.01), libmath-complex-perl (<< 1.56), libmodule-build-perl (<< 0.360300), libmodule-corelist-perl (<< 2.50), libmodule-load-conditional-perl (<< 0.38), libmodule-load-perl (<< 0.16), libmodule-pluggable-perl (<< 3.9), libnet-perl (<= 1:1.22), libnet-ping-perl (<< 2.36), libparams-check-perl (<< 0.26-1), libparent-perl (<< 0.223), libparse-cpan-meta-perl (<< 1.40), libpod-escapes-perl (<< 1.04), libpod-parser-perl (<< 1.37), libpod-plainer-perl (<< 1.02), libpod-simple-perl (<< 3.14), libshell-perl (<< 0.72.01), libswitch-perl (<< 2.16), libtest-harness-perl (<< 3.17), libtest-simple-perl (<< 0.94), libthread-queue-perl (<< 2.11), libtime-local-perl (<< 1.1901.01), libunicode-collate-perl (<< 0.52.01), libversion-perl (<< 1:0.8200), podlators-perl (<< 2.3.1)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">4741610</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Core Perl modules</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Architecture independent Perl modules.  These modules are part of Perl and required if the `perl' package is installed.</p>
+<p>Note that this package only exists to save archive space and should be considered an internal implementation detail of the `perl' package. Other packages should not depend on `perl-modules' directly, they should use `perl' (which depends on `perl-modules') instead.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:ntyni@debian.org?Subject=perl-modules">Niko Tyni  - ntyni@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/perl-modules.list">/var/lib/dpkg/info/perl-modules.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/perl-modules.conffiles">/var/lib/dpkg/info/perl-modules.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/perl-modules" target="_blank">/usr/share/doc/perl-modules</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="perlmagick">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">perlmagick</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">perl</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">584</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=perlmagick">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">imagemagick</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">8:6.6.0.4-3ubuntu1</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">libimage-magick-perl</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">perl (>= 5.12.3-6ubuntu4), perlapi-5.12.3, libc6 (>= 2.4), libmagickcore3 (>= 8:6.6.0.4), libperl5.12 (>= 5.12.3)</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">imagemagick-doc</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">160550</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Perl interface to the ImageMagick graphics routines</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PerlMagick is an objected-oriented Perl interface to ImageMagick. Use the module to read, manipulate, or write an image or image sequence from within a Perl script. This makes it very suitable for Web CGI scripts.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.imagemagick.org/" target="_blank">http://www.imagemagick.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-gmagick-im-team@lists.alioth.debian.org?Subject=perlmagick">ImageMagick Packaging Team  - pkg-gmagick-im-team@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/perlmagick.list">/var/lib/dpkg/info/perlmagick.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/perlmagick" target="_blank">/usr/share/doc/perlmagick</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-13 23:34</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+</body></html>

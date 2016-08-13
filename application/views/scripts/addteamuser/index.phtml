@@ -1,0 +1,17 @@
+<?php if ($this->error) : ?>
+	<?php echo $this->error ?>	
+<?php elseif ($this->message) : ?>
+	<?php echo $this->message ?>
+<?php elseif ($this->form) : ?>
+	<?php echo $this->form ?>
+<?php elseif ($this->paginator) : ?>
+	<?php foreach ($this->paginator as $entry): ?>
+	<div class="col w8"><div class="content">
+	<span class="strong"><?php echo $entry['usr_e_mail'] ?></span></div></div>
+	<div class="col w2 last"><div class="content">
+    <a href="/addteampkg/index/package/<?php echo $entry['usr_e_mail'] ?>" class="button yellow"><span>Select</span></a></div></div>
+    <?php endforeach ?>
+	<?php echo $this->paginationControl($this->paginator,
+                                    'Sliding',
+                                    'partials/paginator.phtml'); ?>
+<?php endif ?>

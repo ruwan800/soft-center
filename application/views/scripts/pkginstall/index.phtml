@@ -1,0 +1,11 @@
+<?php if ($this->status) : ?>
+Requested package will install shortly.</br></br>
+<a href="/" class="button green"><span>OK</span></a></div></div>
+<?php else :?>
+Sorry...! You cannot install this package now. But you can request to install this package.</br></br>
+<div class="col w2"><div class="content">
+<a href="/pkgrequest/index/package/<?php echo $this->result['package'] ?>" class="button red"><span>Request Package</span></a></div></div></div>
+<div class="col w8 last"><div class="content">
+<a href="/" class="button green"><span>Cancel</span></a></div></div>
+</div>
+<?php endif ?>

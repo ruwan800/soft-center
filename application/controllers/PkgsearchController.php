@@ -10,33 +10,42 @@ class PkgsearchController extends Zend_Controller_Action
 
     public function indexAction()
     {
+
+		Zend_Session::start();
+		$tempData = new Zend_Session_Namespace('tempData');
     	$request = $this->getRequest();
-    	if ( ! $request->isPost()){
-			$this->view->paginator = $paginator;
-    		
-#    		$this->view->error = "No package specified." ;
-    	}
-    	else{
+    	if ($request->isPost()){
     		$package = $request->getPost('package');
     		if( ! $package){
         		$this->view->error = "No package specified." ;
         	}
         	else{
-    			$search = new Application_Model_Pkgsearch($package);
-        		$result = $search->fetchAll();
-        		if( ! $result){
-        			$this->view->error = "No package found related with '{$package}'.";
-        		}
-        		else{
-					$paginator = Zend_Paginator::factory($result);
-					$paginator->setCurrentPageNumber(1);
-					echo "PPPPPP";##############################################
-					echo $this->_getParam('page') ;##############################
-					echo "QQQQQQ";##############################################
-					$this->view->paginator = $paginator;
-        		}
+    			$tempData->pkg = $package;
         	}
     	}
+    	else if ($tempData->pkg){
+    		$package = $tempData->pkg;
+    	}
+    	if ($package){
+			$search = new Application_Model_Pkgsearch($package);
+    		$result = $search->fetchAll();
+    		if( ! $result){
+    			$this->view->error = "No package found related with '{$package}'.";
+    		}
+    		else{
+    			Zend_View_Helper_PaginationControl::setDefaultViewPartial('controls.phtml');
+				$paginator = Zend_Paginator::factory($result);
+				$paginator->setCurrentPageNumber($this->_getParam('page', 1));
+				$paginator->setItemCountPerPage(20);
+
+				if( ! $paginator){
+    				$this->view->error = "No PPPPP." ;
+    			}
+    			else{
+					$this->view->paginator = $paginator;
+    			}
+    		}
+		}
     }
 
 }

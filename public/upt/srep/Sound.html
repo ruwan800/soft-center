@@ -1,0 +1,634 @@
+<html>
+<head>
+<meta content="text/html;charset=ISO-8859-1" http-equiv="Content-Type">
+<title>Linux dpkg Software Report</title>
+<style>
+body {
+        background-image: url(DK18GRN.JPG);
+	background-color: blue;
+	font-family: "Times New Roman", Times, serif;
+        width: 98%;
+}
+a:link {color: #0000FF}
+a:visited {color: #FF0000}
+a:hover {color: #FF0000}
+a:active {color: #0000FF}
+
+</style>
+  <meta content="Team Deta" name="author">
+  <meta content="LinuxdpkgReport.sh" name="generator">
+  <link REL="SHORTCUT ICON" HREF="http://www.rayslinks.com/images/favicon.ico">
+  <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+</head><body>
+
+<center><font color="white"><h3>Sound Packages</h3></font></center>
+
+<a name="alsa-base">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">alsa-base</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">516</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel@lists.ubuntu.com?Subject=alsa-base">Ubuntu Core Developers  - ubuntu-devel@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">alsa-driver</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.0.24+dfsg-0ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">alsa</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">module-init-tools (>= 3.2.1), linux-sound-base, udev</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">alsa-utils</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">apmd (>= 3.0.2-1), alsa-oss, oss-compat</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">140082</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">ALSA driver configuration files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This package contains various configuration files for the ALSA drivers.</p>
+<p>For ALSA to work on a system with a given sound card, there must be an ALSA driver for that card in the kernel. Linux 2.6 as shipped in linux-image packages contains ALSA drivers for all supported sound cards in the form of loadable modules. A custom alsa-modules package can be built from the sources in the alsa-source package using the m-a utility (included in the module-assistant package). Please read the README.Debian file for more information about loading and building modules.</p>
+<p>ALSA is the Advanced Linux Sound Architecture.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.alsa-project.org/" target="_blank">http://www.alsa-project.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-alsa-devel@lists.alioth.debian.org?Subject=alsa-base">Debian ALSA Maintainers  - pkg-alsa-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/alsa-base.list">/var/lib/dpkg/info/alsa-base.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/alsa-base.conffiles">/var/lib/dpkg/info/alsa-base.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/alsa-base" target="_blank">/usr/share/doc/alsa-base</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="alsa-utils">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">alsa-utils</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">2032</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=alsa-utils">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.0.24.2-0ubuntu8</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">audio-mixer</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libasound2 (>> 1.0.24.1), libc6 (>= 2.8), libncursesw5 (>= 5.6+20080119), libtinfo5 (>= 5.6+20070908), upstart-job, whiptail | dialog, module-init-tools, lsb-base (>= 3.0-9), linux-sound-base (>= 1.0.15-1), udev</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">alsa-base (>= 1.0.15-1), pciutils</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">alsa-base (<< 1.0.9b-3), udev (<< 0.060)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">1102354</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Utilities for configuring and using ALSA</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Included tools:</p>
+<ul><li> amixer: command line mixer</li>
+<li> alsamixer: curses mixer</li>
+<li> amidi: read from and write to ALSA RawMIDI ports</li>
+<li> aplay, arecord: command line playback and recording</li>
+<li> aplaymidi, arecordmidi: command line MIDI playback and recording</li>
+<li> aconnect, aseqnet, aseqdump: command line MIDI sequencer control</li></ul>
+
+<p>ALSA is the Advanced Linux Sound Architecture.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.alsa-project.org/" target="_blank">http://www.alsa-project.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-alsa-devel@lists.alioth.debian.org?Subject=alsa-utils">Debian ALSA Maintainers  - pkg-alsa-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/alsa-utils.list">/var/lib/dpkg/info/alsa-utils.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/alsa-utils.conffiles">/var/lib/dpkg/info/alsa-utils.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/alsa-utils" target="_blank">/usr/share/doc/alsa-utils</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="banshee">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">banshee</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">7440</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=banshee">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.2.0-1ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">banshee-api-2.2, banshee-asm-2.2.0.0</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.7), libglib2.0-0 (>= 2.29.92), libgstreamer-plugins-base0.10-0 (>= 0.10.26), libgstreamer0.10-0 (>= 0.10.26), libgtk2.0-0 (>= 2.23.90), libsoup-gnome2.4-1 (>= 2.27.4), libsoup2.4-1 (>= 2.26.1), libwebkitgtk-1.0-0 (>= 1.3.10), libx11-6, libxrandr2, libxxf86vm1, mono-runtime (>= 2.10.1), libc6 (>= 2.13) | libc6.1 (>= 2.13) | libc0.1 (>= 2.13), libcairo2 (>= 1.10.2-2~), libdbus-glib1.0-cil (>= 0.5), libdbus1.0-cil (>= 0.7), libgconf2.0-cil (>= 2.24.0), libgdata1.7-cil (>= 1.7.0.1), libgdk-pixbuf2.0-0 (>= 2.24.0), libgkeyfile1.0-cil, libglib2.0-cil (>= 2.12.10-1ubuntu1), libgpod4 (>= 0.7.94), libgtk-sharp-beans-cil, libgtk2.0-cil (>= 2.12.10-1ubuntu1), libgudev1.0-cil (>= 0.1), libmono-addins0.2-cil (>= 0.6), libmono-cairo4.0-cil (>= 2.10.1), libmono-corlib4.0-cil (>= 2.10.1), libmono-posix4.0-cil (>= 2.10.1), libmono-sharpzip4.84-cil (>= 1.0), libmono-system-core4.0-cil (>= 2.10.3), libmono-system-xml4.0-cil (>= 1.0), libmono-system4.0-cil (>= 2.10.1), libmono-zeroconf1.0-cil (>= 0.9.0), libmtp9, libnotify0.4-cil (>= 0.4.0~r2998), libpango1.0-0 (>= 1.25.5), libsqlite3-0, libtaglib2.0-cil (>= 2.0.3.7+dfsg), libwnck22, gstreamer0.10-plugins-base, gstreamer0.10-plugins-good (>= 0.10.8-4), gstreamer0.10-alsa | gstreamer0.10-audiosink, gnome-icon-theme (>= 2.16)</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">brasero, avahi-daemon, banshee-extension-soundmenu (= 2.2.0-1ubuntu2), media-player-info</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">gstreamer0.10-plugins-bad, gstreamer0.10-plugins-ugly, gstreamer0.10-ffmpeg, banshee-extension-ubuntuonemusicstore (= 2.2.0-1ubuntu2), banshee-dbg (= 2.2.0-1ubuntu2)</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">banshee-extensions-common (<< 2.0.1-2~)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">2084998</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Media Management and Playback application</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Banshee is a media management and playback application for the GNOME desktop, allowing users to import audio from CDs, search their library, create playlists of selections of their library, sync music to/from iPods and other media devices, play and manage video files and burn selections to a CD.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.banshee.fm" target="_blank">http://www.banshee.fm</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-cli-apps-team@lists.alioth.debian.org?Subject=banshee">Debian CLI Applications Team  - pkg-cli-apps-team@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/banshee.list">/var/lib/dpkg/info/banshee.list</a></td></tr>
+
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-21 07:03</td></tr>
+<tr><td style="padding: 10px; background-color: rgb(153, 050, 050)">Status</td><td style="padding: 10px; background-color: rgb(153, 050, 050)">Not Installed</td></tr>
+</tbody></table>
+<br>
+<a name="espeak">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">espeak</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">280</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=espeak">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.45.04-1ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libespeak1 (>= 1.45.04)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">67142</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Multi-lingual software speech synthesizer</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>eSpeak is a software speech synthesizer for English, and some other languages.</p>
+<p>eSpeak produces good quality English speech. It uses a different synthesis method from other open source text to speech (TTS) engines, and sounds quite different. It's perhaps not as natural or "smooth", but some find the articulation clearer and easier to listen to for long periods.</p>
+<p>It can run as a command line program to speak text from a file or from stdin.</p>
+<ul><li>Includes different Voices, whose characteristics can be altered.</li>
+<li>Can produce speech output as a WAV file.</li>
+<li>Can translate text to phoneme codes, so it could be adapted as a front end for another speech synthesis engine.</li>
+<li>Potential for other languages. More than 40 languages are included.</li>
+<li>Compact size. The program and its data total about 350 kbytes.</li>
+<li>Written in C++.</li></ul>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://espeak.sourceforge.net/" target="_blank">http://espeak.sourceforge.net/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:debian-accessibility@lists.debian.org?Subject=espeak">Debian Accessibility Team  - debian-accessibility@lists.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/espeak.list">/var/lib/dpkg/info/espeak.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/espeak/docs/index.html" target="_blank">/usr/share/doc/espeak/docs/index.html</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="espeak-data">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">espeak-data</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">2032</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=espeak-data">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">espeak</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.45.04-1ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">espeak (= 1.45.04-1ubuntu2)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">713136</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Multi-lingual software speech synthesizer: speech data files</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>eSpeak is a software speech synthesizer for English, and some other languages.</p>
+<p>This package contains necessary synthesizer data files needed for the espeak program, and the shared library.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://espeak.sourceforge.net/" target="_blank">http://espeak.sourceforge.net/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:debian-accessibility@lists.debian.org?Subject=espeak-data">Debian Accessibility Team  - debian-accessibility@lists.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/espeak-data.list">/var/lib/dpkg/info/espeak-data.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/espeak-data" target="_blank">/usr/share/doc/espeak-data</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="exaile">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">exaile</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">5732</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=exaile">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.3.2.2-0ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">gstreamer0.10-plugins-good, librsvg2-common, python (>= 2.7.1-0ubuntu2), python-dbus, python-gobject (>= 2.18), python-gst0.10, python-gtk2 (>= 2.17), python-mutagen</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">hal, python-cddb, python-mmkeys, python-notify, python-sexy</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">exaile-plugin-contextinfo, exaile-plugin-ipod, exfalso, gstreamer0.10-ffmpeg, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-bad-multiverse, gstreamer0.10-plugins-ugly, gstreamer0.10-plugins-ugly-multiverse, ipython, notify-osd, streamripper</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">1150896</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">full featured music player written for GTK+</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Exaile is a music manager and player aiming for speed, simplicity and intuitive usage while offering rich features at the same time. Its features include tabbed playlists, ReplayGain, an equalizer, automatic fetching of album art and lyrics, Last.fm support, and advanced tag editing.</p>
+<p>Originally conceived to be similar in style and function to KDE's Amarok 1, Exaile uses the GTK+ widget toolkit. It is written in Python, utilizing the GStreamer media framework.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.exaile.org/" target="_blank">http://www.exaile.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/exaile.list">/var/lib/dpkg/info/exaile.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/exaile.conffiles">/var/lib/dpkg/info/exaile.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/exaile" target="_blank">/usr/share/doc/exaile</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 05:58</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="freepats">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">freepats</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">33224</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-motu@lists.ubuntu.com?Subject=freepats">Ubuntu MOTU Developers  - ubuntu-motu@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">20060219-1</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">28964714</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Free patch set for MIDI audio synthesis</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Freepats is a free patch set suitable for MIDI audio synthesis.  It is not complete, nor comprehensive yet, and most, if not all patches are in the old and limited GUS patch format.</p>
+<p>It is, however, the sole DFSG-compliant patch set in existence so far. New patches (including those in better formats, such as SF2 SoundFont banks) are welcome.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:hmh@debian.org?Subject=freepats">Henrique de Moraes Holschuh  - hmh@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/freepats.list">/var/lib/dpkg/info/freepats.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/freepats.conffiles">/var/lib/dpkg/info/freepats.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/freepats" target="_blank">/usr/share/doc/freepats</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-14 10:18</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="gstreamer0.10-gconf">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">gstreamer0.10-gconf</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">172</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-desktop@lists.ubuntu.com?Subject=gstreamer0.10-gconf">Ubuntu Desktop Team  - ubuntu-desktop@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">gst-plugins-good0.10</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.10.30-1ubuntu7</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">gstreamer0.10-plugins-good (<< 0.10.30-1)</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">gstreamer0.10-audiosink, gstreamer0.10-audiosource, gstreamer0.10-videosink, gstreamer0.10-videosource</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">gconf2 (>= 2.28.1-2), libc6 (>= 2.3.6-6~), libgconf2-4 (>= 2.31.1), libglib2.0-0 (>= 2.22), libgstreamer0.10-0 (>= 0.10.33)</td></tr>
+<tr><td style="padding: 10px;">Breaks</td><td style="padding: 10px;">gstreamer0.10-plugins-good (<< 0.10.30-1)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">63872</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">GStreamer plugin for getting the sink/source information from GConf</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>GStreamer is a streaming media framework, based on graphs of filters which operate on media data.  Applications using this library can do anything from real-time sound processing to playing videos, and just about anything else media-related.  Its plugin-based architecture means that new data types or processing capabilities can be added simply by installing new plug-ins.</p>
+<p>This package contains the GStreamer plugin for getting the information about which sources or sinks should be used for audio and video from GConf.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Gstreamer-Elements</td><td style="padding: 10px;">gconfaudiosink, gconfaudiosrc, gconfvideosink, gconfvideosrc</td></tr>
+<tr><td style="padding: 10px;">Gstreamer-Version</td><td style="padding: 10px;">0.10</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-gstreamer-maintainers@lists.alioth.debian.org?Subject=gstreamer0.10-gconf">Maintainers of GStreamer packages  - pkg-gstreamer-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/gstreamer0.10-gconf.list">/var/lib/dpkg/info/gstreamer0.10-gconf.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/gstreamer0.10-gconf" target="_blank">/usr/share/doc/gstreamer0.10-gconf</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="gstreamer0.10-pulseaudio">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">gstreamer0.10-pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">224</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-desktop@lists.ubuntu.com?Subject=gstreamer0.10-pulseaudio">Ubuntu Desktop Team  - ubuntu-desktop@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">gst-plugins-good0.10</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.10.30-1ubuntu7</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">gstreamer0.10-audiosink, gstreamer0.10-audiosource</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libglib2.0-0 (>= 2.24.0), libgstreamer-plugins-base0.10-0 (>= 0.10.33), libgstreamer0.10-0 (>= 0.10.33), libpulse0 (>= 1:0.99.1)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">89954</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">GStreamer plugin for PulseAudio</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>GStreamer is a streaming media framework, based on graphs of filters which operate on media data.  Applications using this library can do anything from real-time sound processing to playing videos, and just about anything else media-related.  Its plugin-based architecture means that new data types or processing capabilities can be added simply by installing new plug-ins.</p>
+<p>This package contains the GStreamer plugin for PulseAudio, a sound server for POSIX and WIN32 systems.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Gstreamer-Elements</td><td style="padding: 10px;">pulsemixer, pulsesink, pulsesrc</td></tr>
+<tr><td style="padding: 10px;">Gstreamer-Version</td><td style="padding: 10px;">0.10</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-gstreamer-maintainers@lists.alioth.debian.org?Subject=gstreamer0.10-pulseaudio">Maintainers of GStreamer packages  - pkg-gstreamer-maintainers@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/gstreamer0.10-pulseaudio.list">/var/lib/dpkg/info/gstreamer0.10-pulseaudio.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/gstreamer0.10-pulseaudio" target="_blank">/usr/share/doc/gstreamer0.10-pulseaudio</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="indicator-sound">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">indicator-sound</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">extra</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">376</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-desktop@lists.ubuntu.com?Subject=indicator-sound">Ubuntu Desktop Team  - ubuntu-desktop@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.7.8-0ubuntu1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.3.6-6~), libcairo2 (>= 1.2.4), libdbusmenu-glib4 (>= 0.4.2), libdbusmenu-gtk3-4 (>= 0.4.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libgee2 (>= 0.5.0), libglib2.0-0 (>= 2.26.0), libgtk-3-0 (>= 3.0.0), libido3-0.1-0 (>= 0.1.9), libindicator3-6, libnotify4 (>= 0.7.0), libpango1.0-0 (>= 1.22.0), libpulse-mainloop-glib0 (>= 1:0.99.1), libpulse0 (>= 1:0.99.1), libxml2 (>= 2.7.4), dconf-gsettings-backend | gsettings-backend, pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">101902</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">System sound indicator.</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>System sound indicator which provides easy control of the PulseAudio sound daemon.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="https://launchpad.net/indicator-sound" target="_blank">https://launchpad.net/indicator-sound</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:conor.curran@canonical.com?Subject=indicator-sound">Conor Curran  - conor.curran@canonical.com</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/indicator-sound.list">/var/lib/dpkg/info/indicator-sound.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/indicator-sound" target="_blank">/usr/share/doc/indicator-sound</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libpulse-mainloop-glib0">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libpulse-mainloop-glib0</td></tr>
+<tr><td style="padding: 10px;">Multi-Arch</td><td style="padding: 10px;">same</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">140</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libpulse-mainloop-glib0">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.16.0), libpulse0 (>= 1:1.0)</td></tr>
+<tr><td style="padding: 10px;">Pre-Depends</td><td style="padding: 10px;">multiarch-support</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">13176</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">PulseAudio client libraries (glib support)</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>Client libraries used by applications that access a PulseAudio sound server via PulseAudio's native interface.</p>
+<p>This package adds support for glib2 client applications.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=libpulse-mainloop-glib0">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libpulse-mainloop-glib0" target="_blank">/usr/share/doc/libpulse-mainloop-glib0</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;"> </td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="libvisual-0.4-plugins">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">libvisual-0.4-plugins</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">540</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=libvisual-0.4-plugins">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">libvisual-plugins</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.4.0.dfsg.1-2ubuntu6</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libvisual0.4-plugins</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libasound2 (>> 1.0.24.1), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libglu1-mesa | libglu1, libstdc++6 (>= 4.1.1), libvisual-0.4-0 (>= 0.4.0)</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">libvisual0.4-plugins</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">128906</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Audio visualization framework plugins</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Plugins for the libvisual audio visualization framework.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:brandon@imbrandon.com?Subject=libvisual-0.4-plugins">Brandon Holtsclaw  - brandon@imbrandon.com</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/libvisual-0.4-plugins.list">/var/lib/dpkg/info/libvisual-0.4-plugins.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/libvisual-0.4-plugins" target="_blank">/usr/share/doc/libvisual-0.4-plugins</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="linux-sound-base">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">linux-sound-base</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">124</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel@lists.ubuntu.com?Subject=linux-sound-base">Ubuntu Core Developers  - ubuntu-devel@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">alsa-driver</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1.0.24+dfsg-0ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">debconf (>= 0.5) | debconf-2.0, module-init-tools (>= 3.2.1)</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">alsa-base (>= 1.0.18-1)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">15508</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">base package for ALSA and OSS sound systems</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>This package allows the administrator to choose between the OSS and ALSA sound systems.</p>
+<p>ALSA is the Advanced Linux Sound Architecture. OSS is the free version of the Open Sound System.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.alsa-project.org/" target="_blank">http://www.alsa-project.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-alsa-devel@lists.alioth.debian.org?Subject=linux-sound-base">Debian ALSA Maintainers  - pkg-alsa-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/linux-sound-base.list">/var/lib/dpkg/info/linux-sound-base.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/linux-sound-base" target="_blank">/usr/share/doc/linux-sound-base</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="pulseaudio">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Multi-Arch</td><td style="padding: 10px;">foreign</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">3148</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=pulseaudio">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">libpulse-browse0 (<< 1:1.0-0ubuntu3), pulseaudio-module-hal, pulseaudio-module-rygel-media-server (<< 1:1.0-0ubuntu3), pulseaudio-module-udev (<< 1:1.0-0ubuntu3)</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">pulseaudio-module-hal, pulseaudio-module-rygel-media-server, pulseaudio-module-udev</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libasound2 (>> 1.0.24.1), libc6 (>= 2.9), libdbus-1-3 (>= 1.1.1), libltdl7 (>= 2.4), libpulse0 (>= 1:1.0), libsamplerate0, libsndfile1 (>= 1.0.20), libspeexdsp1 (>= 1.2~beta3.2-1), libtdb1 (>= 1.2.7+git20101214), libudev0 (>= 147), libx11-6, libx11-xcb1, adduser, lsb-base (>= 3), consolekit, libasound2-plugins, pulseaudio-utils</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">pulseaudio-module-x11, gstreamer0.10-pulseaudio, pulseaudio-esound-compat, rtkit</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">pavumeter, paman, paprefs, pulseaudio-module-raop</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">libltdl3 (<< 1.5.24-1), pulseaudio-module-rygel-media-server (<< 1:1.0-0ubuntu3), pulseaudio-module-udev (<< 1:1.0-0ubuntu3)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">882088</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">PulseAudio sound server</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>These are some of PulseAudio's features:</p>
+<ul><li>High quality software mixing of multiple audio streams with support for more than one sink/source. May be used to combine multiple sound cards into one (with sample rate adjustment).</li></ul>
+<ul><li>Wide range of supported client libraries. ESD, ALSA, oss, libao and GStreamer client applications are supported as-is. Native PulseAudio plug-ins are also available for xmms and mplayer.</li></ul>
+<ul><li>Good low latency behaviour and very accurate latency measurement for playback and recording. Ability to fully synchronize multiple playback streams.</li></ul>
+<ul><li>Network transparency, allowing an application to play back or record audio on a different machine than the one it is running on.</li></ul>
+<ul><li>Extensible plug-in architecture with plug-ins for jackd, multicast-rtp lirc and avahi, just to name a few.</li></ul>
+<p>This package contains the daemon and basic module set.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=pulseaudio">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio.list">/var/lib/dpkg/info/pulseaudio.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio.conffiles">/var/lib/dpkg/info/pulseaudio.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/pulseaudio" target="_blank">/usr/share/doc/pulseaudio</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="pulseaudio-esound-compat">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">pulseaudio-esound-compat</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">216</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=pulseaudio-esound-compat">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Replaces</td><td style="padding: 10px;">esound</td></tr>
+<tr><td style="padding: 10px;">Provides</td><td style="padding: 10px;">esound</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libpulse0 (>= 1:1.0), pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">esound, pulseaudio (<< 0.9.7)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">34132</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">PulseAudio ESD compatibility layer</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>This package contains the ESD compatibility components used by some older versions of complete desktop environments, e.g., GNOME, and many useful applications. It enables a PulseAudio sound server to fully replace ESD.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=pulseaudio-esound-compat">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio-esound-compat.list">/var/lib/dpkg/info/pulseaudio-esound-compat.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/pulseaudio-esound-compat" target="_blank">/usr/share/doc/pulseaudio-esound-compat</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="pulseaudio-module-bluetooth">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">pulseaudio-module-bluetooth</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">extra</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">332</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=pulseaudio-module-bluetooth">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libbluetooth3 (>= 4.91), libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libpulse0 (>= 1:1.0), pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">pulseaudio (<< 0.9.14-2)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">81220</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Bluetooth module for PulseAudio sound server</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>This module enables PulseAudio to work with bluetooth devices, like headset or audio gateway.</p>
+<p>The module is called module-bluetooth</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=pulseaudio-module-bluetooth">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio-module-bluetooth.list">/var/lib/dpkg/info/pulseaudio-module-bluetooth.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/pulseaudio-module-bluetooth" target="_blank">/usr/share/doc/pulseaudio-module-bluetooth</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="pulseaudio-module-gconf">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">pulseaudio-module-gconf</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">140</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=pulseaudio-module-gconf">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libgconf2-4 (>= 2.31.1), libglib2.0-0 (>= 2.16.0), libpulse0 (>= 1:1.0), pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">13842</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">GConf module for PulseAudio sound server</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>This module enables PulseAudio to store additional configuration in GConf.</p>
+<p>The module is called module-gconf.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=pulseaudio-module-gconf">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio-module-gconf.list">/var/lib/dpkg/info/pulseaudio-module-gconf.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/pulseaudio-module-gconf" target="_blank">/usr/share/doc/pulseaudio-module-gconf</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="pulseaudio-module-x11">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">pulseaudio-module-x11</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">172</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=pulseaudio-module-x11">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libice6 (>= 1:1.0.0), libpulse0 (>= 1:1.0), libsm6, libx11-6, libxcb1, libxtst6, pulseaudio, pulseaudio-utils</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">18330</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">X11 module for PulseAudio sound server</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>This module enables PulseAudio to publish itself as the default sound server to the X11 root window automatically upon startup. There is also a module to playback a sound file in place of the X11 bell beep.</p>
+<p>The modules are called module-x11-publish and module-x11-bell.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=pulseaudio-module-x11">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio-module-x11.list">/var/lib/dpkg/info/pulseaudio-module-x11.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/pulseaudio-module-x11" target="_blank">/usr/share/doc/pulseaudio-module-x11</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="pulseaudio-utils">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">pulseaudio-utils</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">336</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=pulseaudio-utils">Ubuntu Core Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Source</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">1:1.0-0ubuntu3</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libc6 (>= 2.4), libice6 (>= 1:1.0.0), libpulse0 (>= 1:1.0), libsm6, libsndfile1 (>= 1.0.20), libx11-6, libx11-xcb1, libxcb1, libxtst6</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">avahi-daemon</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">82016</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Command line tools for the PulseAudio sound server</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>PulseAudio, previously known as Polypaudio, is a sound server for POSIX and WIN32 systems. It is a drop in replacement for the ESD sound server with much better latency, mixing/re-sampling quality and overall architecture.</p>
+<p>These tools provide command line access to various features of the PulseAudio sound server. Included tools are:</p><pre>
+play - Playback a WAV file via a PulseAudio sink.
+cat - Cat raw audio data to a PulseAudio sink.
+rec - Cat raw audio data from a PulseAudio source.
+cmd - Connect to PulseAudio's built-in command line control interface.
+ctl - Send a control command to a PulseAudio server.
+dsp - /dev/dsp wrapper to transparently support OSS applications.
+x11publish - Store/retrieve PulseAudio default server/sink/source
+                  settings in the X11 root window.
+
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.pulseaudio.org" target="_blank">http://www.pulseaudio.org</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:pkg-pulseaudio-devel@lists.alioth.debian.org?Subject=pulseaudio-utils">Pulseaudio maintenance team  - pkg-pulseaudio-devel@lists.alioth.debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/pulseaudio-utils.list">/var/lib/dpkg/info/pulseaudio-utils.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/pulseaudio-utils" target="_blank">/usr/share/doc/pulseaudio-utils</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="sound-juicer">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">sound-juicer</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">4988</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=sound-juicer">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">2.32.1+20110330-1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">libatk1.0-0 (>= 1.12.4), libbrasero-media3-1 (>= 2.91.91), libc6 (>= 2.7), libcanberra-gtk3-0 (>= 0.25), libdbus-glib-1-2 (>= 0.78), libgcc1 (>= 1:4.1.1), libgconf2-4 (>= 2.31.1), libglib2.0-0 (>= 2.18.0), libgnome-media-profiles-3.0-0 (>= 2.91.2), libgstreamer0.10-0 (>= 0.10.15), libgtk-3-0 (>= 3.0.0), libmusicbrainz3-6 (>= 3.0.2), libpango1.0-0 (>= 1.14.0), gconf2 (>= 2.28.1-2), gstreamer0.10-plugins-base (>= 0.10.20), gstreamer0.10-plugins-good</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">eject</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">gstreamer0.10-plugins-ugly, gstreamer0.10-lame, gstreamer0.10-plugins-really-bad, brasero</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">1691040</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">GNOME CD Ripper</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>A CD ripper for GNOME which aims to have a simple, clean, easy to use interface.</p>
+<p>The package includes support by default for Vorbis and FLAC formats. For other supports you need the following packages:</p>
+<ul><li> gstreamer0.10-plugins-ugly to encode to MP2,</li>
+<li> gstreamer0.10-lame (not available in the Debian archive) to encode to MP3,</li></ol>
+<li> gstreamer0.10-plugins-really-bad (not available in Debian) to encode to AAC.</li></ul>
+</td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:ross@debian.org?Subject=sound-juicer">Ross Burton  - ross@debian.org</a></td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.burtonini.com/blog/computers/sound-juicer" target="_blank">http://www.burtonini.com/blog/computers/sound-juicer</a> </td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/sound-juicer.list">/var/lib/dpkg/info/sound-juicer.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/sound-juicer" target="_blank">/usr/share/doc/sound-juicer</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2012-02-13 23:34</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="sound-theme-freedesktop">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">sound-theme-freedesktop</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">extra</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">624</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-devel-discuss@lists.ubuntu.com?Subject=sound-theme-freedesktop">Ubuntu Developers  - ubuntu-devel-discuss@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">all</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.7-0ubuntu2</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">libcanberra-gtk0 | kde-runtime</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">411646</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">freedesktop.org sound theme</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>The default freedesktop.org sound theme following the XDG theming specification. It contains a full set of sounds for different desktop events.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://www.freedesktop.org/" target="_blank">http://www.freedesktop.org/</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:a.starr.b@gmail.com?Subject=sound-theme-freedesktop">Andrew Starr-Bochicchio  - a.starr.b@gmail.com</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/sound-theme-freedesktop.list">/var/lib/dpkg/info/sound-theme-freedesktop.list</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/sound-theme-freedesktop" target="_blank">/usr/share/doc/sound-theme-freedesktop</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 19:59</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+<a name="speech-dispatcher">
+<table style="padding: 10px; width: 100%; background-color: rgb(153, 255, 255);" border="2"><tbody>
+
+<tr><td style="padding: 10px;">Package</td><td style="padding: 10px;">speech-dispatcher</td></tr>
+<tr><td style="padding: 10px;">Priority</td><td style="padding: 10px;">optional</td></tr>
+<tr><td style="padding: 10px;">Section</td><td style="padding: 10px;">sound</td></tr>
+<tr><td style="padding: 10px;">Installed-Size</td><td style="padding: 10px;">1344</td></tr>
+<tr><td style="padding: 10px;">Maintainer</td><td style="padding: 10px;"><a href="mailto:ubuntu-accessibility@lists.ubuntu.com?Subject=speech-dispatcher">Ubuntu Accessibility Developers  - ubuntu-accessibility@lists.ubuntu.com</a></td></tr>
+<tr><td style="padding: 10px;">Architecture</td><td style="padding: 10px;">i386</td></tr>
+<tr><td style="padding: 10px;">Version</td><td style="padding: 10px;">0.7.1-6ubuntu1</td></tr>
+<tr><td style="padding: 10px;">Depends</td><td style="padding: 10px;">adduser, lsb-base (>= 3.0-10), dpkg (>= 1.15.4) | install-info, libasound2 (>> 1.0.24.1), libc6 (>= 2.4), libdotconf1.0, libespeak1 (>= 1.30), libglib2.0-0 (>= 2.24.0), libpulse0, libspeechd2 (>= 0.7.1)</td></tr>
+<tr><td style="padding: 10px;">Recommends</td><td style="padding: 10px;">pulseaudio</td></tr>
+<tr><td style="padding: 10px;">Suggests</td><td style="padding: 10px;">speech-dispatcher-festival (= 0.7.1-6ubuntu1), speech-dispatcher-doc-cs (= 0.7.1-6ubuntu1), libttspico-utils, speech-dispatcher-flite (= 0.7.1-6ubuntu1)</td></tr>
+<tr><td style="padding: 10px;">Conflicts</td><td style="padding: 10px;">libspeechd1 (<< 0.5)</td></tr>
+<tr><td style="padding: 10px;">Size</td><td style="padding: 10px;">444868</td></tr>
+<tr><td style="padding: 10px;">Description</td><td style="padding: 10px;">Common interface to speech synthesizers</td></tr><tr><td style="padding: 10px;" colspan="2">
+<p>Speech Dispatcher provides a device independent layer for speech synthesis. It supports various software and hardware speech synthesizers as backends and provides a generic layer for synthesizing speech and playing back PCM data via those different backends to applications.</p>
+<p>Various high level concepts like enqueueing vs. interrupting speech and application specific user configurations are implemented in a device independent way, therefore freeing the application programmer from having to yet again reinvent the wheel.</p>
+<p>This package contains Speech Dispatcher itself.</p>
+</td></tr>
+<tr><td style="padding: 10px;">Homepage</td><td style="padding: 10px;"><a href="http://devel.freebsoft.org/speechd" target="_blank">http://devel.freebsoft.org/speechd</a> </td></tr>
+<tr><td style="padding: 10px;">Original-Maintainer</td><td style="padding: 10px;"><a href="mailto:dusek@brailcom.org?Subject=speech-dispatcher">Boris Dušek  - dusek@brailcom.org</a></td></tr>
+<tr><td style="padding: 10px;">Installed Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/speech-dispatcher.list">/var/lib/dpkg/info/speech-dispatcher.list</a></td></tr><tr><td style="padding: 10px;">Configuration Files</td><td style="padding: 10px;"><a href="/var/lib/dpkg/info/speech-dispatcher.conffiles">/var/lib/dpkg/info/speech-dispatcher.conffiles</a></td></tr>
+<tr><td style="padding: 10px;">Document</td><td style="padding: 10px;"><a href="/usr/share/doc/speech-dispatcher" target="_blank">/usr/share/doc/speech-dispatcher</a></td></tr>
+<tr><td style="padding: 10px;">Installed</td><td style="padding: 10px;">2011-10-12 20:00</td></tr>
+<tr><td style="padding: 10px;">Status</td><td style="padding: 10px;">Installed</td></tr>
+</tbody></table>
+<br>
+</body></html>
