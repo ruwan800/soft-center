@@ -1,4 +1,9 @@
-<br /><br />
-<div id="view-content">
-	<p>View script for controller <b>Team</b> and script/action name <b>index</b></p>
-</div>
+<br/>
+<?php foreach ($this->result as $entry): ?>
+<div class="col w8"><div class="content">
+<span class="strong"><h1><?php echo $entry['name'] ?></h1></span>
+<span class="italic"><h4><?php echo $entry['info'] ?></h4></span></div></div>
+<div class="col w2 last"><div class="content">
+<a href="<?php echo $this->url(array('controller' => 'team', 'action' => 'team', 'team' =>$entry['name']),Null,True);?>
+		" class="button yellow"><span>Select</span></a></div></div>
+<?php endforeach ?>

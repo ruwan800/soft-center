@@ -5,34 +5,23 @@ class SearchController extends Zend_Controller_Action
 
     public function init()
     {
-        $this->form  = new Application_Form_Search();
-        $this->model = new Application_Model_Search();
-		$this->temp	 = new Zend_Session_Namespace('temp');
-		echo "EEEEEEEEEEEEE".$this->temp->count."WWWWWWWWWW";########################
+        $this->form  	= new Application_Form_Search();
+        $this->model 	= new Application_Model_Search();
+		$this->nssearch	= new Zend_Session_Namespace('search');
     }
 
     public function indexAction()
     {
-
-    	$this->temp->action     = $this->_getParam('to', Null);
-    	$this->temp->controller = $this->_getParam('for', Null);
-		if(! isset($this->temp->count)){
-		    	$this->temp->count = 1;
-		}
-		else{	
-		    	$this->temp->count ++;
-		}
-		echo "AAAAQQ";
-#		$this->isAllowed();
-#		$this->viewForm();
+		$this->isAllowed();
+		$this->viewForm();
     }
 
 	public function searchAction()
 	{
 		$this->isAllowed();
     	if ($this->form->isValid($_POST)){
-    		$this->temp->text = $this->form->getValue('text',Null);
-			$this->result  = $this->getResult($this->temp->text,1);
+    		$this->nssearch->text = $this->form->getValue('text',Null);
+			$this->result  = $this->getResult(1);
     		$this->render('result');
     	}
     	else{
@@ -44,7 +33,13 @@ class SearchController extends Zend_Controller_Action
 	{
 		$this->isAllowed();
 		$page = $this->_getParam('page', 1);
-		$this->result  = $this->getResult($this->temp->text,$page);
+		$this->result  = $this->getResult($page);
+	}
+
+	public function returnAction()
+	{
+		$this->nssearch->value = $this->_getParam('value', Null);
+		$this->_forward($this->nssearch->action, $this->nssearch->controller);
 	}
 
 	public function viewForm()
@@ -52,32 +47,30 @@ class SearchController extends Zend_Controller_Action
 		$this->form->setAction("/search/search");
         $this->view->form   = $this->form;
         $this->render('form');
-		
 	}
 
-	public function getResult($text,$page){
-
-		$result = $this->model->search($this->temp->action,$text);
+	public function getResult($page)
+	{
+		$result = $this->model->search();
 		if( $result){
 			Zend_View_Helper_PaginationControl::setDefaultViewPartial('controls.phtml');
 			$paginator = Zend_Paginator::factory($result);
 			$paginator->setCurrentPageNumber($page);
 			$paginator->setItemCountPerPage(20);
 			$this->view->paginator = $paginator;
-			$this->view->controller = $this->temp->controller;
-			$this->view->action = $this->temp->action;
 		}
 		else{
-			throw new App_Exception("No result found related with '{$text}'.");
+			throw new App_Exception("No result found related with '{$this->nssearch->text}'.");
 		}
 	}
 
-	public function isAllowed(){
-		echo "EEEEEEEEEEEEE".$this->temp->count."WWWWWWWWWW";########################
-		$user = new Application_Model_User();
-		$acl = new App_Acl();
-		if(!$acl->acl->isAllowed($user->getUserType(),$this->temp->controller,$this->temp->action)){
-			#throw new App_Exception("You are not allowed to perform this action.");
+	public function isAllowed()
+	{
+		$user	= new Application_Model_User();
+		$acl	= new App_Acl();
+		if(!$acl->acl->isAllowed($user->getUserType(), $this->nssearch->controller, $this->nssearch->action)){
+			#throw new App_Exception("Please select your task again.");
+			throw new App_Exception(":ER:".$user->getUserType().":ER:".$this->nssearch->controller.":ER:".$this->nssearch->action.":ER:");
 		}
 	}
 

@@ -17,7 +17,9 @@ class App_Acl
 
 		
 		#setting-up resources
-		$this->acl->add(new Zend_Acl_Resource('temp'));
+		$this->acl->add(new Zend_Acl_Resource('mpackage'));
+		$this->acl->add(new Zend_Acl_Resource('mteam'));
+		$this->acl->add(new Zend_Acl_Resource('muser'));
 		$this->acl->add(new Zend_Acl_Resource('index'));
 		$this->acl->add(new Zend_Acl_Resource('error'));
 		$this->acl->add(new Zend_Acl_Resource('cat'));
@@ -66,7 +68,7 @@ class App_Acl
 
 		$this->acl->allow(	array('defaultTO','adminTO'),
 							array('team','teamtasks','addteampkg','addteamuser','delteamuser','delteampkg',
-								  'acceptrequest','temp'));
+								  'acceptrequest','mpackage','mteam','muser'));
 
 
 

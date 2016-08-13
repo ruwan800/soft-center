@@ -7,7 +7,6 @@ class Application_Form_Createteam extends Zend_Form
     {
         
 		$this->setName("Crateteam")
-			 ->setAction('/createteam/form')
 			 ->setMethod('post');
 
 		$teamname = new Zend_Form_Element_Text('teamname');

@@ -10,26 +10,40 @@ class Application_Model_Team
 		$this->team   = $team;
 		$this->db     = Zend_Db_Table::getDefaultAdapter();
 		$this->userns = new Zend_Session_Namespace('members');
+      	$this->nsteam = new Zend_Session_Namespace('team');
 
 	}
 
 
-	public function createTeam($data){
-
-			$this->db->insert('teams', $data);
-
-	}
-	
-	public function myTeams(){
-
+	public function myTeams()
+	{
 		$select =  $this->db->select()
-					 	->from('teams',array('team_name','team_description'))
+					 	->from('teams',array('name' => 'team_name','info' => 'team_description'))
 					 	->where('team_owner = ?', $this->userns->userName)
 					 	->limit(100);
 		$stmt 	= $select->query();
 		$result = $stmt->fetchAll();
 		return $result;
+	}
 
+	public function addUser()
+	{
+		
+	}
+
+	public function delUser()
+	{
+		
+	}
+
+	public function addPackage()
+	{
+		
+	}
+
+	public function delPackage()
+	{
+		
 	}
 
 }
