@@ -1,0 +1,41 @@
+<response>
+<package>
+<name>adzapper</name>
+<description>proxy advertisement zapper add-on</description>
+<soft_id>211</soft_id>
+</package>
+<package><name>apt-zip</name>
+<description>Update a non-networked computer using apt and removable media</description>
+<soft_id>606</soft_id>
+</package>
+<package>
+<name>libaspectwerkz2-java</name>
+<description>AOP framework for Java</description>
+<soft_id>748</soft_id>
+</package>
+<package>
+<name>aspell-uz</name>
+<description>The Uzbek dictionary for GNU Aspell</description>
+<soft_id>785</soft_id>
+</package>
+<package>
+<name>azureus</name>
+<description>BitTorrent client</description>
+<soft_id>1109</soft_id>
+</package>
+<package>
+<name>vuze</name>
+<description>Multimedia BitTorrent client</description>
+<soft_id>1110</soft_id>
+</package>
+<package>
+<name>balazar</name>
+<description>adventure/action game Balazar -- Arkanae II, reforged scepters</description>
+<soft_id>1154</soft_id>
+</package>
+<package>
+<name>balazar3-2d</name>
+<description>dungeon adventure game with multiplayer support - 2D version</description>
+<soft_id>1155</soft_id>
+</package>
+</response>

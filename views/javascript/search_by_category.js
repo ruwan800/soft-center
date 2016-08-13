@@ -29,21 +29,21 @@ xmlhttp.send();
 function viewResult(count){
     var html = "";
     if(pkgNameArray.length<=10+10*count){
-        document.getElementById("updown3").innerHTML="";
+        //document.getElementById("updown3").innerHTML="";
         for (var i=count*10; i<pkgNameArray.length; i++)
             html +=modResult(i);
     }
     else{
-        document.getElementById("updown3").innerHTML="<button type=\"button\" onclick=\"showMore()\">More </br>Results</button>";
+        //document.getElementById("updown3").innerHTML="<button type=\"button\" onclick=\"showMore()\">More </br>Results</button>";
         for (var i=count*10; i<(10+10*count); i++)
             html +=modResult(i);
     }
-    if(0<count)
-        document.getElementById("updown1").innerHTML="<button type=\"button\" onclick=\"showPrevious()\">Previous</br>Results</button>";
-    else
-        document.getElementById("updown1").innerHTML="";
+    if(0<count){}
+        //document.getElementById("updown1").innerHTML="<button type=\"button\" onclick=\"showPrevious()\">Previous</br>Results</button>";
+    else{}
+        //document.getElementById("updown1").innerHTML="";
     document.getElementById("pkgviewResultSet").innerHTML=html;
-    document.getElementById("updown2").innerHTML="";
+    //document.getElementById("updown2").innerHTML="";
 }
 
 function modResult(i){

@@ -21,7 +21,7 @@ function showMore(){
 function loadXMLDoc(){
 
 var text=document.getElementById('pkg').value;
-ProcessXML("../models/pakage_search.php?pkg="+text);
+ProcessXML("../models/pakage_search_2.php");
 }
 
 function resultHandler(){
@@ -67,7 +67,7 @@ function modResult(i){
 
 function searchPakages(){
 	msgText="<div id='searchbar'>Search Software</div>"+
-	"<div id='searchbox'><input type='text' id='pkg' onkeyup='loadXMLDoc()'/>"+
+	"<div id='searchbox'><input type='text' id='pkg'/>"+
 	"<button id='searchButton' onclick='loadXMLDoc()'></button></div>"
 //	"<div id='searchimg'><!-- <img src='images/loader.gif'/> -->"+
 	"</div></div>";

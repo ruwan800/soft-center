@@ -10,7 +10,7 @@ function ProcessXML(url) {
 	}else if (window.ActiveXObject){			// IE/Windows ActiveX object
 		obj = new ActiveXObject("Microsoft.XMLHTTP");
 		if (obj) {
-			obj.onreadystatechange = processChange;
+			obj.onReadyStateChange = processChange;
 			obj.open("GET", url, true);
 			obj.send();							// don't send null for ActiveXObject
 		}
@@ -28,10 +28,10 @@ function processChange() {
 				xmlRoot = xmlResponse.documentElement;
 				resultHandler();
 			}catch(e){
-				notify(e);
+				notify(e+"::proto-31");
 			}
         } else {								// anything else means a problem
-            notify("There was a problem in the returned data:");
+            notify("There was a problem in the returned data::proto-31");
         }
     }
 }
