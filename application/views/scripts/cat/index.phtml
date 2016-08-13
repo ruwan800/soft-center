@@ -3,7 +3,7 @@
 	<?php if (count($this->paginator)): ?>
 	<dl><?php foreach ($this->paginator as $entry): ?>
 	<div class="col w8"><div class="content">
-	<span class="strong"><?php echo $entry['package'] ?></span></br>
+	<span class="strong"><?php echo $entry['package'] ?></span><br/>
     <span class="italic"><?php echo $entry['description'] ?></span></div></div>
 	<div class="col w1"><div class="content">
     <a href="/pkgdetails/index/package/<?php echo $entry['package'] ?>" class="button green"><span>Details</span></a></div></div>

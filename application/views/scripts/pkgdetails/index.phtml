@@ -5,18 +5,18 @@ global $result;
 $size = number_format( $this->result['size']/1024);
 $installed_size = number_format( $this->result['installed_size']);
 ?>
-</br><b>
-<?php echo $this->result['package'] ?></b></br>
-<?php echo $this->result['description'] ?></br></br>
-<?php echo $this->result['desc_more'] ?></br></br></br><b>
+<br/><b>
+<?php echo $this->result['package'] ?></b><br/>
+<?php echo $this->result['description'] ?><br/><br/>
+<?php echo $this->result['desc_more'] ?><br/><br/><br/><b>
 <div class="col w7"><div class="content">
-<?php echo "size:</b> {$size} kB" ?></br><b>
-<?php echo "installed size:</b> {$installed_size} kB" ?></br><b>
-<?php echo "version:</b> {$this->result['version']}" ?></br><b>
-<?php echo "source:</b> {$this->result['source']}" ?></br><b>
-<?php echo "maintainer:</b> {$this->result['maintainer']}" ?></br><b>
+<?php echo "size:</b> {$size} kB" ?><br/><b>
+<?php echo "installed size:</b> {$installed_size} kB" ?><br/><b>
+<?php echo "version:</b> {$this->result['version']}" ?><br/><b>
+<?php echo "source:</b> {$this->result['source']}" ?><br/><b>
+<?php echo "maintainer:</b> {$this->result['maintainer']}" ?><br/><b>
 <?php echo "home page:</b> <a href='{$this->result['homepage']}' target=\"_blank\"><i>{$this->result['homepage']}</i></a>"?>
-</br></br>
+<br/><br/>
 
 <?php if ($this->status) : ?>
 <a href="/pkginstall/index/package/<?php echo $this->result['package'] ?>" class="button green"><span>Install Package</span></a></div></div>
