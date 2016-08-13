@@ -60,6 +60,7 @@ class MpackageController extends Zend_Controller_Action
 		$type = $this->_getParam('type', Null);
 		if ($type){
 			$this->nspkg->type = $type;
+			$this->nssearch->type = $type;
 		}
 		if(isset($this->nspkg->type)){
 			if (isset($this->nssearch->value)){
@@ -70,7 +71,7 @@ class MpackageController extends Zend_Controller_Action
 				return array($type, $value);
 			}
 			$this->nssearch->controller = 'mpackage';
-			$this->nssearch->action = 'package';
+			$this->nssearch->action = $this->nspkg->action;
 			$this->_forward('index','search');
 			return;
 		}

@@ -7,7 +7,6 @@ class Application_Form_Adduser extends Zend_Form
     {
        
 		$this->setName("add-user")
-			 ->setAction('/adduser/form/')
 			 ->setMethod('post');
 
 		$username = new Zend_Form_Element_Text('username');
@@ -61,10 +60,10 @@ class Application_Form_Adduser extends Zend_Form
 		
 		$jobtype = new Zend_Form_Element_Select('jobtype');
 		$jobtype->setLabel('Jobtype of user :')
-				->addMultiOption('programer','programer' )
-				->addMultiOption('qa','qa')
+				->addMultiOption('programer','Programmer' )
+				->addMultiOption('designer','Designer')
 				->addMultiOption('Manager','Manager' )
-				->addMultiOption('admin','Administrater');
+				->addMultiOption('admin','Administrator');
 		$jobtype->class = "text";        
 		$jobtype->setDecorators(array(
 				'ViewHelper',

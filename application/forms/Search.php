@@ -13,7 +13,7 @@ class Application_Form_Search extends Zend_Form
 				 ->setRequired()
 				 ->setAttrib('size', '30')
 				 ->addFilters(array('StringTrim', 'StringToLower'))
-				 ->addValidator('StringLength', false, array(3, 10));
+				 ->addValidator('StringLength', false, array(1, 10));
 
 		$searchtxt->class = "text";        
 		$searchtxt->setDecorators(array(

@@ -24,6 +24,9 @@ class TeamController extends Zend_Controller_Action
     public function adduserAction()
     {
     	$value = $this->getValue();
+    	if( ! $value){
+    		return;
+    	}
 		$this->model->addUser($value);
 		$this->view->message = "User '{$value}' added to the '{$this->nsteam->team}' team successfully.";
 		$this->render('message');
@@ -32,6 +35,9 @@ class TeamController extends Zend_Controller_Action
     public function deluserAction()
     {
     	$value = $this->getValue();
+    	if( ! $value){
+    		return;
+    	}
 		$this->model->delUser($value);
 		$this->view->message = "User '{$value}' removed from the '{$this->nsteam->team}' team.";
 		$this->render('message');
@@ -39,6 +45,9 @@ class TeamController extends Zend_Controller_Action
     public function addpackageAction()
     {
     	$value = $this->getValue();
+    	if( ! $value){
+    		return;
+    	}
 		$this->model->addPackage($value);
 		$this->view->message = "Package '{$value}' added to the '{$this->nsteam->team}' team successfully.";
 		$this->render('message');
@@ -46,6 +55,9 @@ class TeamController extends Zend_Controller_Action
     public function delpackageAction()
     {
     	$value = $this->getValue();
+    	if( ! $value){
+    		return;
+    	}
 		$this->model->delPackage($value);
 		$this->view->message = "Package '{$value}' removed from the '{$this->nsteam->team}'team .";
 		$this->render('message');

@@ -26,24 +26,69 @@ class Application_Model_Team
 		return $result;
 	}
 
-	public function addUser()
+	public function addUser($user)
 	{
-		
+		$team = $this->nsteam->team;
+		$select = $this->db->select()
+					 ->from('team_members',array(	'id' => 'id'))
+					 ->where("user_name = ?",$user)
+					 ->where("team_name = ?",$team)
+					 ->limit(1);
+		$stmt 	= $select->query();
+		$result = $stmt->fetch();
+		if($result){
+			throw new App_Exception("User already a member of this team.");
+			return;
+		}
+
+		$data = array(
+			'user_name'	=> $user,
+			'team_name' => $team
+		);
+		$this->db->insert('team_members',$data);
 	}
 
 	public function delUser()
 	{
-		
+		$team = $this->nsteam->team;
+		$data = array(
+			'user_name'	=> $user,
+			'team_name' => $team
+		);
+		$this->db->delete('team_members', $data);
 	}
 
-	public function addPackage()
+	public function addPackage($pkg)
 	{
+		$team = $this->nsteam->team;
+		$select =   $this->db->select()
+						 ->from('software_for_team',array(	'id' => 'id'))
+						 ->where("software = ?",$pkg)
+						 ->where("team_name = ?",$team)
+						 ->limit(1);
+		$stmt 	= $select->query();
+		$result = $stmt->fetch();
+		if($result){
+			throw new App_Exception("Software already allowed.");
+			return;
+		}
 		
+		$data = array(
+			'team_name'	=> $team,
+			'software' 	=> $pkg
+		);
+		$this->db->insert('software_for_team',$data);
+		$this-update($request);
 	}
 
-	public function delPackage()
+	public function delPackage($pkg)
 	{
-		
+		$team = $this->nsteam->team;
+		$data = array(
+			'team_name'	=> $team,
+			'software' 	=> $pkg
+		);
+		$this->db->delete('software_for_team', $data);
 	}
 
 }

@@ -11,6 +11,11 @@ class MteamController extends Zend_Controller_Action
 		$this->form 	= new Application_Form_Createteam();
     }
 
+    public function indexAction()
+    {
+        // just render view/index.phtml page
+    }
+
     public function addAction()
     {
 		$this->view->form = $this->form;
@@ -53,14 +58,15 @@ class MteamController extends Zend_Controller_Action
     public function editAction()
     {
     	$value = $this->getValue();
+    	if(!$value){
+    		return;
+    	}
 		$result = $this->model->editTeam($value);
 		$this->nsedit->values = $result;
 		$this->setFormValues($result);
 		$this->form->setAction('editform/');
 		$this->view->form = $this->form;
 		$this->render('form');
-		$this->view->message = "User '{$value}' added to the '{$this->nsteam->team}' team successfully.";
-		$this->render('message');
     }
 
 
@@ -82,6 +88,7 @@ class MteamController extends Zend_Controller_Action
 		$this->nssearch->controller = 'mteam';
 		$this->nssearch->action = $this->getRequest()->getActionName();
 		$this->_forward('index','search');
+		return;
 	}
 
 	public function getFormValues()
@@ -99,10 +106,10 @@ class MteamController extends Zend_Controller_Action
 
 	public function setFormValues($request)
 	{
-		$this->form	->teamname->setvalue($request['team_name'])
-					->teamowner->setvalue($request['team_owner'])
-					->teamtype->setvalue($request['team_type'])
-					->teamdesc->setvalue($request['team_description']);
+		$this->form->teamname->setvalue($request['team_name']);
+		$this->form->teamowner->setvalue($request['team_owner']);
+		$this->form->teamtype->setvalue($request['team_type']);
+		$this->form->teamdesc->setvalue($request['team_description']);
 	}
 
 }
