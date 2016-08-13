@@ -45,29 +45,12 @@ class Application_Form_Adduser extends Zend_Form
 
 
 		$usertype = new Zend_Form_Element_Select('usertype');
-		$usertype->setLabel('Priviledges of user :')
-				->addMultiOption('level1','level1' )
-				->addMultiOption('level2','level2')
-				->addMultiOption('level3','level3' )
+		$usertype->setLabel('Type of user :')
+				->addMultiOption('default','Normal User' )
 				->addMultiOption('admin','Administrater');
+
 		$usertype->class = "text";        
 		$usertype->setDecorators(array(
-				'ViewHelper',
-				'Description',
-				'Errors',
-				array('Label'),
-				array('HtmlTag', array('tag' => 'p'))
-		));
-		
-		
-		$jobtype = new Zend_Form_Element_Select('jobtype');
-		$jobtype->setLabel('Jobtype of user :')
-				->addMultiOption('programer','programer' )
-				->addMultiOption('qa','qa')
-				->addMultiOption('Manager','Manager' )
-				->addMultiOption('admin','Administrater');
-		$jobtype->class = "text";        
-		$jobtype->setDecorators(array(
 				'ViewHelper',
 				'Description',
 				'Errors',
@@ -88,7 +71,6 @@ class Application_Form_Adduser extends Zend_Form
 				$username,
 				$email,
 				$usertype,
-				$jobtype,
 				$submit
 			));
 

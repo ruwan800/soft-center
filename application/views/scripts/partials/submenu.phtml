@@ -74,7 +74,9 @@
             </div>
         </div>
         <div>
-        	<?php echo $this->partial('partials/adminmenu.phtml'); ?>
+        	<?php if ($this->userType()) : ?>
+        		<?php echo $this->partial('partials/adminmenu.phtml'); ?>
+        	<?php endif?>
         </div>        
     </div>
     <div class="title">

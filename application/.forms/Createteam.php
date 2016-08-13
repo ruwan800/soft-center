@@ -26,10 +26,10 @@ class Application_Form_Createteam extends Zend_Form
 		));
 
 
-		$teamdesc = new Zend_Form_Element_Textarea('teamdesc');
+		$teamdesc = new Zend_Form_Element_Text('teamdesc');
 		$teamdesc->setLabel('Team Description:')
 				 ->setRequired()
-				 ->setAttrib('rows=15 cols=45', '30')
+				 ->setAttrib('size', '30')
 				 ->addFilters(array('StringTrim', 'StringToLower'))
 				 ->addValidator('StringLength', false, array(4, 70));
 
@@ -60,22 +60,6 @@ class Application_Form_Createteam extends Zend_Form
 		));
 
 
-		$usertype = new Zend_Form_Element_Select('usertype');
-		$usertype->setLabel('Priviledges of user :')
-				->addMultiOption('level1','level1' )
-				->addMultiOption('level2','level2')
-				->addMultiOption('level3','level3' )
-				->addMultiOption('admin','Administrater');
-		$usertype->class = "text";        
-		$usertype->setDecorators(array(
-				'ViewHelper',
-				'Description',
-				'Errors',
-				array('Label'),
-				array('HtmlTag', array('tag' => 'p'))
-		));
-		
-		
 		$teamtype = new Zend_Form_Element_Select('type');
 		$teamtype->setLabel('Type of team :')
 				->addMultiOption('Designing', 'designing')
@@ -91,8 +75,7 @@ class Application_Form_Createteam extends Zend_Form
 				array('Label'),
 				array('HtmlTag', array('tag' => 'p'))
 		));
-		
-		    	
+
 		$submit = new Zend_Form_Element_Submit('createteam');
 		$submit->class = "novisible";
 		$submit->setDecorators(array(
@@ -106,13 +89,12 @@ class Application_Form_Createteam extends Zend_Form
 				$teamname,
 				$teamdesc,
 				$teamlead,
-				$usertype,
 				$teamtype,
 				$submit
 			));
 
 		$this->addElement('image', 'createteam', array(
-				'description' => '<a href="" class="button yellow form_submit"><small class="icon plus"></small><span>Create Team</span></a>',
+				'description' => '<a href="" class="button form_submit"><small class="icon play"></small><span>Create Team</span></a>',
 				'ignore' => true,
 				'decorators' => array(
 				        array('Description', array('escape'=>false, 'tag'=>'p')),

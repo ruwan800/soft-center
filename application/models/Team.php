@@ -11,8 +11,18 @@ class Application_Model_Team
 
 	public function createTeam()
 	{
-		$db = Zend_Db_Table::getDefaultAdapter();
-		$db->insert('user_groups', $this->_data);
+		try {
+			$db = Zend_Db_Table::getDefaultAdapter();
+			$db->insert('user_groups', $this->_data);
+		} catch (Zend_Db_Adapter_Exception $e) {
+			#echo $e->getCode();
+			$this->view->error = $e->getCode();
+		}
+
+	
+	
+#		$db = Zend_Db_Table::getDefaultAdapter();
+#		$db->insert('user_groups', $this->_data);
 	}
 
 }

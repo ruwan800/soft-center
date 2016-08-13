@@ -1,6 +1,6 @@
 <?php
 
-class Zend_View_Helper_Usertype extends Zend_View_Helper_Abstract
+class Zend_View_Helper_UserType extends Zend_View_Helper_Abstract
 {
 
     public function userType()
