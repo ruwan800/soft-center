@@ -171,7 +171,7 @@ function showLogin(){
 }
 
 #check for timedout users
-function recentUsr(){
+function recentUser(){
 	status=true;
 	#TODO check validity
 	if(!valid){

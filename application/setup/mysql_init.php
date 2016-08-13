@@ -1,5 +1,5 @@
 <?php
-require_once("../includes/includes.php");
+require_once("includes/includes.php");
 
 
 db_select(SOFT_CENTER);

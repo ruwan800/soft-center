@@ -1,7 +1,9 @@
-   Please wait...! This takes time. </br>
+
 
 <?php
-require_once("../includes/includes.php");
+require_once("includes/includes.php");
+
+echo   "Please wait...! This takes time. </br>";
 $desc_more=null;
 $homepage=null;
 $maintainer=null;
