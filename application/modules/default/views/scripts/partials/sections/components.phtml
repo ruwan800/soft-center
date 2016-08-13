@@ -1,0 +1,14 @@
+<form id="frm" method="post">
+    <label for="components">Select Component : </label>
+
+    <select id="component" name="component">        
+        <?php foreach($this->components as $component) : ?>
+        <option value="<?php echo $component;?>" 
+            <?php echo ($component == $this->selcomponent)? "selected = '1'" : "" ; ?>>
+            <?php echo ucfirst($component);?>
+        </option>
+        <?php endforeach; ?>
+    </select>    
+    <input type="submit" name="btsubmit" id="btsubmit" value="Go"/>
+</form>
+<br/><br/>

@@ -1,0 +1,28 @@
+<?php $paginationControl = $this->paginationControl($this->paginator, 'All', 'partials/paginator.phtml') ?>
+
+<div class="pagination-control">
+    <?php echo $paginationControl ?>
+</div>
+
+<div class="paged-data">
+    <?php if (count($this->paginator)) : ?>
+    <table class="data">
+        <thead>
+            <tr>
+                <th>List</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            echo $this->partialLoop('partials/sections/sectionlistRow.phtml', $this->paginator);
+        ?>
+        </tbody>
+    </table>
+    <?php else : ?>
+    <p class="notice">No items found</p>
+    <?php endif ?>
+</div>
+
+<div class="pagination-control">
+    <?php echo $paginationControl ?>
+</div>

@@ -1,0 +1,75 @@
+<!-- Script for Ajax calls -->
+<script type="text/javascript">
+$(function()
+{
+    $('#getpkgLink').click(function()
+    {
+        getPkgJson('admin');    
+        return false;
+    });
+    
+    $('#searchLink').click(function()
+    {
+        findPkgJson($("#tbSearch").val());    
+        return false;
+    });
+
+});
+
+function getPkgJson(section)
+{
+    $.post(
+        "async/getinfo",
+        {
+            "section" : section
+        },
+        function(data)
+        {
+            //alert(data);
+                           
+            for (var i=0; i< data.length; i++)
+            {                    
+             $("#packageList").append("<h6>"+data[i].package+"</h6>"); 
+            }            
+        },'json'
+    );
+}
+
+function findPkgJson(name)
+{
+    $.post(
+        "async/searchpkg",
+        {
+            "name" : name
+        },
+        function(data)
+        {
+            //alert(data);
+            if(data){               
+                $("#searchResults").append("<a href='"+data['repository']+data['filename']+"'>"+data['package']+"</a>"+"<br/>");
+            }
+        },'json'
+    );
+}
+    
+</script>
+<?php
+$this->title = "Test Page";
+$this->headTitle($this->title);
+?>
+<br/>
+<input type="text" name="tbSearch" id="tbSearch">
+<a href="#" id="searchLink">Search</a>
+<div id="searchResults"></div>
+<br/><br/><br/>
+
+<h4>List packages using json &amp; jquery</h4>
+<a href="#" id="getpkgLink">Show Packages</a>
+<br/><br/>
+<div id="packageList"></div>
+
+
+<br/>
+<form>
+    <?php echo $this->autocompleteElement; ?>
+</form>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+    <nav>
+    	<home>
+	   <label>Categories</label>
+	   <uri>/</uri>	   
+             
+    	</home>
+        <requests>
+            <label>Requests</label>
+            <uri>/request</uri>
+        </requests>
+    	
+    	<about>
+    	    <label>Reort bug</label>
+            <uri>#</uri>
+    	</about>
+    	<contact>
+    	    <label>Contact Us</label>
+	    <uri>#</uri>
+    	</contact>    	    
+	
+   	</nav>
+</configdata>

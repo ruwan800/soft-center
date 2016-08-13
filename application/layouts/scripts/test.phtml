@@ -1,0 +1,22 @@
+<?php echo $this->doctype() ?>
+<html>
+    <head>
+        <?php
+        echo $this->headMeta()
+                ->prependHttpEquiv('Content-Type', 'text/html; charset=' . $this->getEncoding()) ?>
+        
+        <base href="<?php echo $this->serverUrl(), $this->baseUrl() ?>/">
+        
+        <?php echo $this->headTitle('Awesome Pagination')
+                ->setSeparator(' - ') ?>
+        
+        <?php echo $this->headLink()->appendStylesheet('css/paginator/light-theme.css') ?>
+    </head>
+    <body>
+        <div id="page">
+            <?php echo $this->layout()->content ?>
+        
+        </div>
+        
+    </body>
+</html>

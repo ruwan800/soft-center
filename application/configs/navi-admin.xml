@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configdata>
+    <nav>
+    	<home>
+	   <label>Dashboard</label>
+	   <uri>/admin</uri>
+        </home>
+        <users>
+	   <label>Manage Users</label>
+	   <uri>/admin</uri>
+             <pages>
+                <create>
+                    <label>Create Group</label>
+                    <uri>/admin</uri>
+                </create>
+               
+                <edit>
+                    <label>Edit Groups</label>
+                    <uri>/admin</uri>
+                </edit>                      
+            </pages>
+    	</users>    	
+	
+   </nav>
+</configdata>

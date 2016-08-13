@@ -1,0 +1,10 @@
+<?php $this->inlineScript()->appendFile('js/paginator.js') ?>
+
+<h1>All Sections</h1>
+<br/>
+<div id="paged-data-container">
+    <?php echo $this->render('test/index.ajax.phtml') ?>
+</div>
+<?php echo $this->inlineScript()
+                ->prependFile('/js/modernizr-1.7.min.js')
+                ->prependFile('/js/jquery/jquery-1.7.2.min.js'); ?>

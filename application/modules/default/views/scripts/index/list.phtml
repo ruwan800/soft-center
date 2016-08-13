@@ -1,0 +1,29 @@
+<?php 
+$this->title = "Browse Sections";
+$this->headTitle($this->title);
+?>
+<br/>
+<?php if($this->selsection) : ?>    
+<h1>Packages in <?php echo $this->selsection; ?></h1>
+<br/>
+<a class="navi_btn" href="<?php echo $this->url(array('controller'=>'index', 'action'=>'index')); ?>">&lt; Back to Sections</a> 
+<br/>
+<br/><br/>
+
+
+<?php $this->inlineScript()->appendFile('js/paginator.js') ?>
+
+<div id="paged-data-container">
+        <?php echo $this->render('index/list.ajax.phtml') ?>
+</div>
+    <?php echo $this->inlineScript()
+    ->prependFile('/js/modernizr-1.7.min.js')
+    ->prependFile('/js/jquery/jquery-1.7.2.min.js'); ?>
+
+
+<?php else : ?>
+<h4>You haven't selected a Section !!</h4>
+<br/>
+<a class="navi_btn" href="<?php echo $this->url(array('controller'=>'index', 'action'=>'index')); ?>">&lt; Back to Sections</a>
+
+<?php endif; ?>
