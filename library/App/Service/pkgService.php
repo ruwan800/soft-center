@@ -11,7 +11,12 @@ class App_Service_pkgService
     /**
      * @var Application_Model_DbTable_Packages
      */
-    protected $_pkgsTable;    
+    protected $_pkgsTable;
+
+    /**
+     * @var Application_Model_DbTable_Sections
+     */
+    protected $_sectsTable;
 
     /**
      * @var Zend_Db
@@ -21,6 +26,7 @@ class App_Service_pkgService
     public function __construct() 
     {
        $this->_pkgsTable = new Model_DbTable_Packages();
+       $this->_sectsTable = new Model_DbTable_Sections();
     }
     
     /**
@@ -56,7 +62,24 @@ class App_Service_pkgService
 
         return $adapter;
     }        
-    
+
+    /**
+     * Retrieve all rows under selected section
+     *
+     * @param String
+     * @return Zend_Db_Table_Rowset
+     */
+    public function getPkgsInCategory($category)
+    {
+        $select = $this->_pkgsTable->select();
+	$select->from("vos_packages", array('package','filename','repository','description'));
+	$select->where('tag = ?', $category);
+
+        $adapter = new Zend_Paginator_Adapter_DbSelect($select);
+
+        return $adapter;
+    }
+
     /**
      * retrieve the row of the selected package
      * 
@@ -71,20 +94,23 @@ class App_Service_pkgService
         // retrieve the row corresponding to the selected package  	
         return $this->_pkgsTable->fetchRow($where);
     }
+
     /**
-     * retrieve the row of the selected package
-     *
-     * @param String
+     * retrieve all section names
+     * 
      * @return Zend_Db_Table_rowset
      */
-    public function getAllPkgs()
+    public function getAllSections()
     {
-        $select = $this->_pkgsTable->select();
-	$select->from("vos_packages", array('package','filename','repository'));	
+        $select = $this->_sectsTable->select();
+	$select->from("vos_sections")
+                ->order('name');
 
         $rowset = $this->_pkgsTable->fetchAll($select);
 
-        return $rowset;
+        $adapter = new Zend_Paginator_Adapter_DbSelect($select);
+
+        return $adapter;
     }
         
     

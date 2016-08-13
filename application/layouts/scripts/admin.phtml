@@ -8,11 +8,8 @@ echo $this->doctype();
 <head>
     <?php echo $this->headMeta(); ?>
     <?php echo $this->headTitle(); ?>
-    <?php echo $this->headScript()->appendFile($this->baseUrl().'/js/jquery.js'); ?>
-    <?php echo $this->headScript()->appendFile($this->baseUrl().'/js/navi_menu.js'); ?>
     
-    <?php $this->headLink()->prependStylesheet($this->baseUrl().'/css/blueprint/screen.css','screen, projection'); ?>
-    <?php $this->headLink()->appendStylesheet($this->baseUrl().'/css/admin/admin.css'); ?>
+    <?php $this->headLink()->prependStylesheet($this->baseUrl().'/css/blueprint/screen.css','screen, projection'); ?>    
     <?php $this->headLink()->appendStylesheet($this->baseUrl().'/css/blueprint/ie.css','screen, projection','IE'); ?>
     <?php $this->headLink()->appendStylesheet($this->baseUrl().'/css/blueprint/print.css','print'); ?>
     

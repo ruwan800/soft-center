@@ -2,23 +2,24 @@
 <configdata>
     <nav>
     	<home>
-	   <label>Categories</label>
-	   <uri>/</uri>	   
-             
+	   <label>Home</label>
+	   <uri>/</uri>	                
     	</home>
+
         <requests>
             <label>Requests</label>
             <uri>/request</uri>
         </requests>
-    	
+
+        <feedback>
+            <label>Feedback</label>
+            <uri>/feedback</uri>
+        </feedback>
+
     	<about>
-    	    <label>Reort bug</label>
+    	    <label>Reort a bug</label>
             <uri>#</uri>
-    	</about>
-    	<contact>
-    	    <label>Contact Us</label>
-	    <uri>#</uri>
-    	</contact>    	    
+    	</about>    	 	    
 	
-   	</nav>
+   </nav>
 </configdata>

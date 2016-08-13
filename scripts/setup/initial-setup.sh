@@ -33,7 +33,7 @@ else
     exit
 fi
 
-# Download and extract source files
+# Download and extract a source files
 php setup.php get-repository "deb http://archive.ubuntu.com/ubuntu/ $distro main restricted multiverse universe"
 
 php setup.php get-appinstalldata bzr
@@ -44,14 +44,14 @@ php setup.php get-popcon by_inst
 mkdir -p $temp_icons_dir
 cp $temp_dir/app-install-data/app-install-data-ubuntu/*/icons/* $temp_icons_dir
 
-# Create database tables
+# Create a database tables
 php setup.php create-tables
 
 # Import the data into database
-for component in main restricted multiverse universe
+for component in main universe multiverse restricted
 do
     php setup.php import-packages "$temp_dir/repositories/archive.ubuntu.com/ubuntu/dists/$distro/$component/binary-i386/Packages" 'http://archive.ubuntu.com/ubuntu/' $distro $component
-    for lang in en uk
+    for lang in en
     do
         php setup.php import-translation "$temp_dir/repositories/archive.ubuntu.com/ubuntu/dists/$distro/$component/i18n/Translation-$lang" 'http://archive.ubuntu.com/ubuntu/' $distro $component $lang
     done

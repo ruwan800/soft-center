@@ -8,15 +8,13 @@ echo $this->doctype();
 <head>
     <?php echo $this->headMeta(); ?>
     <?php echo $this->headTitle(); ?>
-   
-    <?php $this->headLink()->appendStylesheet($this->baseUrl().'/css/login.css'); ?>
+    
+    <?php $this->headLink()->appendStylesheet($this->baseUrl().'/gray_admin/css/reset.css'); ?>
+    <?php $this->headLink()->appendStylesheet($this->baseUrl().'/gray_admin/css/style.css'); ?>
     
     <?php echo $this->headLink(); ?>
 </head>
-    <body>
-        <h1>VOS Software Portal</h1>
-        <div class="container">
-            <?php echo $this->layout()->content; ?>
-        </div>
+    <body>       
+        <?php echo $this->layout()->content; ?>
     </body>
 </html>

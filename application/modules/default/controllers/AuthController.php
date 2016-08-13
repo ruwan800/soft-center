@@ -55,7 +55,9 @@ class AuthController extends Zend_Controller_Action
         $authAdapter->setTableName('vos_users')
                     ->setIdentityColumn('username')
                     ->setCredentialColumn('password')
-                    ->setCredentialTreatment('MD5(?)');
+                    ->setCredentialTreatment('MD5(?) AND active = 1');
+                   // ->setCredentialTreatment('SHA1(CONCAT(?,salt)) AND active = 1');
+
 
         return $authAdapter;
     }

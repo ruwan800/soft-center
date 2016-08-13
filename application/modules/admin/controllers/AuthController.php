@@ -9,17 +9,10 @@ class Admin_AuthController extends Zend_Controller_Action
      */
     protected $_session;
 
-    public function init()
-    {
-        $this->_session = new Zend_Session_Namespace('auth');
-    }
 
     public function preDispatch()
-    {        
-    }
-
-    public function postDispatch()
-    {        
+    {
+         $this->_session = new Zend_Session_Namespace('auth');
     }
 
     public function indexAction()

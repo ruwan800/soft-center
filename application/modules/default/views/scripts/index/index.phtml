@@ -1,19 +1,107 @@
 <br/><br/>
-<?php
-// view partial with a HTML Form (to select the component)
-echo $this->partial('partials/sections/components.phtml', array(
-    "components" => $this->components,
-    "selcomponent" => $this->selcomponent
-));
-?>
+<div class="col w10 last">
+    <div class="content">
+        <div class="shelf">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="inside">
+                <div class="books">
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'accessories')); ?>">
+                            <span>Accessories</span>
+                            <img src="images/dept/accessories.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'devel')); ?>">
+                            <span>Developer Tools</span>
+                            <img src="images/dept/developer-tools.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'education')); ?>">
+                            <span>Education</span>
+                            <img src="images/dept/education.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2 last">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'fonts')); ?>">
+                            <span>Fonts</span>
+                            <img src="images/dept/fonts.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="shelf">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="inside">
+                <div class="books">
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'games')); ?>">
+                            <span>Games</span>
+                            <img src="images/dept/games.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'graphic')); ?>">
+                            <span>Graphics</span>
+                            <img src="images/dept/graphics.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'internet')); ?>">
+                            <span>Internet</span>
+                            <img src="images/dept/internet.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2 last">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'office')); ?>">
+                            <span>Office</span>
+                            <img src="images/dept/office.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="shelf">
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="inside">
+                <div class="books">
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'science')); ?>">
+                            <span>Science & Engineering</span>
+                            <img src="images/dept/science-engineering.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'sound-video')); ?>">
+                            <span>Sound & Video</span>
+                            <img src="images/dept/sound-video.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'themes')); ?>">
+                            <span>Themes & Tweaks</span>
+                            <img src="images/dept/themes-tweaks.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col w2 last">
+                        <a href="<?php echo $this->url(array('controller' => 'cat', 'action' => 'index', 'id' => 'universal')); ?>">
+                            <span>Universal Access</span>
+                            <img src="images/dept/universal-access.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
 
-<?php $this->inlineScript()->appendFile('js/paginator.js') ?>
 
-<h1>All Sections</h1>
-<br/>
-<div id="paged-data-container">
-    <?php echo $this->render('index/index.ajax.phtml') ?>
+    </div>
+    <div class="clear"></div>
 </div>
-<?php echo $this->inlineScript()
-                ->prependFile('/js/modernizr-1.7.min.js')
-                ->prependFile('/js/jquery/jquery-1.7.2.min.js'); ?>

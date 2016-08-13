@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * Description of pkgService
  *
@@ -15,7 +13,7 @@ class App_Controller_Plugin_LayoutPicker
         if('auth' == $controllerName)
             Zend_Layout::getMvcInstance()->setLayout('auth');
         else if('error' == $controllerName)
-            Zend_Layout::getMvcInstance()->setLayout('error');
+            Zend_Layout::getMvcInstance()->setLayout('error');       
         else
             Zend_Layout::getMvcInstance()->setLayout($request->getModuleName());
     }

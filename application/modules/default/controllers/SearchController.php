@@ -49,8 +49,8 @@ class SearchController extends Zend_Controller_Action
 
     public function searchAction()
     {
-        if ($request->isPost()) {
-            $post = $request->getPost();
+#        if ($request->isPost()) {
+#            $post = $request->getPost();
 
             /**
              * Open index
@@ -62,8 +62,13 @@ class SearchController extends Zend_Controller_Action
             $query = 'username:"' . $post['username'] . '" OR city:"' . $post['city'] . '"';
 
             $this->view->result = $index->find($query);
-        } else {
-            $this->view->form = new Search_Form();
-        }
+#        } else {
+#            $this->view->form = new Search_Form();
+#        }
+    }
+    
+    public function indexAction()
+    {
+    	
     }
 }

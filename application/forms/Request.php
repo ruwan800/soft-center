@@ -10,7 +10,7 @@ class Form_Request extends Zend_Form
         $manager = new Zend_Form_Element_Text('manager');
         $manager->setLabel('Reporting Manager\'s Name *')
                 ->addValidator(new Zend_Validate_Alnum())
-                ->setRequired('true');
+                ->setRequired();
         
         $pkgName = new Zend_Form_Element_Text('pkgName');
         $pkgName->setLabel('Package Name *')
@@ -19,8 +19,9 @@ class Form_Request extends Zend_Form
         
         $comments = new Zend_Form_Element_Textarea('comments');
         $comments->setLabel('Additional Comments (Optional)')
-                 ->addValidator(new Zend_Validate_Alnum());
-        
+                ->addValidator(new Zend_Validate_Alnum())
+                ->setAttrib('cols', '30')
+                ->setAttrib('rows', '5');
         
         $submit = new Zend_Form_Element_Submit('submit');   
 

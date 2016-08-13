@@ -19,12 +19,12 @@ class App_Controller_Plugin_Acl
 	$session = new Zend_Session_Namespace('auth');
 
         if(!$session->authenticatedAsAdmin) {
-	    $request->setControllerName('auth');
-	    $request->setActionName('index');
+	    $request->setControllerName('auth');	    
 	    return;
         }
         
-    }    
+    }
+
 /*
     public function preDispatch(Zend_Controller_Request_Abstract $request)
     {
@@ -47,7 +47,6 @@ class App_Controller_Plugin_Acl
         $controller = $request->getControllerName();
         $action = $request->getActionName();    
     }
- * 
- */
-
+*/
+    
 }

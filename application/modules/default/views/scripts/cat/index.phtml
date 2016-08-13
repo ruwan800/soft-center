@@ -1,0 +1,36 @@
+<?php
+$this->title = "Categories";
+$this->headTitle($this->title);
+?>
+<?php if($this->category) : ?>
+
+<h1>Packages in <?php echo $this->category; ?></h1>
+<br/>
+<div class="navi_btn">
+    <a class="navi_btn" href="<?php echo $this->url(array('controller'=>'index', 'action'=>'index')); ?>">&lt; Back</a>
+</div>
+<br/><br/>
+
+<?php $this->inlineScript()->appendFile($this->baseUrl().'/js/paginator/paginator.js') ?>
+
+<div id="page">
+    <div id="paged-data-container">
+            <?php echo $this->render('cat/list.ajax.phtml') ?>
+    </div>
+</div>
+
+<?php echo $this->inlineScript()->prependFile($this->baseUrl().'/js/paginator/modernizr-1.7.min.js')
+            //->prependFile('https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js')
+            //->prependFile($this->baseUrl().'/js/jquery/jquery-1.7.2.min.js'); ?>
+
+<?php else : ?>
+
+<h4>You haven't selected a Category !!</h4>
+<br/>
+<div class="navi_btn">
+    <a class="navi_btn" href="<?php echo $this->url(array('controller'=>'index', 'action'=>'index')); ?>">&lt; Back</a>
+</div>
+
+<?php endif; ?>
+
+
